@@ -1,0 +1,3 @@
+La principal motivación del proyecto es generar documentación que pueda servir para aquellos desarrolladores con ideas similares a las que se presentará a continuación.
+La plataforma de hardware reconfigurable presenta como disitivo central un PLDs(FPGA/CPLD) al cuál se le permitirá interactuar con el exterior a través de puertos I/O (algunas de ellas aisladas galvánicamente), ADCs, DACs, puertos estándares de comunicación entre otros.
+
