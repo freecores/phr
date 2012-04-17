@@ -1,0 +1,16 @@
+EESchema-LIBRARY Version 2.3  Date: mar 28 feb 2012 16:42:03 ART
+#encoding utf-8
+#
+# PCB_HOLE
+#
+DEF PCB_HOLE H 0 40 Y Y 1 F N
+F0 "H" -250 350 60 H V C CNN
+F1 "PCB_HOLE" 0 -350 60 H V C CNN
+DRAW
+C 0 0 291 0 1 0 N
+P 2 0 1 0  300 -300  -300 300 N
+P 2 0 1 0  300 300  -300 -300 N
+ENDDRAW
+ENDDEF
+#
+#End Library

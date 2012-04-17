@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="489.64594"
+   height="482.49887"
+   id="svg2977"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="Documento nuevo 2">
+  <defs
+     id="defs2979">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective2985" />
+    <inkscape:perspective
+       id="perspective2952"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="69.108719"
+     inkscape:cy="255.53513"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="607"
+     inkscape:window-height="421"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata2982">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-280.89128,-305.39845)">
+    <g
+       id="g3343"
+       transform="matrix(3.133111,0,0,3.133111,1505.2407,-1059.0526)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         ry="9.8888741"
+         y="436.06586"
+         x="-390.20569"
+         height="152.85622"
+         width="155.13736"
+         id="rect2820-3"
+         style="fill:none;stroke:#000000;stroke-width:1.14370966;stroke-opacity:1" />
+      <g
+         id="g3332"
+         transform="translate(7.4064839,-6.1608903)">
+        <rect
+           ry="9.8888741"
+           y="490.53775"
+           x="-342.86905"
+           height="56.610737"
+           width="56.610737"
+           id="rect2847-2"
+           style="fill:#b3b3b3;stroke:#000000;stroke-width:1.14370966;stroke-opacity:1" />
+        <text
+           sodipodi:linespacing="100%"
+           id="text2816-4-4-9"
+           y="516.89594"
+           x="-332.82108"
+           style="font-size:50.90691757px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           xml:space="preserve"><tspan
+             style="font-size:12.72672939px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10"
+             y="516.89594"
+             x="-332.82108"
+             id="tspan2818-6-9-3"
+             sodipodi:role="line">FPGA</tspan><tspan
+             id="tspan3168"
+             style="font-size:12.72672939px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10"
+             y="529.62268"
+             x="-332.82108"
+             sodipodi:role="line">CPLD</tspan></text>
+      </g>
+      <g
+         transform="translate(3.2353836,-17.794609)"
+         id="g3160">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.14370966;stroke-opacity:1"
+           id="rect2901-0"
+           width="59.557594"
+           height="26.513245"
+           x="-306.24054"
+           y="467.10345"
+           ry="9.8888741" />
+        <text
+           xml:space="preserve"
+           style="font-size:50.90691757px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           x="-300.57224"
+           y="484.70627"
+           id="text2816-4-8-8"
+           sodipodi:linespacing="100%"><tspan
+             sodipodi:role="line"
+             id="tspan2818-6-5-8"
+             x="-300.57224"
+             y="484.70627"
+             style="font-size:12.72672939px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10">EPROM</tspan></text>
+      </g>
+      <g
+         transform="translate(-99.892464,-61.472288)"
+         id="g3210">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.14370966;stroke-opacity:1"
+           id="rect2901-0-2"
+           width="41.762978"
+           height="36.623817"
+           x="-280.77817"
+           y="509.51373"
+           ry="9.8888741" />
+        <text
+           xml:space="preserve"
+           style="font-size:50.90691757px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           x="-276.06598"
+           y="532.17181"
+           id="text2816-4-8-8-2"
+           sodipodi:linespacing="100%"><tspan
+             sodipodi:role="line"
+             id="tspan2818-6-5-8-3"
+             x="-276.06598"
+             y="532.17181"
+             style="font-size:12.72672939px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10">CLKs</tspan></text>
+      </g>
+      <g
+         transform="translate(-60.62557,-6.404423)"
+         id="g3249">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.14370966;stroke-opacity:1"
+           id="rect2901-0-5"
+           width="59.557594"
+           height="26.513245"
+           x="-320.21652"
+           y="551.30151"
+           ry="9.8888741" />
+        <text
+           xml:space="preserve"
+           style="font-size:50.90691757px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           x="-308.01541"
+           y="568.9743"
+           id="text2816-4-8-8-6"
+           sodipodi:linespacing="100%"><tspan
+             sodipodi:role="line"
+             id="tspan2818-6-5-8-5"
+             x="-308.01541"
+             y="568.9743"
+             style="font-size:12.72672939px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10">JTAG</tspan></text>
+      </g>
+      <text
+         sodipodi:linespacing="100%"
+         id="text2816-4-6"
+         y="586.36444"
+         x="-320.04636"
+         style="font-size:50.90691757px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:12.72672939px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10"
+           y="586.36444"
+           x="-320.04636"
+           id="tspan2818-6-3"
+           sodipodi:role="line">Placa Central</tspan></text>
+    </g>
+  </g>
+</svg>

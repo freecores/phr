@@ -1,0 +1,458 @@
+*************************XILINX*********************************
+*(15/06)Estudio familia Spartan-3 extendida (Spartan-3 Generation FPGA User Guide.pdf)
+=Características
+		-Bajo Costo
+			Posee muchas prestaciones dependiendo del dispositivo, éstos son:
+			+Spartan-3A
+			+Spartan-3A DSP
+			+Spartan-3AN
+Dependiendo de la aplicación debemos recurrir a la Tabla 1-2, donde especifica los recursos que tiene cada tipo de Spartan-3 como ser Cantidad de bloques lógicos, pines, I/O disponibles, uP embebidos, Voltage de alimentación, modo de configuración, DSP, etc.
+/*Algo que no me gusto en ésta tabla es la posibilidad que tiene de configurar las spartan-3A en comparación con las spartan-3E. REVISAR */
+Datos interesantes en las características,
+	_Vin_máx: 4,6V. Compatible con fuentes de 3.3V +/- 10%
+	_señales estandar: LVCMOS, LVTTL, HSTL y SSTL.
+	_driver de salida hasta 24mA.
+	_tasa de transferencia 622Mb/s.
+	_18x18 multiplicadores dedicados con pipeline opcional
+	_Puerto programación/debug JTAG IEEE 1149.1/1532.
+	_Digital Clock Manager (DCMs) /*BUSCAR*/
+		Rango de frecuencia 5Mhz hasta 300Mhz.
+	_ ocho global clock.
+	_Interface de configuración para PROMs estandar.
+		-PROM flash SPI, bajo costo.
+		-PROM flash NOR paralelo x8 o x8/x16.
+	_reconfiguración automática Multi-boot entre dos archivos.
+	_Package de bajo costo QFP y BGA
+=Resumen de la arquitectura
+	La arquitectura de la Spartan-3 consiste de cinco elementos fundamentales funcionales programables:
+		_Configurable Logic Block (CLBs) contienen flexibles Look-Up Tables(LUTs) que implentan elementos logicos usados como flip-flop o latch.
+		_Input/Output Blocks (IOBs) controla el floujo de datos entre los pines de I/O y la lógica interna del dipositivo. Los IOBs soportan flujo de datos bidireccionales además de operaciones 3-state.
+		_Block RAM provee almacenamiento de datos en la forma de bloques dual-port de 18Kbit.
+		_Multiplier Blocks toma dos numeros binarios de 18bit como entrada y calcula el producto. La línea Spartan-3A DSP incluye bloques especiales DSP.
+		_Digital Clock Manager (DCM) Block proporciona auto-calibración, retardos, multiplicadores, divisores, y señales de clock de cambio de fase (phase-shifting).
+=Configuración
+	La generación de FPGAs Spartan-3 son programadas por la carga de datos de configuración en dispositivos sólidos, reprogramables, static CMOS configuration latches (CCLs) que en conjunto controla todo los elementos funcionales y designan las fuentes. El dato de configuración de las FPGA son almacenados en dispositivos externos como una PROM o algún dispositivo no-volatil.
+=Capacidades de I/O
+	Aquí es interesante ver el consumo de cada familia, el mejor de todos es la Spartan-3, hasta 24mA para 3.3V y el peor de todos es la Spartan-3E con una corriente máxima de 16mA a 3.3V. /* RECORDAR QUE ÉSTO DEPENDE TAMBIÉN SI UTILIZAMOS LAS I/O A MODO COMÚN O DIFERENCIAL.*/
+
+=Utilizando los recursos Globales de Clock.
+	Especifican los recursos que ofrecen todas las familias de Spartan-3, especificaciones tanto de conexionado como de rendimiento.
+En la figura 2-1 se observa cuál es el camino que sigue las señales de clock. Una aplicación interesante del DCM es introducirlo entre el GCLK pad  y el BUFGMUX para manejar la frecuencia del clock (por ej. divisor).
+=Entrada de clock Spartan-3E
+	En ésta familia, evitar usar la entrada global clock GCLK1 ya que siempre es compartido con el pin selector M2. Las entradas global clock GCLK0,2,3,12,13,14 y GCLK15 tiene funcionalidades compartidas en algunos modos deconfiguración, y todas las entradas RHCLK comparten funcionalidades con lineas de direccionamiento en el modo BPI. Asegurar que no exista conclicto entre el uso de lo spines durante la configuración es algo que siempre se aconseja.
+También en la familia Spartan-3E, algunos de los pines pad son solo pines de entrada como se indica en la sección "Pinout Descriptions"  de la hoja de datos. Esto podría ser más útil como entrada de clock ya que éstos pines no requiere usar el modo pin I/O.
+=Utilizando recursos I/O
+	Todas las señales que entran y salen de la FPGA deben pasar a trevés de los recursos I/O, conocidos como IOBs. Ya que las FPGAs son usadas en muchas aplicaciones complejas, éstos dispositivos deben soportan un incremento variable de I/O. La revolucinaría SelectIO(patentado por xilinx), que contiene la Spartan-3 reune ésta necesidad proporcinando una enorme configurabilidad, alto performance de recursos adecuados para aplicaciones como son memorias de alta velocidad y interfaces de placas complejas programables.
+
+La generación de FPGA Spartan-3 simplifica diseños de alto-performance ofreciendo un seleccionable diseño I/O estandar para entrada y salida. Más de 20 diferentes estandares son soportados en cada familia, con diferentes especificaciones de corriente, voltage, I/O baffering, y terminaciones técnicas. Como un resultado, la generación de FPGA Spartan-3 puede ser usada para transformadas integrales discreta y drive direccional en muchas placas avanzadas, buses, y memorias. Directamente proporciona el interface estandar necesario no solo para eliminar el costo externo de traslación, sino también mejora significativamente la velocidad de chip-to-chip y reduce el consumo de potencia.
+=Alimentación de las FPGA generación Spartan-3
+	Los diseñadores de FPGA se enfrentan al único problema que es diseñar una fuente de potencia y un sistema distribuido de potencia. Muchos otros ICs tienen muchas requermientos especificados. Mientras las FPGAs pueden implmentar un siin fin de apliaciones a frecuencias indeterminada y en multiples dominios de clock, y tiene multiples fuente de potencia seleccionado, es importante tener cuidado en determinar los requeriemientos para las aplicaciones especificas y diseñar a estos requerimientos.
+==Diferencias entre las familias Spartan-3
+	Las familias Spartan-3, Spartan-3E y la Spartan-3A extendida comparten comparten el mismo proceso tecnológico de 90nm y el voltage VCCint del núcleo de 1.2V, y tienen arquitecturas similares.
+Por lo tanto tinen similares caracteristicas de consumo de potencia. A diferencia de otras familias, la Spartan-3A y Spartan-3A DSP permiten VCCaux de 3.3V. En la Spartan-3AN, la VCCaux debe ser hasta 3.3V. Usans3eboard-starterdo una VCCaux de 3.3V puede elimiarse la alimentación 2.5V mediante la prestación total  de 3.3V compatible y por ser compatible con todos los aspectos de la aplicación  de intercambio.
+/* Aquí lo interesante es analizar los valores de tensión de cada familia y los modos de alimentación como son (Power-On Reset Inputs, Suspend Mode)*/
+
+=Voltage Supplies
+	Las FPGAs generación Spartan-3 tiene multiples voltages de alimentación de entrada, como se observa en la Tabla 18-2. Hay dos fuentes de entrada para las funciones lógicas internas, VCCint y VCCaux. En las Spartan-3A/A DSP, el nivel VCCaux es programable a un 2.5V(default) o 3.3V. La especificación del usuario el valor en el software a través del CONFIG VCCAUX=2.5 o CONFIG VCCAUX=3.3. En la Spartan-3AN, el usuario debe configurar CONFIG VCCAUX=3.3 (default) para usar el Flash In-System.
+
+*************************ALTERA*********************************
+* Resumen de la familia de dispositivos Cyclone III
+	La familia de dispositivos Cyclone III ofrece una única combinación de gran funcionalidad, bajo consumo de potencia además de bajo costo. Basado en el proceso tecnológico Taiwan Semiconductor Manufacturing Company (TSMC) Low-power (LP), /* no seguimos leyendo por que, al fin, continua como Xilinx, todo muy lindo "Bueno, Bonito y Barato".*/
+Lo que sí, Altera ofrece información sobre las características de seguridad, se ve que ellos piensan que es interesante cuidad los IPs. Estos son:
+	_Configuración de seguridad usando advance encryption standar (AES) con clave volátil de 256-bit.
+	_Oscilador interno permite controlar el sistema y capacidad de chequeo satisfactorio.
+++Mayor integración del sistema
+	_Soporte de I/O estandares tales como LVTTL, LVCMOS, SSTL, HSTL, PCI, PCI-X, LVPECL, bus LVDS(BLVDS), LVDS, mini-LVDS, RSDS, y PPDS
+	_ Cuantro PPLs por dispositivo
+	_ Sistema remoto de actualización sin la ayuda de un controlador externo. /*BUENIIIIISIMO!!!!!!*/
+=Configuración
+	La familia de dispositivos Cyclone III usan celdas SRAM para almacenar los datos de configuración. El dato de configuración se descarga en la familia de dispisitivos Cyclone III cada ves qeu el dispositivo se alimenta. La opción de configuración de bajo costo incluye la familia de dispositivos de dispositivos flash seriales EPCS como también la opción de configuración flash paralelo. Esta opción proporciona la flexibilidad para aplicaciones de propósito general y la habilidad de permitir configuraciones específicas y tiempos requeridos wake-up de las aplicaciones. La familia de dispositivos Cyclone II soporta el AS, PS, FPP, y esquemas de configuración JTAG. EL esquema de configuración AP está soportado solo en dispositivos Cyclone III.
+
+*Conclusión
+	El análisis se realiza sobre dos fabricantes de FPGA, Alter y Xilinx. Se tiene experiencia en el trabajo con FPGAs de Xilinx, mientras que con Altera se ha realizado trabajos anteriores sobre una plataforma MAX10K.
+La documentación proporcionada por los fabricantes, resumen de dispositivos de cada familia, se especifican las características específicas en las que cada fabricante tuve mejores desarrollos. Xilinx hace incapié en la variedad de subfamilias que posee, como son las orientados a DSP y Automación. Mientras que Altera presenta un gran desarrollo en la seguridad y encriptación de sus IP, además presenta la posibilidad de configurar sus dispositivos en forma remota.
+Seguir explicando por que elegir xilinx y no altera.
+
+*************************MODO DE PROGRAMACIÓN*********************************
+Spartan-3 Generation FPGA User Guide.pdf
+*Capacidad de JTAG Boundary-Scan
+	Todos los IOBs soportan testeo Boundary-Scan compatible con el estandars IEEE 1149.1/1532. Para más información ver Capítulo 21.
+
+=Usando Boundary-Scan y archivos BSDL
+	Los archivos Boundary-Scan Description Languegue (BSDL) son provistos por todos los dispositivos y conbinación de paquetes de dispositivos compatibles de IEEE 1149.1 (JTAG) producidos por Xilinx, incluido toda las FPGAs generación Spartan-3. Herramientas de terceros Bundary-Scan usan éste archivo para generar vectores de testeo para platafromas de prueba. El software de programación de Xilinx también usa archivos BSDL en la configuración de dispositivos a través de Boundary-Scan.
+Este capítulo es aplicable a todas las familias Spartan-3: Spartan-3, Spartan-3E, Spartan-3A, Spartan-3AN y Spartan-3A DSP.
+El testeo con Boundary-Scan fue usado para identificar fayas de conexión a nivel de placa, como también pines desconectados y cortos. El testeo por Boundary-Scan permite a los diseñadores identificar con rapidez problemas de fabricación o layout, que de otra forma podría ser imposible de aislar, especialmente con encapsulados muy grandes como los BGA. Últimamente muchos, proveedores de PLDs como Xilinx utilizan el Boundary-Scan como un modo conveniente de configurar sus dispositivos. 
+=Estandar IEEE
+	EL Join Test Action Group (JTAG) es un nombre comunmente usado para el estandar IEEE 1149.1, que define un método para Boundary-Scan. Los dispositivos compatibles JTAG tiene un hardware dedicado que comprenden una maquina de estado y varios registros que permiten operaciones Boundary-Scan. Este hardware dedicado interpreta instrucciones y proporciona cuatro señales: TDI(Test Data In), TDO(Test Data Out), TMS (Test Mode Select), y TCK(Test Clock). El hardware JTAG interpreta instrucciones y datos sobre las señales TDI y TMS, y el control de salida sobre la señal TDO. La señal TCK es usada como el reloj del proceso.
+/* Insertar el gráfico 21-1 Arquitectura típica del JTAG */
+En las FPGAs Spartan-3, las señales TDI, TDO, TMS, y TCK se encuentran con pines dedicados alimentados por VCCaux. Cada una puede ser configurado como pullUp(por defecto), pullDown, o ninguno de éstos, a trevés de la opciones en el bitstream. EL IEEE 1532 es un gran conjunto del estandar IEEE 1149.1 JTAG. El estandar IEEE 1532 proporciona adicionalmente flexibilidad para la configuración de PLDs. El estandar IEEE 1532 habilita al diseñar a programar multiples dispositivos concurrentemente, minimizando los tiempos de programación con características mayores de silicio, y sistemas robustos de producción que son más fáciles de mantener. Ésta norma define los tres elementos adicionales requeridos para configurar en el sistema de PDLs.
+	*_ Dispositivos de componentes aquitectónicos para configurar.
+	*_ Descripción del algorítmo "framework".
+	*_ Archivo de configuración de datos.
+****************BUSCAR INTERESANTE**************************
+General information on the IEEE 1532 JTAG standard is available at:
+http://www.xilinx.com/products/design_resources/config_sol/isp_standards_specs.htm
+****************BUSCAR INTERESANTE**************************
+
+=Funciones del Boundary-Scan
+	Los dispositivos Spartan-3 soportan obligatoriamente los comandos del IEEE 1149.1, como así también varios comandos especificados por el proveedor Xilinx. Las instrucciones EXTEST, INTEST, SIMPLE/PRELOAD, BYPASS, IDCODE, USERCODE, y HIGHZ se encuentran incluidas. EL TAP(Test Access Port) también soporta registros internos definidos por el usuario (USER1, USER2) y configuración readback del dispositivo.
+Las operaciones del Boundary-Scan de la Spartan-3 son independiente del modo seleccionado. El modo Boundary-Scan en los dispositivos Spartan-3 reemplazan otros modos seleccionados. Por ésta razón, las instrucciones Boundary-Scan usando el registro Boundary-Scan (SAMPLE/PRELOAD, INTEST, y EXTEST) no deben llevarse a cabo durante la configuración. Todas las instrucciones salvo la instrucción definidas por el usuairio deben esta habilitadas antes de configurar un dispositivo. Luego de la configuración, todas las instrucciones se encontrarán habilitadas.
+Cada arreglo de FPGA Spartan-3 tiene un identificador de dispisitivo específico de 32-bit legible a traves de la lógica Boundary-Scan. El interface Boundary-Scan también proporciona la opción de almacenar un ID de usuario de 32-bit, cargado durante la configuración y especificado via la opción de configuración en el bitstrean UserID.
+El testeo por Boundary-Scan requiere equipamiento de prueba y software específicos. El software de testeo Boundary-Scan es usado para generar un vector de testeo, que son transferidos tipicamente a la cadena Boundary-Scan usando un canal de prueba conectado a un PC.
+El desarrollo de vectores de prueba Boundary-Scan, el software de testeo debe estar provisto con información a cerca de la cadena escaneada:
+	1_ La composición de la cadena - el número de dispitivos, que tipo, etc.
+		La composición de la cadena puede también ser especificada por el usuario o automáticamente detectada por el software Boundary-Scan.
+	2_ La arquitectura Boundary-Scan de cada dispositivo - la longitud del Interruption Register, código de operación, número de I/Os, y de que manera se comportan cada I/O.
+		La arquitectura del Boundary-Scan de cada dispositivo se define en el archivo Boundary-Scan Description Language (BSDL).
+	3_ Como las I/Os de un dispositivo se encuentra conectado el uno con el otro.
+		Ésta información tipicamente está tomada desde un netlist a nivel de placa.
+
+=Archivos BSDL
+	Todos los fabricantes de dispositivos compatibles con JTAG deben proporcionar un archivo BSDL por dispositivo. El archivo BDSL contiene información sobre el funcionamiento de cada uno de los pines sobre el dispositivo - que es usado como I/Os, como vcc y masa, etc. Todos los archivos BSDL de xilinx tiene la extensión .bsd.
+El archivo BSDL para los dispositivo Xilinx se encuentran habilitados en el sistema de desarrollo y sobre la web de xilinx. El archivo BSDL para otros fabricantes tipicamente puede encontrado en la web del fabricante.
+Los archivos para la extensión IEEE 1532 para el archivo BSDL está también habilitado como producto de xilinx. Están incluidos además otros archivos BSDL.
+Los archivos BSDL IEEE 1149.1 aparecen como : <nombre_dispositivo>.bsd
+Por ejemplo: xc3s50.bsd
+Estos archivos BSDL son los necesitados para la programación. Para el testing con JTAG, el archivo del encapsulado específico es necesario.
+Por ejemplo: xc3s50_pq208.bsd
+Los archivos IEEE 1532 aparecen como: <nombre_dispitivo>_1532.bsd
+Por ejemplo: xc3s50_pq208_1532.bsd
+Los archivos IEEE Std 1532 BSDL no debe utilizarse en lugar del los archivos BSDL 1149.1-
+
+=Composición del archivo BSDL
+	EL archivo BSDL describe la arquitectura del Boundary-Scan de un dispositivo compatible JTAG, y está escrito en VHDL. Hay ocho partes principales en un archivo BSDL:
+	1_ Declaración de entidad
+		La declaración de entidad es una construcción VHDL usada para identificar el nombre de el dispitivo que se escribe por medio del archivo BSDL.
+		Ejemplo (desde el archivo xc3s50_PQ208.bsd)
+		entity XC3S50_PQ208 is
+	2_ Parametros genéricos
+		El parámetro genérico especifíca cuál es el encapsulado del archivo descrito BSDL.
+		Ejemplo (desde el archivo xc3s50_pq208)
+		generic (PHYSICAL_PIN_MAP : string := "PQ208");
+	3_ Descripción de puerto lógico
+		La descripción de puertos lógicos lista todos los pads en un dispositivo, e indicar el estdo de uno como entrada (in bit), salida (out bit), bidireccional (inout bit;) o deshabilitado para Boundary-scan(linkage bit;).
+		Ejemplo (desde el archivo xc3s50_pq208.bsd)
+		port(
+		GND: linkage bit_vector (1 to 28);
+		CCLK_P104: inout bit;
+		DONE_P103: inout bit;
+		HSWAP_EN_P206: in bit;
+		M0_P55: in bit;
+		M1_P54: in bit;
+		M2_P56: in bit;
+		PROG_B: in bit;
+		TCK: in bit;
+		TDI: in bit;
+		TDO: out bit;
+		TMS: in bit;
+		VCCAUX: linkage bit_vector (1 to 8);
+		VCCINT: linkage bit_vector (1 to 4);
+		VCCO0: linkage bit_vector (1 to 2);
+		IO_P2: inout bit; -- PAD124
+		IO_P3: inout bit; -- PAD123
+	4_ Mapeo de pines del encapsulado
+		El mapeo de pines del encapsulado muestra como el pad dentro del dispitivo se encuentra cableado hacia el pin sobre el encapsulado.
+		ejemplo (desde el archivo xc3s50_pq208.bsd):
+		constant PQ208: PIN_MAP_STRING:=
+  		"GND:(P1,P8,P14,P25,P30,P41,P47,P53,P59,P66," &
+		"P75,P82,P91,P99,P105,P112,P118,P129,P134,P145," &
+		"P151,P157,P163,P170,P179,P186,P195,P202)," &
+		"CCLK_P104:P104," &
+		"DONE_P103:P103," &
+		"HSWAP_EN_P206:P206," &
+		"M0_P55:P55," &
+		"M1_P54:P54," &
+		"M2_P56:P56," &
+		"PROG_B:P207," &
+		"TCK:P159," &
+		"TDI:P208," &
+		"TDO:P158," &
+		"TMS:P160," &
+		"VCCAUX:(P17,P38,P69,P89,P121,P142,P173,P193)," &
+		"VCCINT:(P70,P88,P174,P192)," &
+		"VCCO0:(P188,P201)," &
+		"IO_P2:P2," &
+		"IO_P3:P3," &
+	5_ usando declaraciones
+		El uso de declaraciones de celdas de paquetes VHDL que contienen atributos, tipos, constantes, y otros que son referidos en el archivo BSDL.
+		Ejemplo(desde el archivo xc3s50_pq208.bsd)
+		use STD_1149_1_1994.all;
+	6_ Escaneo de identificación de puerto
+		El escaneo de identifiación de puerto identifica los pines del JTAG: TDI, TDO, TMS, TSK, y el TRST(si está usado). El TRST es un pin opcional que no se utilizan en los dispositivos de xilinx.
+		Ejemplo (desde el archivo xc3s50_pq208.bsd)
+		attribute TAP_SCAN_IN    of TDI : signal is true;
+		attribute TAP_SCAN_MODE  of TMS : signal is true;
+		attribute TAP_SCAN_OUT   of TDO : signal is true;
+		attribute TAP_SCAN_CLOCK of TCK : signal is (33.0e6, BOTH);
+	7_ Descripción de TAP (Test Access Port)
+		La decripción TAP proporciona informacióna adicional sobre la lógica JTAG del dispositivo. Entre ésta información se incluye la longitud del registro de instrucciones, código de operaciones de instrucciones, y IDCODE del dispositivo. Estas características son específicas del dispositivo, y pueden cambiar mucho de un dispositivo a otro.
+		Ejemplo (desde el archivo xc3s50_pq208.bsd)
+		attribute COMPLIANCE_PATTERNS of XC3S50_PQ208 : entity is
+	       "(PROG_B) (1)";
+		attribute INSTRUCTION_LENGTH of XC3S50_PQ208 : entity is 6;
+		attribute INSTRUCTION_OPCODE of XC3S50_PQ208 : entity is
+		"EXTEST    (000000)," &
+		attribute INSTRUCTION_CAPTURE of XC3S50_PQ208 : entity is
+	       "XXXX01";
+		attribute IDCODE_REGISTER of XC3S50_PQ208 : entity is
+		"XXXX" &      -- version
+		"0001010" & -- family
+		"000001101" &    -- array size
+		"00001001001" & -- manufacturer
+		"1";          -- required by 1149.1
+	8_ descripción del registro Boundary
+		La descripción del registro Boundary da la estructura de las celdas Boundary-Scan sobre el dispositivo. Cada pin sobre el dispositivo puede tener hasta tres celdas Boundary-Scan, cada celda contiene de un registro y un latch. el vector de prueba Boundary-Scan son cargados dentro o escaneados desde estos registros.
+		Ejemplo (desde el archivo xc3s50_pq208.bsd)
+		attribute BOUNDARY_REGISTER of XC3S50_PQ208 : entity is
+		   "   0 (BC_2, *, controlr, 1)," &
+   		   "   1 (BC_2, IO_P161, output3, X, 0, 1, PULL0)," & --
+		   "   2 (BC_2, IO_P161, input, X)," & -- PAD30
+*(23/06) Verificación del archivo BSDL
+	La verificación de Xilinx de los archivos BSDL tiene dos etapas. Preliminarmente los archivos son generados usando un proceso automático de generación BSDL. EL proceso es un script y extrae información directamente desde el archivo del dispositivo diseñado, con la descripción completa de la arquitectura y el pinout. La calidad del archivo "preliminar" BSDL es muy alta, y la sintaxis está siempre testeada. Los archivos marcados como "Final" tienen experimentado todo el testeo para la sintaxis y verificación de hardware. Para garantizar que el archivo BSDL describe exactamente la operación de cada pin, Xilinx utiliza una tercera herramienta Boundary-Scan -Intellitech- para verificar el silicio real en el BSDL.
+Los archivos BSDL de xilinx son chequeados por 1149.1 conforme con el producto Intellitech Eclipse usando un extricto chequeo de sintaxis BSDL. Cada contrón semántico descrito en el IEEE 1149.1b-1994(El estandar para sintaxis BSDL) es realizo usando un estricto parsing. El testeo de patrones entonces es generado desde el archivo BSDL que incluye el testeo único para todos los pines I/O. Cada dispositivo/package Xilinx combinado es testeado en el Intellitech Reduced Control Tester (RCT).
+El patrón de testeo incluye verificación de Test-Logic-Reset y controlador TAP, las instrucciones BYPASS/IDCODE/USERCODE y registros, y mapeo de pines de el registro  boundary a todos los pines input/output/bidirecional/clock y control de celda. Finalmente, cada dispositivo es testeado por el 1149.1 compatible después el dispositivo es programado por la descarga de un diseño y usando el testeo RCT para verificar anteriormente configurado.
+=iMPACT
+	iMPACT presenta una completa herramienta de software usado para la configuración y programación de todas los CPLDs, FPGAs, y PROMs de Xilinx. Este presenta una serie de dialogos "wizard" que facilmente guía al usuario a través de cada paso del proceso de configuración. iMPACT soporta un host de archivos de salida incluyendo SVF. La configuración del software iMPACT permite al usuario configurar las FPGAs de xilinx usando diferentes modos: esclavo serial, SPI, SelectMAP (esclavo paralelo), y JTAG IEEE 1149.1. iMPACT soporta el cable paralelo IV y cables USB.
+=Archivos SVF
+	El Serial Vector Format (SVF) es un formato de archivo estandar-industrial que es usado para describir cadenas de operaciones JTAG comprimido, modo portable. Los archivos SVF capturan todo las especificacinos del dispositivo e información de programación dentro de las instrucciones SVF. Los archivos SVF son muy usados ya el conocimiento intrisenco del dispositivo no es necesario. La capacidad de crear un archivo SVF se incluye en la herramienta iMPACT.
+
+=Usando el macro BSCAN_SPARTAN3A
+	BSCAN_SPARTAN3A proporciona acceso al sitio BSCAN para los dispositivos Spartan-3A, 3-AN y 3-A DSP. El macro BSCAN_SPARTAN3 proporciona funcionalidades similares para la familia Spartan-3 y Spartan-3E, pero no incluye los pines TCK y TMS. El componente es preliminarmente usado para crear internamente una cadena Boundary-Scan. Los cuatro pines del interface JTAG(TDI, TDO, TCK y TMS) continene pines dedicados en la familia Spartan-3. Para uso normal JTAG por Boundary-Scan, debe engancharse los pines JTAG al puerto y listo. Los pines en el BSCA_SPARTAN3A no son necesariamente conectados a no ser que aquellos funciones especiales que necesitan acceder internamente a la cadena scan.
+========================FIGURA21-2======================
+La generación de FPGA Spartan-3 proporciona enlaces para dos cadenas de scaneo definidos por el usuario a través de las instrucciones USER1 y USER2. Estras instrucciones puede ser usados para permitir el acceso al usuario del diseño a través del interface JTAG. Para tomar ventajas de la instrucción opcional USER1 y USER, el diseñador deberá instanciar el maro BSCAN_SPARTAN3A en le codigo fuente, y cablar esto en la cadena scan definido por el usuario. Solo un componente BSCAN_SPARTAN3A puede ser usado en cualquier diseño-
+
+El componente BSCAN_SPARTAN3A es generalmente utilizado con IP, tal como el ChipScope PRO analyzer, para comunicaciones vía los pines JTAG para la FPGA para  los dispositivos lógicos interno. Con el uso de éste IP, éste componente es generalmente instanciado con una parte del IP y nada más se necesita para que el usario se aseguro que ésto sea correctamente utulizado. Si, aun así, el acceso de costumbre es deseado, el componente BSCAN_SPARTAN3A puede ser instanciado y conectado al diseño para tomar ésta funcionalidad. Todos los pines apropiadamente deben ser conectados a la lógica interna.
+=============BUSCAR http://www.xilinx.com/support/documentation/user_guides/ug332.pdf==========
+
+******************************************************* Overview y  concideraciones de diseño *******************************************
+
+Las FPGAs de xilinx son muy flexibles, dispositivos lógicos reprogramables que presentan una avanzada tecnología de fabricación CMOS. Al igual que los procesadores y periféricos, las FPGAs de xilinx son muy programados por el usuario. Para las FPGAs, el programa es llamada un bitstream de configuración, que define las funcionalidades de la FPGA. El bitstream se carga dentro de la FPGA.
+
+EL proceso por le cuál se definen los datos se van acargar o programar dentro de la FPGA es llamado "configuración". La configuracicón está diseñado para ser fexible para acompodar las diferentes necesidades de aplicación y, en lo posible, aprovechar la existencia de fuentes de 
+sistemas para minimizar los costos.
+
+Similar para ámbos procesadores y periféricos procesadores, las FPGAs puede ser reprogramadas, en sistemas, o demandado, un ilimitado numero de veces. Después de configurar, el bitstream de configuración de la FPGA es almacenado en un robusto CMOS Configuration Latches (CCLs). Aunque los CCLs son reprogrmables como una memoría SRAM, los CCLs son diseñados preliminarmente para integración de datos, no para uso común. El dato almacenado en la CCLs es escrito solo durante la configuración y retiene los datos en forma estática a menos que cambie por eventualidad provocada por otra configuración.
+
+*Concideraciones de diseño
+	Antes de comensar con un nuevo diseño basado en FPGA, tomese unos minutos para concideraciones como la configuración del modo de la FPGA que requiere su sistema. Cada modo de configuración asigna algunos pines de la FPGA y apropiarse de otros.
+===============================FIGURA1-1===============================
+El modo de configuración en la descarga a la FPGA, generalmente llamado modo Slave, se encuentra disponible con cualquier cantidad de datos seriales o byte-wide. En el modo Slave, un "agente inteligente" externo como un procesador, microcontrolador, DSP procede configuración sador, o bus test descargará la imagen de configuración dentro de la FPGA, Figura1-2. La ventaja del modo de configuración Slave es que el bitstream de la FPGA puede encontrarse lugar en el sitema general. EL bitstream podría residir en una Flash, sobre un placa, junto con el host procesador del código. Podría residir en un disco duro. Podría ser originada en alguna parte a través de una conexión de red. las posibilidades son casí infinitas.
+================================= FIGURA 1-2 ============================================
+
+El modo Slave Parallel, también llamado modo SelectMAP en otras arquitecturas FPGA, es esencialmente un siemple procesador byte-wide con un interface periférico, incluye un chip-select de entrada de clock y entrada de datos serial.
+Los cuatro cables del interface JTAG es común en muchas testeo de placas y hardware de depuración. De hecho, los cables de programación de Xilinx para las FPGAs spartan-3, listados debajo, usan el interface JTAG para prototipaje y depuración. Independientemente del modo de configuración ultimamente se utilizado en aplicaciones, lo mejor es que también incluye un path de configuración del JTAG para un fácil desarrollo de diseño.
+
+==En lo que respecta a configuración "más simple pisible", que concideraciones son más importantes?
+Seamos realistas, en algunas aplicaciones, la solución más fácil es la mejor solución. La mejor solución para éstas aplicaciones es o el modo Internal Master SPI que es soportado solo para las Spartan-3AN o el modo Master Serial usando una PROM Flash de Xilinx, que se encuentra disponible para la generación de FPGA Spartan-3. Estas soluciones usan algunos pines de más, tienen una flexibilidad  en el soporte de voltages de I/O, y están completamente soportados por iMPACT, el software de programación de Xilinx basados en JTAG.
+	
+==Que aplicaciones requieran una FPGA volátil?
+Una FPGA no volátil proporciona convenientemente, seguridad, y una solución a costo efectivo y en un solo chip. Multiples opciones del bitstream de FPGA pueden ser almacenados en un solo dispositivo, más cualquier otro dato no volátil necesario para el sistema. Más de 11Mb de datos de usuario se encuentran disponibles en la familia Spartan-3AN. 
+==En lo que respecta a solución de "bajo cost", que concideraciones son más importantes?
+Para aplicaciones sensibles al costo, obviamente que la solución de configuración de bajos costo es la mejor. Cualquier que sea, cuál es la de menor costo?. La respuesta de depende de las especificaciones de su aplicación.
++_Hay posibilidad de memoria externa no volátil dispinible en el sistema en donde almacenar el bitstream de configuración de la FPGA? La imagen bitstream puede ser almacenada en memoria del sistema, almacenado sobre una disco duro, o descargado remotamente a través de una conexión de red. Si es así, concidere una de los modos de descarga, Master Parallel Mode, Slave Serial Mode, o el modo de configuración JTAG y Boundary-Scan.
++_Hay algún modo de configuraciones en los requisitos de memoría no volátil en la aplicación? Por ejemplo, puede almacenarse el bitstram de configuración con cualquier procesador de codigo desde una placa? Si el procesador es un MicroBlaze embebido en la FPGA, el dato de configuración de la FPGA en el MicroBlaze puede compartir facilmente algunos dispositivos de memoria no volátil.
++_Las Spartan-3A y Spartan-3E opcionalmente son configurados desde una memoria SPI Flash y memorias NOR paralelas. Ya que éstas memorias tiene footprints comunes y alimentaciones múltiples, pueden tener precios más bajos debido a el mercado altamente competitivo.
++_Con respecto a si es posible tiempos de configuración rápidos, que concideraciones son más importantes?
+Algunas aplicaciones requieren que la lógica sea operativamente en un corto periodo de tiempo. Ciertos modos y métodos de configuración de FPGA son más rápidos que otros. La dependencia de los tiempos de configuración dependen del tamaño del dispositivo y la velocidad de configuración lógica. Por ejemplo, una XC3S1400A programada a 10MHz requerirá 4755296 bits/ 10Mhz por aproximadamente 500ms.
+--En algunas frecuencias de clock, el modo de configuración paralelo es inherentemente rápido que en los modos seriales, ya que programa 8 bits a la vez.
+--Configurar una simple FPGA es inherentemente rápido que configurar multiples FPGAs en una cadena. En un diseño de multi-FPGA donde la velocidad de configuración es una preocupación, configure cada FPGA separadamente y en paralelo.
+--En el modo Master, la FPGA genera internamente la señal de clock de configuración CCLK. Por defecto, la frecuencia del CCLK comienza con valores bajos, pero puede incrementarse usando la opción de bitstream ConfigRate. El valor máximo de frecuencia soportado CCLK depende de las especificaciones de lectura de la memoria no volátil asocidada a la FPGA. Una memoría más rápida puede permitir una configuración más rápida.
+--Además, en el modo Master, la frecuencia de salida  CCLK de la FPGA varia con el proceso, voltage, y temperatura. El rango más rápido de configuración garantizdo depende de la frecuencia CCLK más baja garantizada como se muestra en la respectiva hoja de aplicación. Si un clock externo se encuentra disponible en la placa, también es posible configurar la FPGA en un modo Slave sin dejar de utulizar una memoria no volátil adjunta.
+==La FPGA o FPGAs son cargadas con una sola imagen de configuración o cargar con múltiples imágenes?
+En muchas aplicaciones con FPGA, la FPGA se cargan solo cuando el sistema está encendido.
+Sin embargo, algunas aplicaciones de recarga en la FPGA multiple veces mientras el sistema está operativo...
+/****************** vamos a desarrollar las preguntas y concideraciones más importante *********************************/
++_Que voltage de I/O se requieren en la aplicación final?
+El modo de configuración seleccionado presenta algunas limitaciones en la aplicación de la FPGA, especificamente en el voltaje de I/O permitido en los bancos de configuración de la FPGA.
+Por ejemplo, los modos SPI o BPI, utizados para la programación de memorias flash, generalmente utilizan solo 3.3V. Por lo que hace necesario que los voltages de I/O  en banco o los bancos asociados a la memoria también sean de 3.3V. En muchas aplicaciones, esto no es un problema.
+Sin embargo, si un voltage diferente a 3.3V es requerido, específicamente 2,5V, concidere usar una PROM de Xilinx, que soporta un rango de voltage de salida a través de una fuente independiente para la memoría PROM. Configurar a 1.8V no se recomienda para las familias Spartan-3 y Spartan-3E y no es soportado para las familias extendidas Spartan-3A.
+
+
+*(18-Agosto)
+Spartan-3 Generation Configuration User Guide.pdf
+La flexibilidad de configuración de la FPGA permite que muchos pines sirvan en multiples propositos. ..... . Otros pines son dedicados para la configuración. Éste capítulo describe como se comportan esos varios pines durante el proceso de configuración. Durante la configuración incluye el tiempo que la FPGA se enciende por primera vez, después PROG_B es pulsado a Low, o durante 
+
+
+
+
+
+
+*Pin DONE
+DriveDone
+	El "DriveDone bitstream generator option" define si el pin DONE tiene una salida totem-pole que genera un energético High o actua como una salida open-drain. Si se configuro como una salida open-drain -que es el comportamiento por defecto- entonces requiere de un resistor pull-up para producir un nivel lógico High. El "DonePin bitstream option" controla el resitor pull-up.
+**Asigne DriveDone: YES en aplicaciones con una simple FPGA o para la primera FPGA de un diseño de multiples FPGA.
+Ésta opción se asigna gráficamente en el "ISE Software Project Navigator" donde debe chequearse "Drive Done Pin High" durante la configuración de "Generate programming file"-> "Propiertis".
+El pin de DONE es drenador abierto, por lo que se debe conexionar pull-up. Se tiene un pull-up interno como también se puede colocar uno externo, ésto se decido mediante la configuración del "DonePin Bitstream Generator Option". Tenemos dos configuraciones
+_Pullup: Por defecto, Después de la configuración, el pin DONE tiene un resistor interno pull-up a VCCAUX.
+_Pulldone: No hay resistor interno pull-up en DONE. Un resistor pull-up externo de 300 a 3.3K se requiere puesto a VCCAUX. El resistor pull-up debe ser suficiente para poner el pin DONE a un High válido en menos de un ciclo de CCLK.
+
+
+*Resistores 0 Ohms.
+En algunas aplicaciones se puede utilizasr un resistor de 0 Ohms que permita aislar los pines del hardware para un fácil testeo de funcionamiento.
+
+
+*PROG_B
+	El pin PROG_B es una entrada de control asíncrona de la FPGA. En Low, el pin PROG_B resetea la FPGA, inizializando la memoria de configuración. Cuando se libera el PROG_B comienza el proceso de configuración. El proceso de inizialización no arranca sino hasta que PROG_B retorna a High. 
+En el encendido o después de una "master reset", PROG_B siempre tiene un resistor pull-up a VCCAUX, sin tener en cuenta la entrada de control  "Pull-up resistors during configuration".
+
+
+
+
+=======================================================0000
+25 de oct. 2011
+
+Se está diseñando la placa para la programación del CPLD. En ésta etapa nos encontramos con el problema de analizar el cálculo para la cantidad y valor de los capacitordes de desacople (decoupling) o también llamado bypass (Bypassing). La nota de aplicación xapp158.pdf dice en su resumen.
+"Power consumption in Xilinx FPGAs depends upon the number of internal logic transitions and
+        is proportional to the operating clock frequency. As device size increases, so does power
+        consumption. It is common for a large, high-speed design to require several amperes of
+        current. Without an accurate thermal analysis, the heat generated could easily exceed the
+        maximum allowable junction temperature. Power supply requirements, including initial
+        conditions, transient behavior, turn-on, and turn-off are also important. Bypassing or
+        decoupling the power supplies at the device, in the context of the device’s application, requires
+        careful attention. All these aspects of the power supply must be considered in order to achieve
+        successful designs."
+
+La nota de aplicación continua con conceptos muy interesantes y detallando cada uno de sus valores. Habla de alta, media y baja frecuencia y los valores de capacitancia que maneja. Aquí no se pega recordes de texto por lo que a la hora de documentar se pide acceder a dicha nota.
+
+
+
+Pero al final he dado con la documentación necesaria, ésto es, puntualmente sobre los capacitores de la placa de CPLDs. Las notas de aplicación que debemos leer son:
+(placas/OT-CPLD) xapp112.pdf  Designing With XC9500XL CPLDs
+(placas/OT-CPLD) xapp115.pdf    Planning for High Speed XC9500XL Designs
+
+Algo muy importante que dice en la nota 112.pdf son una lista de concideraciones para una buena placa.
+Layout Checklist:
+(aquí no se pudo pegar lo que dice) :( pero en definitiva dice VCC desacoplado a masa con capacitores:.1uF .01uF (conectado al plano de masa más cercano).
+para la parte de potencia desacoplar con capacitores de cerámica: .1uF (alta frecuencia) y un electrolítico de 100uF (baja frecuencia).
+
+
+En la nota xapp115.pdf tenemos las ecuaciones que necesitamos para calcular los capacitores de desacople tanto a nivel de placas, VCCINT, VCCIO. Al final de cada cálculo presenta sus valores típicos tal como en la nota xapp158.pdf.
+
+
+
+=======================================================0000
+11 de Feb 2012
+
+Se está diseñando la placa FPGA, la misma cuanta con
+	_el dispositivo PLD
+	_memoria PROM xilinx
+	_capacitores de fitrado y desacople de AF
+	_mapeo de los puertos de salida y entrada
+	_mapeo de puerto spi (si es que cuenta con hardware dedicado)
+	_comunicacion JTAG (el mismo debe estar en cadena con la FPGA y la memoria)
+	_jumper de configuración
+	_indicador de programacion
+	_una entrada de pulsador de prueba y un led con la misma función
+
+
+Hasta el momento se encuentra distribuidos los pines de configuración de los modos de programación como así también el diodo indicador de la correcta programación.
+Lo que en éste momento se encuentra en desarrollo es la interconexión en cadena del puerto JTAG, la FPGA y la memoria. Se utiliza la nota del fabricante "Xilinx UG332 Spartan-3 Generation Configuration User Guide" para evitar errores (página 82).
+Se aconseja para un trabajo posterior, la configuración de los anteriores dispositivos que permitan la reutilización de la memoria PROM luego que la FPGA haya sido programada. Lo que llama la atención es que si se utiliza dicha memoria se perdería el bitstream almacenado. (tema a ver).
+
+=======================================================0000
+23 de Feb 2012
+En la Página 79 del UG332, especifíca los modos de programar la FPGA mediante las memorias Flash PROM (Figura 3-1 -2 -3). En las figuras se tiene algunos componentes opcionales según la configuración del software. Por ejemplo se puede configurar el bitstream el pin PROG_B como ProgPin PullUp.
+Sin embargo entre la salida VCCAUX y los pines se recomienda la utilización de un resistor externo 4K7.
+
+VER traducción: "All the FPGA mode-select pins, M[2:0], must be Low when sampled, which occurs when
+the FPGA’s INIT_B output initially goes High."
+
+La Figura 3-2 (Página 81) muestra la configuración para la familia FPGA Extended Spartan-3A con VCCAUX= 3.3V. En la Tabla 3-1 (Página 80) se muestran las conexiones entre la FPGA y la memoria.
+
+FPGA Pin	Platform Flash PROM Pin		Comments
+  DIN		         D0
+  CCLK        		CLK 		Watch signal integrity on this trace. See “CCLK Design Considerations,” page 58.
+  INIT_B    		OE/RESET        FPGA resets PROM during initialization, then enables the PROM data out during configuration.
+  DONE   		CE  		FPGA enables PROM during configuration. DONE output powered by FPGA VCCAUX supply.
+  PROG_B		CF			
+  VCCO_2		VCCO		2.5V or 3.3V. Spartan-3E FPGAs can also support 1.8V configuration.
+			VCCJ		PROM JTAG output voltage. If 3.3V, then protect the Spartan-3E FPGA JTAG inputs with current-limiting resistors (>68Ω).
+
+
+
+Diseño librería KICAD para XC3S50A
+pinout
+
+nombrepin	pin	tipo
+____________________________
+VCCO_0		79	VCCO
+VCCO_0		96	VCCO
+
+VCCO_1		67	VCCO
+
+VCCO_2		26	VCCO
+VCCO_2		45	VCCO
+
+VCCO_3		11	VCCO
+____________________________
+
+Importante detalle encontrado en la designación de pines
+Para las Spartan 3A el valor de VCCAUX es seteado mediante softwar. Tener cuidado para el caso conectar con memorias que trabajen a una determinada tensión distinta a la de la VCCUX configurada.
+==========================================================================================================
+VCCAUX Level
+             In the Spartan-3A and Spartan-3A DSP platforms, the VCCAUX level is programmable as
+             either 2.5V (default) or 3.3V. The user specifies the value in the software through the
+             CONFIG VCCAUX=2.5 or CONFIG VCCAUX=3.3 constraint. In the Spartan-3AN platform,
+             the user must set CONFIG VCCAUX=3.3 (default) for using the In-System Flash. The
+             Spartan-3 and Spartan-3E families have a fixed VCCAUX at 2.5V.
+==========================================================================================================
+
+
+23 de feb 2012
+
+La mayoría de los pines de programación, alimentación ya se encuentra designados.
+Falta la conexión de los pines PUDC_B de la FPGA y el famoso PROGRAM\ que se encuentra como entrada desde afuera.
+	
+PUDC_B  Para mayores detalles ver UG332 página 62 "Pull-Up Resistors During Configuration"
+
+
+PROGRAM\ es la entrada que permite resetear la memoria. Para ver su aplicación ver el documento 
+"/home/luis/Documentos/tesis/referencias/digilent.inc/archivos placa nexys/BAJADO POR MI/Nexys2_sch.pdf" página 4. También leer en el archivo UG332 Página 56 "Program or Reset FPGA: PROG_B"
+
+=======================================================0000
+27 de feb 2012
+
+El diseño de la placa FPGA ya casí se encuentra terminada. Lo que resta por conectar son el OSC (leer UG331 página 43), además falta conectar los 4 huecos donde perforar. Se podría sacar las dimensiones del osc desde el proyecto del INTI. De éste último buscaremos los footprints.
+
+=======================================================0000
+28 de feb 2012
+Se estaba olvidando de algo muy importante en el diseño final. Los capacitores de desacople. Para ello vamos a revisar la nota UG331 página 478. Ahí encontraremos características de la alimentación. También podemos tomar de referencia los capactires que se utilizaron en la placa del INTI.
+Ver también UG393 página 13
+
+=======================================================0000
+07 de marzo 2012
+La tecnología de las FPGA actuales requieren capacitores en tres rangos de frecuencias, referidos como altas, medias y bajas. Estas frecuencias barren desde 1Khz a un rango de 500Mhz -...
+La correcta ubicación es muy importante para los capacitores de alta frecuencia (0.1uF a 0,001uF de baja inductacia con encapsulado chips cerámicos). Esta es menos importante para capacitores de frecuencias medias (47uF a 100uF de tantalum), e incluso menos importante para capacitores de frecuencias bajas (470uF a 3300uF). 
+La razón para esta dependencia sobre la ubicación es simple: La inductacia en el path desde el terminal del capacitor a el pin de potencia de la FPGA debe ser mantenido lo má bajo posible. Esta manera mantiene el path tan corto como sea posible, incluso cuando el path esta a través de un plano de masa o potencia. Todas las distancias son significativas desde la inductancia de uno...
+
+=======================================================0000
+08 de marzo 2012
+Si bien la nota xapp158 tiene todo lo necesario para el calculo de los capacitores de paso y desacople. Vamos a conciderar las ecuaciones pero cuando se re deacte el informe final deberíamos leer e incorporar la mayoría de los datos.
+
+Para nuestra placa tenemos
+Capacitores VCC_INT
+	C_bi= (S x P)/(N_p x V^2 x F)
+donde
+	S= factor permite reducir la variación de VCC_INT debido a la carga y descarga
+	P= Potencia consumida
+	N_p= numero de VCC_INT (dependiendo los bancos)
+	V= tensión VCC_INT
+	F= frecuencia máxima de operación
+por lo tanto
+	C_bi= (50 x 5) / (4 x 1.2^2 x 50Mhz)
+	C_bi= 0.868 uF => se concidera un cap  100nF
+para las frecuencias medias y bajas las obtenemos multiplicamos por 1000 y 10 respectivamente.
+
+Capacitores VCCO
+	C_bi= (S x N_l x C_l) / N_p
+donde
+	C_l= capacitancia de carga de entrada (creo).
+	N_l= cantidad de I/O por banco
+
+por lo tanto tenemos:
+	C_bi= (50 x 20 x 10pF) / 4
+	C_bi= 2.5 nF => se concidera un cap 1nF
+para las frecuencias medias y bajas las obtenemos multiplicando a C_bi por 1000 y 10 respectivamente.
+
+
+

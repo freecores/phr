@@ -1,0 +1,799 @@
+# EESchema Netlist Version 1.1 created  mar 20 mar 2012 20:37:34 ART
+(
+ ( /4F69144A $noname  Ca6 100u {Lib=CAPAPOL}
+  (    1 /VCCAUX )
+  (    2 GND )
+ )
+ ( /4F691428 $noname  Ca4 10n {Lib=C}
+  (    1 /VCCAUX )
+  (    2 GND )
+ )
+ ( /4F69141F $noname  Ca3 10n {Lib=C}
+  (    1 /VCCAUX )
+  (    2 GND )
+ )
+ ( /4F69141B $noname  Ca2 10n {Lib=C}
+  (    1 /VCCAUX )
+  (    2 GND )
+ )
+ ( /4F6913AD $noname  Ci1 10n {Lib=C}
+  (    1 /VCCINT_1V2 )
+  (    2 GND )
+ )
+ ( /4F6913AC $noname  Ci2 10n {Lib=C}
+  (    1 /VCCINT_1V2 )
+  (    2 GND )
+ )
+ ( /4F6913AB $noname  Ci4 10n {Lib=C}
+  (    1 /VCCINT_1V2 )
+  (    2 GND )
+ )
+ ( /4F6913AA $noname  Ci3 10n {Lib=C}
+  (    1 /VCCINT_1V2 )
+  (    2 GND )
+ )
+ ( /4F6913A9 $noname  Ci6 100u {Lib=CAPAPOL}
+  (    1 /VCCINT_1V2 )
+  (    2 GND )
+ )
+ ( /4F6913A7 $noname  Ci5 10u {Lib=CAPAPOL}
+  (    1 /VCCINT_1V2 )
+  (    2 GND )
+ )
+ ( /4F58BF85 $noname  Ca5 10u {Lib=CAPAPOL}
+  (    1 /VCCAUX )
+  (    2 GND )
+ )
+ ( /4F58BF30 $noname  Co9 10u {Lib=CAPAPOL}
+  (    1 /VCCO )
+  (    2 GND )
+ )
+ ( /4F58BF17 $noname  Co8 1u {Lib=CAPAPOL}
+  (    1 /VCCO )
+  (    2 GND )
+ )
+ ( /4F58BF12 $noname  Co7 1u {Lib=CAPAPOL}
+  (    1 /VCCO )
+  (    2 GND )
+ )
+ ( /4F58BF10 $noname  Co6 1u {Lib=CAPAPOL}
+  (    1 /VCCO )
+  (    2 GND )
+ )
+ ( /4F58BEE2 $noname  Co5 1u {Lib=CAPAPOL}
+  (    1 /VCCO )
+  (    2 GND )
+ )
+ ( /4F58BC4F $noname  Co4 1n {Lib=C}
+  (    1 /VCCO )
+  (    2 GND )
+ )
+ ( /4F58BC4C $noname  Co3 1n {Lib=C}
+  (    1 /VCCO )
+  (    2 GND )
+ )
+ ( /4F58BC49 $noname  Co2 1n {Lib=C}
+  (    1 /VCCO )
+  (    2 GND )
+ )
+ ( /4F58BBF5 $noname  Co1 1n {Lib=C}
+  (    1 /VCCO )
+  (    2 GND )
+ )
+ ( /4F58A802 $noname  Ca1 10n {Lib=C}
+  (    1 /VCCAUX )
+  (    2 GND )
+ )
+ ( /4F4D3968 $noname  R5 R_clk {Lib=R}
+  (    1 N-000012 )
+  (    2 /CLOCK )
+ )
+ ( /4F4D3964 $noname  C1 C_clk {Lib=C}
+  (    1 /VCCO )
+  (    2 GND )
+ )
+ ( /4F4D2E41 $noname  OSC1 OSC {Lib=OSC}
+  (  CLK N-000012 )
+  (  GND GND )
+  (   NC ? )
+  (  VCC /VCCO )
+ )
+ ( /4F4D2E3A $noname  H4 PCB_HOLE {Lib=PCB_HOLE}
+ )
+ ( /4F4D2E38 $noname  H2 PCB_HOLE {Lib=PCB_HOLE}
+ )
+ ( /4F4D2E36 $noname  H3 PCB_HOLE {Lib=PCB_HOLE}
+ )
+ ( /4F4D2E32 $noname  H1 PCB_HOLE {Lib=PCB_HOLE}
+ )
+ ( /4F4D2C3A $noname  P3 JTAG {Lib=CONN_6}
+  (    1 /TMS_JTAG )
+  (    2 /TDO_JTAG )
+  (    3 /TDI_JTAG )
+  (    4 /TCK_JTAG )
+  (    5 /VCCO )
+  (    6 GND )
+ )
+ ( /4F4810C2 $noname  P5 PUDC {Lib=CONN_2}
+  (    1 N-000017 )
+  (    2 GND )
+ )
+ ( /4F481067 $noname  R8 100 {Lib=R}
+  (    1 /PUDC )
+  (    2 N-000017 )
+ )
+ ( /4F480E3E $noname  P2 B {Lib=CONN_20}
+  (    1 /Bpin1 )
+  (    2 /Bpin2 )
+  (    3 /Bpin3 )
+  (    4 N-000037 )
+  (    5 N-000049 )
+  (    6 N-000071 )
+  (    7 N-000082 )
+  (    8 N-000061 )
+  (    9 N-000041 )
+  (   10 N-000036 )
+  (   11 N-000045 )
+  (   12 N-000074 )
+  (   13 N-000070 )
+  (   14 N-000081 )
+  (   15 N-000078 )
+  (   16 N-000035 )
+  (   17 N-000048 )
+  (   18 N-000003 )
+  (   19 N-000077 )
+  (   20 N-000002 )
+ )
+ ( /4F4807B3 $noname  P1 A {Lib=CONN_20}
+  (    1 N-000046 )
+  (    2 N-000050 )
+  (    3 N-000038 )
+  (    4 N-000058 )
+  (    5 N-000062 )
+  (    6 N-000076 )
+  (    7 N-000079 )
+  (    8 N-000068 )
+  (    9 N-000072 )
+  (   10 N-000043 )
+  (   11 N-000047 )
+  (   12 N-000039 )
+  (   13 N-000059 )
+  (   14 N-000063 )
+  (   15 N-000080 )
+  (   16 N-000069 )
+  (   17 N-000044 )
+  (   18 N-000040 )
+  (   19 N-000060 )
+  (   20 /Apin20 )
+ )
+ ( /4F4801C9 $noname  R7 R_push {Lib=R}
+  (    1 /PROG_B )
+  (    2 N-000007 )
+ )
+ ( /4F4801A4 $noname  SW1 RESET_PROG {Lib=SW_PUSH}
+  (    1 N-000007 )
+  (    2 GND )
+ )
+ ( /4F47FC62 $noname  P4 POWER {Lib=CONN_2}
+  (    1 N-000084 )
+  (    2 GND )
+ )
+ ( /4F47E8FD $noname  U2 TPS75003_PM {Lib=TPS75003_PM}
+  (    1 N-000084 )
+  (    2 GND )
+  (    3 N-000084 )
+  (    4 GND )
+  (    5 GND )
+  (    6 /VCCINT_1V2 )
+  (    7 GND )
+  (    8 /VCCO )
+  (    9 GND )
+  (   10 /VCCAUX )
+  (   11 GND )
+ )
+ ( /4F46B626 $noname  R3 4K7 {Lib=R}
+  (    1 /VCCO )
+  (    2 N-000085 )
+ )
+ ( /4F46B5A2 $noname  R2 4K7 {Lib=R}
+  (    1 /VCCAUX )
+  (    2 /PROG_B )
+ )
+ ( /4F46B535 $noname  R1 330 {Lib=R}
+  (    1 /DONE_PROG )
+  (    2 /VCCAUX )
+ )
+ ( /4F4675A1 $noname  U1 XC3S50A-VQ100 {Lib=XC3S50A-VQ100}
+  (    1 /TMS_JTAG )
+  (    2 /TDI_JTAG )
+  (    3 /Bpin1 )
+  (    4 /Bpin2 )
+  (    5 /Bpin3 )
+  (    6 ? )
+  (    7 ? )
+  (    8 GND )
+  (    9 /CLOCK )
+  (   10 ? )
+  (   11 /VCCO )
+  (   12 ? )
+  (   13 ? )
+  (   14 GND )
+  (   15 ? )
+  (   16 ? )
+  (   17 /VCCINT_1V2 )
+  (   18 GND )
+  (   19 ? )
+  (   20 ? )
+  (   21 ? )
+  (   22 N-000075 )
+  (   23 GND )
+  (   24 /MODE_PROG )
+  (   25 /MODE_PROG )
+  (   26 /VCCO )
+  (   27 N-000046 )
+  (   28 N-000050 )
+  (   29 N-000038 )
+  (   30 N-000058 )
+  (   31 N-000062 )
+  (   32 N-000076 )
+  (   33 N-000079 )
+  (   34 N-000068 )
+  (   35 N-000072 )
+  (   36 N-000043 )
+  (   37 N-000047 )
+  (   38 /VCCINT_1V2 )
+  (   39 N-000039 )
+  (   40 N-000059 )
+  (   41 N-000063 )
+  (   42 GND )
+  (   43 N-000080 )
+  (   44 N-000069 )
+  (   45 /VCCO )
+  (   46 N-000044 )
+  (   47 GND )
+  (   48 N-000085 )
+  (   49 N-000040 )
+  (   50 N-000060 )
+  (   51 N-000083 )
+  (   53 N-000042 )
+  (   54 /DONE_PROG )
+  (   55 N-000075 )
+  (   56 /Apin20 )
+  (   57 ? )
+  (   58 GND )
+  (   59 ? )
+  (   60 ? )
+  (   61 ? )
+  (   62 ? )
+  (   63 GND )
+  (   64 ? )
+  (   65 ? )
+  (   66 /VCCINT_1V2 )
+  (   67 /VCCO )
+  (   68 ? )
+  (   69 GND )
+  (   70 ? )
+  (   71 N-000002 )
+  (   72 N-000077 )
+  (   73 N-000003 )
+  (   74 GND )
+  (   75 N-000073 )
+  (   76 /TCK_JTAG )
+  (   77 N-000048 )
+  (   78 N-000035 )
+  (   79 /VCCO )
+  (   80 GND )
+  (   81 /VCCINT_1V2 )
+  (   82 N-000078 )
+  (   83 N-000081 )
+  (   84 N-000070 )
+  (   85 N-000074 )
+  (   86 N-000045 )
+  (   87 GND )
+  (   88 N-000036 )
+  (   89 N-000041 )
+  (   90 N-000061 )
+  (   91 GND )
+  (   92 N-000075 )
+  (   93 N-000082 )
+  (   94 N-000071 )
+  (   95 GND )
+  (   96 /VCCO )
+  (   97 N-000049 )
+  (   98 N-000037 )
+  (   99 /PUDC )
+  (  100 /PROG_B )
+ )
+ ( /4E178DD4 xilinx_virtexii-xc2v80&flashprom-VO20  IC1 XCF01S-VO20 {Lib=XCF01S-VO20}
+  (    1 N-000083 )
+  (    3 N-000042 )
+  (    4 N-000073 )
+  (    5 /TMS_JTAG )
+  (    6 /TCK_JTAG )
+  (    7 /PROG_B )
+  (    8 N-000085 )
+  (   10 /DONE_PROG )
+  (   11 GND )
+  (   13 ? )
+  (   17 /TDO_JTAG )
+  (   18 /VCCO )
+  (   19 /VCCO )
+  (   20 /VCCO )
+ )
+ ( /4E4D5328 $noname  R6 10K {Lib=R}
+  (    1 /MODE_PROG )
+  (    2 /VCCO )
+ )
+ ( /4E4D4DD3 $noname  D1 DONE {Lib=LED}
+  (    1 N-000051 )
+  (    2 GND )
+ )
+ ( /4E4D4DC9 $noname  R4 R_LED {Lib=R}
+  (    1 N-000051 )
+  (    2 /DONE_PROG )
+ )
+ ( /4E178908 $noname  K1 MODE_PROG {Lib=CONN_3}
+  (    1 ? )
+  (    2 /MODE_PROG )
+  (    3 GND )
+ )
+)
+*
+{ Allowed footprints by component:
+$component Ca6
+ CP*
+ SM*
+$endlist
+$component Ca4
+ SM*
+ C?
+ C1-1
+$endlist
+$component Ca3
+ SM*
+ C?
+ C1-1
+$endlist
+$component Ca2
+ SM*
+ C?
+ C1-1
+$endlist
+$component Ci1
+ SM*
+ C?
+ C1-1
+$endlist
+$component Ci2
+ SM*
+ C?
+ C1-1
+$endlist
+$component Ci4
+ SM*
+ C?
+ C1-1
+$endlist
+$component Ci3
+ SM*
+ C?
+ C1-1
+$endlist
+$component Ci6
+ CP*
+ SM*
+$endlist
+$component Ci5
+ CP*
+ SM*
+$endlist
+$component Ca5
+ CP*
+ SM*
+$endlist
+$component Co9
+ CP*
+ SM*
+$endlist
+$component Co8
+ CP*
+ SM*
+$endlist
+$component Co7
+ CP*
+ SM*
+$endlist
+$component Co6
+ CP*
+ SM*
+$endlist
+$component Co5
+ CP*
+ SM*
+$endlist
+$component Co4
+ SM*
+ C?
+ C1-1
+$endlist
+$component Co3
+ SM*
+ C?
+ C1-1
+$endlist
+$component Co2
+ SM*
+ C?
+ C1-1
+$endlist
+$component Co1
+ SM*
+ C?
+ C1-1
+$endlist
+$component Ca1
+ SM*
+ C?
+ C1-1
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "/Apin20" "Apin20"
+ U1 56
+ P1 20
+Net 2 "" ""
+ P2 20
+ U1 71
+Net 3 "" ""
+ U1 73
+ P2 18
+Net 4 "GND" "GND"
+ U1 69
+ Ci5 2
+ Ci6 2
+ Ci3 2
+ Ci4 2
+ Ci2 2
+ Ci1 2
+ Ca2 2
+ Ca3 2
+ Ca4 2
+ Ca6 2
+ U1 58
+ D1 2
+ K1 3
+ IC1 11
+ U1 8
+ U1 80
+ U1 74
+ U1 95
+ U1 47
+ U1 87
+ U1 18
+ U1 14
+ U1 63
+ U1 23
+ U1 42
+ U1 91
+ Co9 2
+ Ca5 2
+ C1 2
+ Ca1 2
+ P4 2
+ SW1 2
+ U2 2
+ U2 4
+ U2 5
+ Co5 2
+ U2 7
+ U2 9
+ U2 11
+ P3 6
+ Co1 2
+ Co2 2
+ Co3 2
+ Co7 2
+ Co8 2
+ P5 2
+ Co4 2
+ Co6 2
+ OSC1 GND
+Net 6 "/PROG_B" "PROG_B"
+ R7 1
+ R2 2
+ IC1 7
+ U1 100
+Net 7 "" ""
+ SW1 1
+ R7 2
+Net 8 "/VCCINT_1V2" "VCCINT_1V2"
+ Ci3 1
+ U1 81
+ Ci4 1
+ Ci6 1
+ Ci2 1
+ Ci1 1
+ U1 38
+ U2 6
+ Ci5 1
+ U1 17
+ U1 66
+Net 9 "/VCCAUX" "VCCAUX"
+ Ca1 1
+ Ca2 1
+ Ca3 1
+ Ca4 1
+ Ca6 1
+ R1 2
+ R2 1
+ U2 10
+ Ca5 1
+Net 11 "/CLOCK" "CLOCK"
+ U1 9
+ R5 2
+Net 12 "" ""
+ OSC1 CLK
+ R5 1
+Net 17 "" ""
+ P5 1
+ R8 2
+Net 18 "/PUDC" "PUDC"
+ U1 99
+ R8 1
+Net 35 "" ""
+ U1 78
+ P2 16
+Net 36 "" ""
+ U1 88
+ P2 10
+Net 37 "" ""
+ P2 4
+ U1 98
+Net 38 "" ""
+ U1 29
+ P1 3
+Net 39 "" ""
+ P1 12
+ U1 39
+Net 40 "" ""
+ P1 18
+ U1 49
+Net 41 "" ""
+ P2 9
+ U1 89
+Net 42 "" ""
+ U1 53
+ IC1 3
+Net 43 "" ""
+ P1 10
+ U1 36
+Net 44 "" ""
+ U1 46
+ P1 17
+Net 45 "" ""
+ U1 86
+ P2 11
+Net 46 "" ""
+ P1 1
+ U1 27
+Net 47 "" ""
+ U1 37
+ P1 11
+Net 48 "" ""
+ U1 77
+ P2 17
+Net 49 "" ""
+ P2 5
+ U1 97
+Net 50 "" ""
+ U1 28
+ P1 2
+Net 51 "" ""
+ R4 1
+ D1 1
+Net 52 "/TDI_JTAG" "TDI_JTAG"
+ P3 3
+ U1 2
+Net 53 "/TMS_JTAG" "TMS_JTAG"
+ U1 1
+ P3 1
+ IC1 5
+Net 54 "/DONE_PROG" "DONE_PROG"
+ U1 54
+ IC1 10
+ R4 2
+ R1 1
+Net 55 "/TDO_JTAG" "TDO_JTAG"
+ P3 2
+ IC1 17
+Net 56 "/VCCO" "VCCO"
+ P3 5
+ U1 11
+ R3 1
+ U1 79
+ U1 96
+ U1 67
+ R6 2
+ Co9 1
+ U2 8
+ IC1 20
+ IC1 18
+ IC1 19
+ Co5 1
+ Co6 1
+ Co7 1
+ Co8 1
+ OSC1 VCC
+ U1 26
+ C1 1
+ U1 45
+ Co1 1
+ Co2 1
+ Co3 1
+ Co4 1
+Net 57 "/TCK_JTAG" "TCK_JTAG"
+ IC1 6
+ P3 4
+ U1 76
+Net 58 "" ""
+ U1 30
+ P1 4
+Net 59 "" ""
+ P1 13
+ U1 40
+Net 60 "" ""
+ U1 50
+ P1 19
+Net 61 "" ""
+ P2 8
+ U1 90
+Net 62 "" ""
+ U1 31
+ P1 5
+Net 63 "" ""
+ P1 14
+ U1 41
+Net 64 "/Bpin1" "Bpin1"
+ P2 1
+ U1 3
+Net 65 "/Bpin2" "Bpin2"
+ P2 2
+ U1 4
+Net 66 "/Bpin3" "Bpin3"
+ P2 3
+ U1 5
+Net 67 "/MODE_PROG" "MODE_PROG"
+ R6 1
+ U1 25
+ K1 2
+ U1 24
+Net 68 "" ""
+ U1 34
+ P1 8
+Net 69 "" ""
+ U1 44
+ P1 16
+Net 70 "" ""
+ P2 13
+ U1 84
+Net 71 "" ""
+ U1 94
+ P2 6
+Net 72 "" ""
+ P1 9
+ U1 35
+Net 73 "" ""
+ IC1 4
+ U1 75
+Net 74 "" ""
+ U1 85
+ P2 12
+Net 75 "" ""
+ U1 55
+ U1 92
+ U1 22
+Net 76 "" ""
+ P1 6
+ U1 32
+Net 77 "" ""
+ P2 19
+ U1 72
+Net 78 "" ""
+ U1 82
+ P2 15
+Net 79 "" ""
+ P1 7
+ U1 33
+Net 80 "" ""
+ P1 15
+ U1 43
+Net 81 "" ""
+ U1 83
+ P2 14
+Net 82 "" ""
+ P2 7
+ U1 93
+Net 83 "" ""
+ U1 51
+ IC1 1
+Net 84 "" ""
+ U2 1
+ U2 3
+ P4 1
+Net 85 "" ""
+ U1 48
+ IC1 8
+ R3 2
+}
+#End

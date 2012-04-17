@@ -1,0 +1,197 @@
+*herramientas
+	vym
+	TeXMaker
+	libreoffice
+	opejproj(openproj.org)
+	inkscape
+		fuentes: Gaposis outlineBRK, brazeBRK, macropsiaBRK, pseudp BRK, Xtrusion BRK, zoiadl BRK, Zurklez sodial BRK
+	diagrama de GRANTT
+		grantt project (java)
+		planner (ref: http://paraisolinux.com/herramientas-para-diagramas-de-gantt/)
+	DFM Design For Manufacturing 
+		https://www.protoexpress.com/betterdfm/index.jsp?XXREFPATH=TOPMENU-PRODSVCS
+		http://www.4pcb.com/
+	iMPACT helper: transferir binario sin instalar iMPACT (http://fpgalibre.sourceforge.net/hard.html#tp10)
+	Grabación de FPGAs y memorias, JTAG, etc.: (http://openwince.sourceforge.net/jtag/)
+	INTI: Contactar con los changos para que nos pasen el script que usan para sintetizar y programar a traves del impact por linux
+
+=================0
+idea presentada hace poco 21 oct 2011
+Mirando las características expuestas por la placa Digilent C-Mod, se presenta la idea de hacer una placa de modo DIP con un CPLD. Según las prestaciones con las que cuenta la placa, es siemplemente un CPLD con lo necesario en alimentación además de Clk..
+=================0
+
+*referencias (http)
+	opencores.org
+		Open Design Prototype Board (http://opencores.org/project,board)
+		Griva Basic board (http://opencores.org/project,griva)
+		Open JTAG (http://opencores.org/project,openjtag-project)
+	altera
+		Cyclone II FPGA Starter Development Kit (http://www.altera.com/products/devkits/altera/kit-cyc2-2C20N.html#related_links) $200
+			nota: La alimentación de la placa es bastante bastante básica pero se ve que anda(ver esquemático).
+	terasIC
+		DE1
+			Altera EPCS4 serial EEPROM chip
+		MAX II Micro Kit
+	slscorp
+		MAX II/MAX IIZ
+	xilinx
+		Spartan-3A/3AN FPGA Starter Kit Board
+	easyFPGA
+		EZ1KUSB - Altera ACEX FPGA Development board with USB interface
+		EZ1CUSB - Altera Cyclone FPGA Development board with USB interface
+		EZ2SUSB - Xilinx Spartan-II FPGA Development board with USB interface
+		EZ3SUSB - Xilinx Spartan-3 FPGA Development board with USB interface
+	digilent
+		Spartan-3 Board
+	FPGAlibre
+		http://fpgalibre.sourceforge.net/enlaces.html#tp18
+	FPGAdevelopment.com
+		FPGA Development Kits (http://www.fpgadevelopment.com/fpga-development-news.asp?a=0&ga=news&pst=712)
+	ORSoC
+		FPGA Development Board(http://orsoc.se/fpga-development-board/langswitch_lang/en/)
+	openCPI(http://opencpi.org/documentation.php)
+		http://www.w3.org/TR/xml/
+	JTAG Serial Cable run 1 for Milkymist One
+		Proyecto LGPL ========> http://en.qi-hardware.com/wiki/JTAG_Serial_Cable_run_1_for_Milkymist_One
+			Para bajar proyecto=======> git clone git://github.com/milkymist/extras-m1.git
+
+*transportistas internacionales
+	EMS http://www.ems.com.cn/english-main.jsp
+
+*protocolos estandares
+	IEEE 1149.1/1532 JTAG programming/debug port (spartan)
+	IEEE1149.1 JTAG Boundary Scan Test (coolrunner)
+
+
+*memorias SPI
+	ST (512 Kbit to 32 Mbit, Low Voltage, Serial Flash Memory With 40 MHz or 50 MHz SPI Bus Interface)
+		M25P40 (4Mbits)
+	ATMEL
+		AT45DB321D
+	MICROCHIP
+		SST25VF016B
+
+*ADC y DAC
+	MCP3021(ADC)
+	MCP4725(DAC)
+*POWER
+	fabricante interSi
+	MC33063A 	 código digikey 296-17765-2-ND
+	desarrollo: http://www.labbookpages.co.uk/circuits/tps75003.html
+		Fuente de alimentación con integrado de texas instruments(TPS75003)
+	Texas Instruments
+		TPS75003 - LA MEJOR NOTA DE APLICACIÓN para la implementación (slva175.pdf - la mejor)(slvr283.pdf) (slvr274.pdf) 
+		Xilinx FPGA & CPLD Power Management Solutions
+		(http://focus.ti.com/analog/docs/gencontent.tsp?familyId=64&genContentId=1069&DCMP=hpa_pmp_general&HQS=Tools+IL+xilinxfpga)
+	STmicroelectronics
+		ver Xilinx-FPGA-Power-Management-Design-Guide-V2_0.pdf
+*fabricantes de PCB
+	http://www.pcbwing.com/
+
+*herramientas
+	Soldadura BGA http://gsmserver.com/shop/equipment/soldering_sssembly/infrared/jovy_systems_re_7500_rework_system.php?lang=sp  U$S1790 (más gastos de envío)
+
+* componentes
+
+digikey	-	memoria XCF01SVOG20C( corresponde a XC3S50A-4VQG100C)	U$S 3,15	comprar
+digikey	-	CPLD CoolRunner-II 					U$S 3,05	comprar		código digikey: 122-1409-ND
+digikey	-	fpga XC3S50A-4VQG100C 					U$S 6,12	listo		(cantidad 2)
+digikey	-	ftdi FT2232D-REEL					U$S 3,8		listo		(cantidad 5)
+digikey	-	ftdi FT232HL-REEL	(estudiar alternativa)		U$S 2,75	ver
+digikey -	FPGA memoria no volatil XC3S50AN-4TQG144C		U$S 9,91	ver 		codigo digikey: 122-1555-ND
+
+	LT	nexys2 y basys2
+		LT1765
+		LTC3545
+		LTC6905
+		LTC3417
+		LTC1844
+
+*miscelanius
+	nombre de la placa
+		X		placa de desarrollo en hardware recofigurable PDHR v0.1
+				development platform reconfigurable hardware DPRH v
+
+		X		plataforma de desarrollo orientado al HDL PDHDL v0.1
+
+				DPHDL
+
+		X		plataforma de desarrollo basado en hardware reconfigurable PDbHR
+				developments platform based on hardware reconfigurable (inglés)
+
+		*?		plataforma de hardware reconfigurable	
+				open reconfigurable hardware plataform (inglés) openRHP
+
+
+		*?		plataforma abierta de sistemas reconfigurable		
+				open platform for reconfigurable hardware
+
+		******		Plataforma de Hardware Reconfigurable	PHR
+
+
+	componentes
+		Para el diseño de los conectores que permitiran conectar la placa base con la placa FPGA deberíamos usar los conectores SMD con separación mínima que son los 1.27mm o (0.050)pulgadas. Para más detalles ver en ref/conectores SMD - torson.pdf
+		Se pretende utilizar un conector de 1mm de paso, debe revisarse la disponibilidad en córdoba.
+	CUENTAS
+		Realizando una análisis a priorí se observa que comprando los componentes más caros(con mayores prestaciones) se llega a un costo estimado por plataforma de unos U$S86 = $ 345
+		Mientras que si reducimos los costos y apostamos a ofrecer las prestaciones necesasarias tenemos un costo de U$S53 = $ 210. Son datos a priori pero no dejan de reflejar el análisis hecho hace tiempo ya. Si se quiere cubrir con las necesidades de todos los desarrolladores tendremos que aumentar el costo. Mientras que si diseñamos una plataforma para cubrir las necesidades principales de cualquier desarrollo se tendrá una plataforma baja en costo.
+
+
+
+
+*Financiamiento
+	CUDAR
+
+	ADEC
+		presentación vence el 30 de mayo (visitar antes para consultar).
+
+*Concursos
+	CAI
+		presentación vence el 17 junio (tiene que estar allá, mandar con tiempo).
+	SASE
+		ver para el 2012
+	INNOVAR
+		2012	http://www.innovar.gob.ar/
+
+
+*transferencia de tecnología
+	UTNs
+		San francisco
+			http://www.frsfco.utn.edu.ar/secyt/grupoI+D_Electronica_Medicina.asp
+			http://www.frsfco.utn.edu.ar/secyt/grupoI+D_Electronica_Bioingenieria.asp
+			http://www.frsfco.utn.edu.ar/secyt/grupoI+D_Desarrollo_Electronico.asp
+		Villa Maria
+			http://www.frvm.utn.edu.ar/Construccion.html (en construcción todo :(... Hablar con marco para tener un contacto).
+
+
+*Tener en cuenta en diseño
+	+ aislar las entradas y salidas de la FPGA
+	+ contar con: (aprox. 48pines usados)
+		_ 8 led
+		_ 8 llaves
+		_ 4 pulsadores
+		_ 1 display 7seg x 4 digitos
+		_ 1 puerto serial (DB9)
+		_ 1 puerto serial (conector simple)
+		_ 1 ADC seria SPI (10 bit como mucho 20Ks, maximo audio)
+		_ 1 DAC serial SPI (10 bit como mucho 20Ks, maximo audio)
+		_ 4/8 entradas aisladas (usar chip TI de mesa XYZ)
+			ISO7242M (150Mbps)
+			ISO7242C (25Mbps)
+			ISO7242A (1Mbps)
+		_ 1 conector externo IDE
+
+
+* Fundamento del proyecto
+	+ Lo que se puede apreciar, de los diferentes proyectos que se asemejan al nuestro, el costo máximo no tiene que superar lo que nos cuesta comprar una placa afuera. Hasta el momento (17/05/2011) el diseño base es la BASYS2, cuesta en la página de digilent U$S 50 (académico) U$S 80(burros). No se si debe ser cuantitativa la comparación pero si nos sirve para tener una referencia, ya que ésta placa se asemeja a lo que se quiere lograr
+
+=================================================================================================================================================
+
+18/11/11
+Se ha logrado regularizar la tesis con la presentación de un 49% de la tesis. A la fecha no se ha retirado la primera entrega del financiamiento ADEC pero en una semana, luego de rendir se hará efectivo el retiro.
+
+Se hablo con Yoaquino, ex estudiante de la facultad regional de "San Francisco" para que nos contacte con docentes/investigadores de dicha regional que estén interesados en recibir las placas a diseñar. Desde luego que dichas placas se construiran pero con recursos que se puedan conseguir en el futuro ya que se debe poner toda la atensión en las placas que se fabricarán para nuestra regional
+
+Las primeras placas enviadas a china hace una semana (más o menos) ya se encuentran en camino hacia argentina. El envío fue realizado por la empresa FedEx que presentana una leve diferencia con las demás firmas de transporte. El envío cuenta con las placas OOCDLinks, CPLD2DIP y S3proto Power. La última placa es para el proyecto de tesis de facundo por lo que pagará 1/3 del costo que suma un monto total de U$S55. 
+
+

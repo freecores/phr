@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1488.1219"
+   height="1278.239"
+   id="svg3104"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="Documento nuevo 4">
+  <defs
+     id="defs3106">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3112" />
+    <inkscape:perspective
+       id="perspective3044"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="744.06099"
+     inkscape:cy="639.11952"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="607"
+     inkscape:window-height="421"
+     inkscape:window-x="615"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3109">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(394.06099,106.75732)">
+    <g
+       id="g3564"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(3.133111,0,0,3.133111,-813.49513,-1676.9294)">
+      <rect
+         ry="9.8888741"
+         y="501.72617"
+         x="134.44331"
+         height="406.83386"
+         width="473.82254"
+         id="rect2820"
+         style="fill:none;stroke:#000000;stroke-width:1.14370966;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text2816-4"
+         y="895.64331"
+         x="536.91827"
+         style="font-size:50.90691757px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:12.72672939px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10"
+           y="895.64331"
+           x="536.91827"
+           id="tspan2818-6"
+           sodipodi:role="line">Placa Base</tspan></text>
+      <g
+         transform="matrix(1.1437096,0,0,1.1437096,-29.760695,154.56338)"
+         id="g3128">
+        <rect
+           style="fill:none;stroke:#000000;stroke-opacity:1"
+           id="rect2921"
+           width="64.285713"
+           height="27.142857"
+           x="493.57141"
+           y="432.36218"
+           ry="8.2640791" />
+        <text
+           xml:space="preserve"
+           style="font-size:44.51035309px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           x="501.2074"
+           y="449.01941"
+           id="text2816-4-1"
+           sodipodi:linespacing="100%"><tspan
+             sodipodi:role="line"
+             id="tspan2818-6-6"
+             x="501.2074"
+             y="449.01941"
+             style="font-size:11.12758827px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10">USB-Prog</tspan></text>
+      </g>
+      <g
+         transform="matrix(1.1437096,0,0,1.1437096,-32.129285,1.4790818)"
+         id="g3123">
+        <rect
+           style="fill:none;stroke:#000000;stroke-opacity:1"
+           id="rect2934"
+           width="65.714287"
+           height="21.428572"
+           x="493.21411"
+           y="485.21933"
+           ry="8.2640791" />
+        <text
+           xml:space="preserve"
+           style="font-size:44.51035309px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           x="504.77887"
+           y="499.73367"
+           id="text2816-4-87"
+           sodipodi:linespacing="100%"><tspan
+             sodipodi:role="line"
+             id="tspan2818-6-4"
+             x="504.77887"
+             y="499.73367"
+             style="font-size:11.12758827px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10">RS-232C</tspan></text>
+      </g>
+      <g
+         transform="translate(-57.194042,0)"
+         id="g3559">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.14370966;stroke-opacity:1"
+           id="rect2947"
+           width="257.33466"
+           height="71.89032"
+           x="288.88934"
+           y="521.40253"
+           ry="9.4517069" />
+        <text
+           xml:space="preserve"
+           style="font-size:50.90691757px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           x="336.95123"
+           y="560.52936"
+           id="text2816-4-0"
+           sodipodi:linespacing="100%"><tspan
+             sodipodi:role="line"
+             id="tspan2818-6-50"
+             x="336.95123"
+             y="560.52936"
+             style="font-size:12.72672939px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10">Conector: Display LCD 16x2</tspan></text>
+      </g>
+      <g
+         transform="matrix(1.1437096,0,0,1.1437096,-51.545772,174.61905)"
+         id="g3005">
+        <g
+           id="g2984"
+           transform="translate(6.0353818,0)">
+          <rect
+             ry="4.2857141"
+             y="590.2193"
+             x="178.97281"
+             height="10.714286"
+             width="192.14285"
+             id="rect2967"
+             style="fill:none;stroke:#000000;stroke-opacity:1" />
+          <text
+             sodipodi:linespacing="100%"
+             id="text2816-4-9"
+             y="599.01941"
+             x="233.3503"
+             style="font-size:44.51035309px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+             xml:space="preserve"><tspan
+               style="font-size:11.12758827px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10"
+               y="599.01941"
+               x="233.3503"
+               id="tspan2818-6-60"
+               sodipodi:role="line">8 x Diodos LEDs</tspan></text>
+        </g>
+      </g>
+      <g
+         transform="matrix(1.1437096,0,0,1.1437096,-51.545772,167.75679)"
+         id="g3000">
+        <rect
+           style="fill:none;stroke:#000000;stroke-opacity:1"
+           id="rect2971"
+           width="189.28572"
+           height="26.428572"
+           x="186.43675"
+           y="613.49487"
+           ry="4.2857141" />
+        <text
+           xml:space="preserve"
+           style="font-size:44.51035309px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           x="256.20746"
+           y="630.448"
+           id="text2816-4-5"
+           sodipodi:linespacing="100%"><tspan
+             sodipodi:role="line"
+             id="tspan2818-6-7"
+             x="256.20746"
+             y="630.448"
+             style="font-size:11.12758827px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10">8 x Llaves</tspan></text>
+      </g>
+      <g
+         transform="matrix(1.1437096,0,0,1.1437096,5.9886053,171.45184)"
+         id="g3024">
+        <rect
+           style="fill:none;stroke:#000000;stroke-opacity:1"
+           id="rect3011"
+           width="82.832504"
+           height="26.263968"
+           x="351.82776"
+           y="610.92548"
+           ry="8.6463156" />
+        <text
+           xml:space="preserve"
+           style="font-size:44.51035309px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           x="357.71335"
+           y="627.85754"
+           id="text2816-4-57"
+           sodipodi:linespacing="100%"><tspan
+             sodipodi:role="line"
+             id="tspan2818-6-46"
+             x="357.71335"
+             y="627.85754"
+             style="font-size:11.12758827px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10">4 x Pulsadores</tspan></text>
+      </g>
+      <rect
+         ry="4.9016123"
+         y="518.7149"
+         x="142.54224"
+         height="176.76414"
+         width="21.951101"
+         id="rect3042"
+         style="fill:none;stroke:#000000;stroke-width:1.14370966;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text2816-4-04"
+         y="538.08026"
+         x="167.51813"
+         style="font-size:50.90691757px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:12.72672939px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10"
+           y="538.08026"
+           x="167.51813"
+           id="tspan2818-6-97"
+           sodipodi:role="line">I/O Ext</tspan></text>
+      <rect
+         ry="4.9016123"
+         y="708.18756"
+         x="143.69757"
+         height="46.212845"
+         width="18.48514"
+         id="rect3055"
+         style="fill:none;stroke:#000000;stroke-width:1.14370966;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text2816-4-11"
+         y="735.64014"
+         x="165.20749"
+         style="font-size:50.90691757px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:12.72672939px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10"
+           y="735.64014"
+           x="165.20749"
+           id="tspan2818-6-40"
+           sodipodi:role="line">Mod ADC</tspan></text>
+      <rect
+         ry="4.9016123"
+         y="771.15253"
+         x="143.94907"
+         height="46.212845"
+         width="18.48514"
+         id="rect3055-9"
+         style="fill:none;stroke:#000000;stroke-width:1.14370966;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text2816-4-11-1"
+         y="798.6051"
+         x="165.45898"
+         style="font-size:50.90691757px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:12.72672939px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10"
+           y="798.6051"
+           x="165.45898"
+           id="tspan2818-6-40-5"
+           sodipodi:role="line">Mod DAC</tspan></text>
+      <g
+         transform="matrix(1.1437096,0,0,1.1437096,-27.726872,88.466963)"
+         id="g3173">
+        <rect
+           style="fill:none;stroke:#000000;stroke-opacity:1"
+           id="rect3121"
+           width="81.822357"
+           height="82.832512"
+           x="473.94849"
+           y="549.02301"
+           ry="8.6463156" />
+        <text
+           xml:space="preserve"
+           style="font-size:44.51035309px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           x="490.95038"
+           y="587.5127"
+           id="text2816-4-16-0"
+           sodipodi:linespacing="100%"><tspan
+             sodipodi:role="line"
+             id="tspan2818-6-49-4"
+             x="490.95038"
+             y="587.5127"
+             style="font-size:11.12758827px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10">Fuente</tspan><tspan
+             sodipodi:role="line"
+             x="490.95038"
+             y="598.64026"
+             style="font-size:11.12758827px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10"
+             id="tspan3171">Switching</tspan></text>
+      </g>
+      <g
+         transform="translate(313.83221,130.22419)"
+         id="g3467">
+        <rect
+           style="fill:#e6e6e6;stroke:#000000;stroke-width:1.14370966;stroke-opacity:1"
+           id="rect2820-3-4"
+           width="155.13736"
+           height="152.85622"
+           x="-48.45023"
+           y="491.43539"
+           ry="9.8888741" />
+        <text
+           xml:space="preserve"
+           style="font-size:50.90691757px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           x="21.709105"
+           y="641.73395"
+           id="text2816-4-6-9"
+           sodipodi:linespacing="100%"><tspan
+             sodipodi:role="line"
+             id="tspan2818-6-3-0"
+             x="21.709105"
+             y="641.73395"
+             style="font-size:12.72672939px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10">Placa Central</tspan></text>
+      </g>
+      <g
+         transform="translate(22.949975,-72.391707)"
+         id="g3511">
+        <g
+           id="g3506">
+          <rect
+             ry="9.4517069"
+             y="675.81488"
+             x="533.85034"
+             height="26.594866"
+             width="50.472061"
+             id="rect2921-9"
+             style="fill:none;stroke:#000000;stroke-width:1.14370966;stroke-opacity:1" />
+          <text
+             sodipodi:linespacing="100%"
+             id="text2816-4-1-0"
+             y="693.5285"
+             x="544.63416"
+             style="font-size:50.90691757px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+             xml:space="preserve"><tspan
+               style="font-size:12.72672939px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10"
+               y="693.5285"
+               x="544.63416"
+               id="tspan2818-6-6-4"
+               sodipodi:role="line">VGA</tspan></text>
+        </g>
+      </g>
+      <g
+         transform="translate(26.691914,7.1001905)"
+         id="g3551">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.14370966;stroke-opacity:1"
+           id="rect2971-5"
+           width="113.53866"
+           height="30.226624"
+           x="375.694"
+           y="823.37012"
+           ry="4.9016123" />
+        <text
+           xml:space="preserve"
+           style="font-size:50.90691757px;font-style:normal;font-weight:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+           x="383.35059"
+           y="841.58875"
+           id="text2816-4-5-7"
+           sodipodi:linespacing="100%"><tspan
+             sodipodi:role="line"
+             id="tspan2818-6-7-4"
+             x="383.35059"
+             y="841.58875"
+             style="font-size:12.72672939px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:LMRoman10;-inkscape-font-specification:LMRoman10">4 x Display 7 seg.</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

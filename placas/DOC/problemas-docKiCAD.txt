@@ -1,0 +1,19 @@
+En el proceso de generación de los archivos gerber se presentaron varios problemas. EL principal de todo es tener presenta las reglas de diseño en que archivos gerber son los que se necesitan enviar. Luego que se lograron general los archivos gerber(principalmente constó encontrar donde está el archivo de taladrado .drl y el de hole .pho). Se enviaron los archivos pero desde pcbwing.com nos dijeron que
+1_ está mal enviar varias placas en 1 sola. 
+2_ Las dimensiones mínimas con las que se pueden trabajar dependen de que tipo de placa vamos a pedir. Es decir, en el formato prototipaje, las dimensiones mínimas son mayores a las que uno quisiera pedir. Por lo que nos tocó cambiar las reglas de diseño especialmente la separación entre pista y pista como también el tamaño de los agujeros.
+
+
+Documentación Tutorial KICAD
+"GERBER"
+PCBNEW genera por cada capa un fichero según la norma GERBER 274X, normalmente en formato 3.4 (cada coordenada tiene 7 cifras, 3 de parte entera y 4 de parte fraccionaria, expresado en pulgadas). El trazado va siempre en escala 1.
+Se deben crear normalmente los ficheros de capas de cobre y, según la definición del circuito, capas de máscara de soldadura, de máscara de pasta para soldar y de serigrafía. Esto se hace en una sola operación, marcando todas las casillas correspondientes a las capas a generar.
+A modo de ejemplo, para un circuito de doble cara, con máscara de soldadura, serigrafía y máscara de pasta para soldar (para los componentes SMD) hacen falta 8 ficheros (« xxxxxx » es el nombre del fichero .brd):
+       • xxxxxx.copper.pho para la cara de cobre (soldadura).
+       • xxxx.cmp.pho para la cara de componentes.
+       • xxxx.silkscmp.pho para serigrafía de la cara de componentes.
+       • xxxx.silkscu.pho para serigrafía de la cara de cobre.
+       • xxxx.soldpcmp.pho para la máscara de pasta para soldar, cara de componentes
+       • xxxx.soldpcu.pho para la máscara de pasta para soldar, cara de cobre.
+       • xxxx.maskcmp.pho para la máscara de soldadura de la cara de componentes.
+       • xxxx.maskcu.pho para la máscara de soldadura de la cara de cobre.
+

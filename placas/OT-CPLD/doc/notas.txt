@@ -1,0 +1,5 @@
+La implementación que se está diseñando es siemplemente un anexo al proyecto final.
+La idea es tener un CPLD con en un formato DIP40-600mil que permita programarse con el PHR.
+
+Nombre:
+	*CPLD2DIP, el nombre hace referencia a que el CPLD se llevará a un formato DIP40.

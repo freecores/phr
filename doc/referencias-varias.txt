@@ -1,0 +1,58 @@
+20 oct 2011 : http://www.altera.com/products/devices/apex/features/apx-compdensity.html
+
+se sabe que la primer FPGA fue creada por Xilinx en el año 1984 (cuando yo nací). En realidad fue creada por uno de los co-cundadores. Ver FPGA en wikipedia
+
+otra referencia importante es ver la comparación que muestra altera en su web. http://www.altera.com/products/devices/apex/features/apx-compdensity.html
+Ahí muestra como se puede comparar tanto sus FPGA con las de Xilinx que hasta el momento pinta a ser uno de los lideres en la fabricación de éstos dispositivos.
+aquí parte de texto:
+=========================================================0
+Comparing Altera APEX 20KE & Xilinx Virtex-E Logic Densities
+
+Home > Products > Devices > Comparing Altera APEX 20KE & Xilinx Virtex-E Logic Densities
+A proper understanding of logic density is important for designers when they compare the size of programmable logic devices (PLDs) from different vendors. Unfortunately, different PLD vendors publish logic-density data with different terminology and counting schemes, which complicates the device-density selection process. The largest PLD densities in the market today are from the Altera APEX 20KE and Xilinx Virtex-E families. This web page provides designers with a calculation method that effectively compares the densities of the Altera APEX 20KE and Xilinx Virtex-E device families.
+
+Counting Basic Building Blocks
+
+The most direct method of measuring the logic density of PLDs is to count the number of basic building blocks. The basic building block of Altera APEX 20KE devices is the logic element (LE). One LE contains a 4-input look-up table (LUT), a register, and additional carry and cascade logic. The basic building block of Xilinx Virtex-E devices is the logic cell (LC). According to the Xilinx Virtex-E data sheet, "An LC includes a 4-input function generator [LUT], carry logic, and a storage element [register]" (p. 5). Comparing these basic building blocks makes it easy to calculate logic density. Table 1 provides a comparison of the APEX 20KE and Virtex-E architecture terms.
+===========================================================0
+Calculating Logic Resources from the Data Sheet
+
+To accurately compare the logic density resources of APEX 20KE LEs and Virtex-E LCs, the Virtex-E LC count reported in the data sheet should be reduced by 12.5%. This 12.5% is derived by using the actual 4 LCs per CLB for the comparison, rather than the claimed 4.5 LCs. To calculate the actual Virtex-E density, divide the Virtex-E data sheet LC count by 4.5 and multiply the result by 4.
+
+(Virtex-E data sheet LCs) × (4/4.5) = (Actual Virtex-E LCs)
+
+For example, the Xilinx XCV2000E device is listed in the data sheet as having 43,200 LCs. When you multiply 43,200 by 4 and divide by 4.5, you obtain the actual number of LCs on the device, 38,400.
+
+43,200 × (4/4.5) = 38,400
+
+Therefore, the logic density resources of Virtex XCV2000E and APEX EP20K1000E devices are in fact equal, as shown in Figure 1.
+
+Figure 1. Comparison of EP20K1000E & XCV20000E Logic Resources
+
+
+
+Comparing Logic Resources Using the Alliance Software Report
+
+Designers should be able to compare APEX 20KE LEs to Virtex-E LCs by compiling a design into both architectures and then comparing the logic utilization. Altera's Quartus II software reports APEX 20KE utilization in LEs, just as in the APEX 20KE data sheet. However, Xilinx's Alliance software does not report Virtex-E utilization in LCs, the metric used in the Virtex-E data sheet. Xilinx's Alliance software reports three utilization metrics after compiling a design: slices, LUTs, and flipflops. Several issues arise when trying to compare the three metrics given in the Xilinx software report with the number of LCs reported in the Xilinx data sheet.
+
+Slices
+
+A Virtex-E CLB consists of two slices. In the data sheet, Xilinx claims that there are 4.5 LCs per CLB, so the LC count would be calculated by multiplying the number of slices by 2.25. However, without knowing precisely how the slice is used, there is no way to determine if any additional logic is available within the slice. Therefore, converting slices to LCs by multiplying by 2.25 would overstate LC utilization.
+
+LUTs
+
+In the LUT metric, LCs that only use a flipflop are not counted. Therefore, the LUT metric understates the true LC utilization.
+
+FlipFlops
+
+Similarly, in the flipflop metric, LCs that only use a LUT are not counted. Therefore, the flip-flop metric understates the true LC utilization.
+
+It is therefore very difficult to compare the logic utilization values given in the Alliance software report with those shown in the data sheet and to determine the true utilization of a Virtex-E device.
+
+Conclusion
+
+The Virtex-E data sheet creates the perception that Virtex-E devices are higher in density than they actually are. The Xilinx datasheet justifies the density count by claiming that additional logic in Virtex-E devices permits the implementation of larger designs. However, Altera's APEX 20KE devices also contain additional logic that allows similar design size implementation for equivalent Altera and Xilinx devices. Only by counting the actual number of APEX LEs and Virtex-E LCs is it possible to effectively compare the two device families.
+
+============================================================================================0
+
+

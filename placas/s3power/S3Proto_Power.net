@@ -1,0 +1,330 @@
+# EESchema Netlist Version 1.1 created  mié 24 ago 2011 18:50:58 ART
+(
+ ( 48FC941B -B/3528-21W C1 100uf_6v
+  ( 1 +5V )
+  ( 2 DGND )
+ )
+ ( 48FC9514 SM0805 C2 100nf
+  ( 1 +5V )
+  ( 2 DGND )
+ )
+ ( 48FC9531 SM0805 C3 100nf
+  ( 1 +5V )
+  ( 2 DGND )
+ )
+ ( 48FC9532 SM0805 C4 100nf
+  ( 1 +5V )
+  ( 2 DGND )
+ )
+ ( 48FC94F6 SM0805 C5 1.5nf
+  ( 1 N-000012 )
+  ( 2 DGND )
+ )
+ ( 48FCB2A9 SM0805 C6 1.5nf
+  ( 1 N-000011 )
+  ( 2 DGND )
+ )
+ ( 48FC94AF SM0805 C7 10nf
+  ( 1 N-000013 )
+  ( 2 DGND )
+ )
+ ( 48FC948C -A/3216-18R C8 10uf_6v
+  ( 1 +Vaux_1 )
+  ( 2 DGND )
+ )
+ ( 48FC948A -A/3216-18R C9 10uf_6v
+  ( 1 +5V )
+  ( 2 DGND )
+ )
+ ( 48FDDDFF -A/3216-18R C10 10uf_6v
+  ( 1 +5V )
+  ( 2 DGND )
+ )
+ ( 48FC9564 SM0805 C11 10pf
+  ( 1 +Vcco_1 )
+  ( 2 N-000015 )
+ )
+ ( 48FC9463 -B/3528-21W C12 100uf_3v
+  ( 1 +Vcore_1 )
+  ( 2 DGND )
+ )
+ ( 48FDDDFE -B/3528-21W C13 100uf_3v
+  ( 1 +Vcco_1 )
+  ( 2 DGND )
+ )
+ ( 48FC939B DO_214AA D1 SM6T6V6A
+  ( 1 DGND )
+  ( 2 +5V )
+ )
+ ( 48FC97B2 DO214AB D2 SS32
+  ( 1 DGND )
+  ( 2 N-000010 )
+ )
+ ( 48FDDE02 DO214AB D3 SS32
+  ( 1 DGND )
+  ( 2 N-000008 )
+ )
+ ( 4900D275 -1206 D4 LED
+  ( 1 N-000003 )
+  ( 2 DGND )
+ )
+ ( 4900C810 -1206 D5 LED
+  ( 1 N-000019 )
+  ( 2 DGND )
+ )
+ ( 48FC9598 wuerth_elektronik_WE-PD4 L1 15uHy
+  ( 1 N-000010 )
+  ( 2 +Vcore_1 )
+ )
+ ( 48FDDE00 wuerth_elektronik_v5-WE-TPC_XL/XLH L2 5uHy
+  ( 1 N-000008 )
+  ( 2 +Vcco_1 )
+ )
+ ( 4907220B PINTST P1 TST_Vin
+  ( 1 +5V )
+ )
+ ( 48FDE089 PINTST P3 TST_Vaux
+  ( 1 +Vaux_1 )
+ )
+ ( 48FDDD65 PINTST P4 TST_Vcore
+  ( 1 +Vcore_1 )
+ )
+ ( 48FDDE09 PINTST P5 TST_Vcco
+  ( 1 +Vcco_1 )
+ )
+ ( 491C3ECB header_1x4 P6 CONN_4
+  ( 1 DGND )
+  ( 2 +5V )
+  ( 3 DGND )
+  ( 4 +5V )
+ )
+ ( 49256388 header_1x7 P7 CONN_7
+  ( 1 DGND )
+  ( 2 +Vcore_1 )
+  ( 3 DGND )
+  ( 4 +Vcco_1 )
+  ( 5 DGND )
+  ( 6 +Vaux_1 )
+  ( 7 DGND )
+ )
+ ( 499DB3E3 PINTST P8 TST_GND
+  ( 1 DGND )
+ )
+ ( 48FC9789 SOT23GDS Q1 G2309
+  ( D N-000010 )
+  ( G N-000014 )
+  ( S N-000009 )
+ )
+ ( 48FDDE01 SOT23GDS Q2 G2309
+  ( D N-000008 )
+  ( G N-000005 )
+  ( S N-000007 )
+ )
+ ( 48FDE587 SM0805 R1 22K
+  ( 1 +Vaux_1 )
+  ( 2 DGND )
+ )
+ ( 48FDE584 SM0805 R2 22K
+  ( 1 +5V )
+  ( 2 DGND )
+ )
+ ( 48FDE56A SM0805 R3 22K
+  ( 1 +Vcco_1 )
+  ( 2 DGND )
+ )
+ ( 48FDE06A SM0805 R4 620K
+  ( 1 +Vaux_1 )
+  ( 2 N-000016 )
+ )
+ ( 48FDE06B SM0805 R5 154K
+  ( 1 N-000016 )
+  ( 2 DGND )
+ )
+ ( 48FDD021 SM2512 R6 33m
+  ( 1 +5V )
+  ( 2 N-000009 )
+ )
+ ( 48FDDE03 SM2512 R7 33m
+  ( 1 +5V )
+  ( 2 N-000007 )
+ )
+ ( 4900D274 SM0805 R8 330
+  ( 1 +Vaux_1 )
+  ( 2 N-000003 )
+ )
+ ( 48FDE2B6 SM0805 R9 56
+  ( 1 +Vaux_1 )
+  ( 2 DGND )
+ )
+ ( 48FDDF37 SM0805 R10 620K
+  ( 1 +Vcco_1 )
+  ( 2 N-000015 )
+ )
+ ( 48FDDF3E SM0805 R11 365K
+  ( 1 N-000015 )
+  ( 2 DGND )
+ )
+ ( 4900C7F6 SM0805 R12 330
+  ( 1 +Vcco_1 )
+  ( 2 N-000019 )
+ )
+ ( 48FC9227 TPS75003 U1 TPS75003
+  ( 1 +Vaux_1 )
+  ( 2 N-000016 )
+  ( 3 +Vcco_1 )
+  ( 4 +5V )
+  ( 5 N-000011 )
+  ( 6 DGND )
+  ( 7 N-000005 )
+  ( 8 +5V )
+  ( 9 N-000007 )
+  ( 10 N-000015 )
+  ( 11 +Vcore_1 )
+  ( 12 N-000009 )
+  ( 13 +5V )
+  ( 14 N-000014 )
+  ( 15 DGND )
+  ( 16 N-000012 )
+  ( 17 +Vaux_1 )
+  ( 18 DGND )
+  ( 19 N-000013 )
+  ( 20 +5V )
+  ( 21 DGND )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ CP*
+ SM*
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component C7
+ SM*
+ C?
+ C1-1
+$endlist
+$component C8
+ CP*
+ SM*
+$endlist
+$component C9
+ CP*
+ SM*
+$endlist
+$component C10
+ CP*
+ SM*
+$endlist
+$component C11
+ SM*
+ C?
+ C1-1
+$endlist
+$component C12
+ CP*
+ SM*
+$endlist
+$component C13
+ CP*
+ SM*
+$endlist
+$component D1
+ D?
+ SO*
+ SM*
+$endlist
+$component D2
+ D?
+ S*
+$endlist
+$component D3
+ D?
+ S*
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R9
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R10
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R11
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R12
+ R?
+ SM0603
+ SM0805
+$endlist
+$endfootprintlist
+}

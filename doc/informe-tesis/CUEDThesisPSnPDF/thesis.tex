@@ -1,0 +1,116 @@
+%input macros (i.e. write your own macros file called MacroFile1.tex)
+%\include{Macros/MacroFile1}
+
+%[luis edit] paquete idima y litdes 
+ \documentclass[oneside,12pt,spanish,a4paper]{Classes/CUEDthesisPSnPDF}
+
+
+\ifpdf
+    \pdfinfo { /Title  (Plataforma de Hardware Reconfigurable)
+               /Creator (TeX)
+               /Producer (pdfTeX)
+               /Author (Luis Alberto Guanuco guanucoluis@gmail.com)
+               /CreationDate (D:20120501000000)  %format D:YYYYMMDDhhmmss
+               /ModDate (D:20030815213532)
+               /Subject (Tesis de Grado)
+               /Keywords (Ingenier\'ia Electr\'onica, Tesis)}
+    \pdfcatalog { /PageMode (/UseOutlines)
+                  /OpenAction (fitbh)  }
+\fi
+
+\title{Plataforma de Hardware Reconfigurable}
+
+\ifpdf
+  \author{\href{mailto:guanucoluis@gmail.com}{Luis Alberto Guanuco}}
+  \collegeordept{\href{http://www.frc.utn.edu.ar}{Departamente de Ingenier\'ia}}
+  \university{\href{http://www.utn.edu.ar}{Universidad Tecnol\'ogica Nacional}}
+% insert below the file name that contains the crest in-place of 'UnivShield'
+  \crest{\includegraphics[width=30mm]{UnivShield}}
+\else
+  \author{Luis Alberto Guanuco}
+  \collegeordept{Departamente de Ingenier\'ia}
+  \university{Universidad Tecnol\'ogica Nacional}
+% insert below the file name that contains the crest in-place of 'UnivShield'
+  \crest{\includegraphics[bb = 0 0 292 336, width=30mm]{UnivShield}}
+\fi
+%
+% insert below the file name that contains the crest in-place of 'UnivShield'
+% \crest{\IncludeGraphicsW{UnivShield}{40mm}{14 14 73 81}}
+%
+%[Luis edit]
+\renewcommand{\submittedtext}{Tesis que otorga el grado de}
+\degree{Ingeniero Electr\'onico}
+\degreedate{Dedicado a mi Familia}
+
+% turn of those nasty overfull and underfull hboxes
+\hbadness=10000
+\hfuzz=50pt
+
+% Put all the style files you want in the directory StyleFiles and usepackage like this:
+\usepackage{StyleFiles/watermark}
+
+%[luis add] paquete idima y litdes 
+\usepackage[utf8]{inputenc}
+
+
+% Comment out the next line to get single spacing
+\onehalfspacing
+
+\begin{document}
+
+%\language{english}
+
+% A page with the abstract on including title and author etc may be
+% required to be handed in separately. If this is not so, then comment
+% the below 3 lines (between '\begin{abstractseparte}' and 
+% 'end{abstractseparate}'), normally like a declaration ... needs some more
+% work, mind as environment abstracts creates a new page!
+% \begin{abstractseparate}
+%   \input{Abstract/abstract}
+% \end{abstractseparate}
+
+
+
+
+% Using the watermark package which is in StyleFiles/
+% and to remove DRAFT COPY ONLY appearing on the top of all pages comment out below line
+%\watermark{DRAFT COPY ONLY}
+
+
+\maketitle
+
+%set the number of sectioning levels that get number and appear in the contents
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\frontmatter % book mode only
+\pagenumbering{roman}
+\include{Dedication/dedication}
+\include{Acknowledgement/acknowledgement}
+\include{Abstract/abstract}
+
+\tableofcontents
+\listoffigures
+\printnomenclature  %% Print the nomenclature
+\addcontentsline{toc}{chapter}{Nomenclature}
+
+\mainmatter % book mode only
+\include{Introduction/introduction}
+\include{Chapter1/chapter1}
+\include{Chapter2/chapter2}
+\include{Chapter3/chapter3}
+\include{Conclusions/conclusions}
+
+\backmatter % book mode only
+\appendix
+\include{Appendix1/appendix1}
+\include{Appendix2/appendix2}
+
+\bibliographystyle{plainnat}
+%\bibliographystyle{Classes/CUEDbiblio}
+%\bibliographystyle{Classes/jmb}
+%\bibliographystyle{Classes/jmb} % bibliography style
+\renewcommand{\bibname}{References} % changes default name Bibliography to References
+\bibliography{References/references} % References file
+
+\end{document}

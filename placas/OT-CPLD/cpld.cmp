@@ -1,0 +1,101 @@
+Cmp-Mod V01 Created by CvPCB (2010-03-14)-final date = jue 27 oct 2011 15:57:54 ART
+
+BeginCmp
+TimeStamp = /4EA65376;
+Reference = C1;
+ValeurCmp = 1uF;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA6543A;
+Reference = C2;
+ValeurCmp = 1uF;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA882B4;
+Reference = C3;
+ValeurCmp = .1uF;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA882BB;
+Reference = C4;
+ValeurCmp = .01uF;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA882C2;
+Reference = C5;
+ValeurCmp = .1uF;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA882CF;
+Reference = C6;
+ValeurCmp = 100uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA654D2;
+Reference = D1;
+ValeurCmp = power;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA74DB8;
+Reference = P1;
+ValeurCmp = CON_1;
+IdModule  = 1X20;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA74DAC;
+Reference = P2;
+ValeurCmp = CON_2;
+IdModule  = 1X20;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA1F196;
+Reference = P3;
+ValeurCmp = JTAG-POWER;
+IdModule  = 1X06;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA653DA;
+Reference = R1;
+ValeurCmp = 470K;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA654AE;
+Reference = R2;
+ValeurCmp = 470;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA652AE;
+Reference = U1;
+ValeurCmp = SP6200;
+IdModule  = SOT23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EA62E7A;
+Reference = U2;
+ValeurCmp = XC9572XL;
+IdModule  = TQFP44;
+EndCmp
+
+EndListe

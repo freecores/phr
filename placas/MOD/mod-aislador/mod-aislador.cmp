@@ -1,0 +1,45 @@
+Cmp-Mod V01 Created by CvPCB (2010-03-14)-final date = vie 11 nov 2011 18:21:34 ART
+
+BeginCmp
+TimeStamp = /4EBD6AD6;
+Reference = C1;
+ValeurCmp = 0.1u;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EBD6AE3;
+Reference = C2;
+ValeurCmp = 0.1u;
+IdModule  = SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EBD6A13;
+Reference = K1;
+ValeurCmp = jum_EN2;
+IdModule  = con-lstb-MA03-1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EBD6248;
+Reference = P1;
+ValeurCmp = FPGA;
+IdModule  = con-lsta-FE05-2W;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EBD696A;
+Reference = P2;
+ValeurCmp = IO_aislados;
+IdModule  = con-lstb-MA07-1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4EBD77F2;
+Reference = U1;
+ValeurCmp = ISO7242A;
+IdModule  = analog-devices-SOIC16N;
+EndCmp
+
+EndListe

@@ -1,0 +1,932 @@
+
+\documentclass[11pt]{report}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[none,dcucite,abbr]{harvard}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{uathesis}
+\usepackage{lscape}
+\usepackage{longtable}
+
+%TCIDATA{OutputFilter=Latex.dll}
+%TCIDATA{LastRevised=Sat Jul 17 17:16:09 1999}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{CSTFile=report.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+
+\begin{document}
+
+
+%TCIMACRO{
+%\TeXButton{degree}{\degree{\MSc}%
+%}}%
+%BeginExpansion
+\degree{\MSc}%
+%
+%EndExpansion
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%The degree completed.  \PhD or \MSc
+
+%TCIMACRO{
+%\TeXButton{dept}{\dept{Department of Chemical and Materials Engineering}%
+%}}%
+%BeginExpansion
+\dept{Department of Chemical and Materials Engineering}%
+%
+%EndExpansion
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%The Department in which degree completed
+
+%TCIMACRO{
+%\TeXButton{field}{\field{Process Control}%
+%}}%
+%BeginExpansion
+\field{Process Control}%
+%
+%EndExpansion
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%Field of specialization
+
+%TCIMACRO{
+%\TeXButton{address}{\permanentaddress{CME 536 \\
+%University of Alberta \\
+%Edmonton, AB \\
+%Canada, T6G 2G6}%
+%}}%
+%BeginExpansion
+\permanentaddress{CME 536 \\
+University of Alberta \\
+Edmonton, AB \\
+Canada, T6G 2G6}%
+%
+%EndExpansion
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%Your address
+
+%TCIMACRO{
+%\TeXButton{examiners}{\examiners{J. Fraser Forbes, Martin Guay, G. Galileo }%
+%}}%
+%BeginExpansion
+\examiners{J. Fraser Forbes, Martin Guay, G. Galileo }%
+%
+%EndExpansion
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%Examiners on your committee
+
+%TCIMACRO{
+%\TeXButton{convocationseason}{\convocationseason{Fall}%
+%}}%
+%BeginExpansion
+\convocationseason{Fall}%
+%
+%EndExpansion
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%When you graduate. (finally...)
+
+%TCIMACRO{
+%\TeXButton{quotes}{\frontpiece{
+%{\large ```The stars are made of the same atoms as the earth.'
+%I usually pick one small topic like this to give a lecture on. 
+%Poets say science takes away from the beauty of the stars -- mere gobs of gas atoms. 
+%Nothing is ``mere." I too can see the stars on a desert night, and feel them. 
+%But do I see less or more? The vastness of the heavens stretches my imagination -- 
+%stuck on this carousel my little eye can catch one-million-year-old light. 
+%A vast pattern -- of which I am a part --  perhaps my stuff was belched from some forgotten star, 
+%as one is belching there. Or see them with the greater eye of Palomar, 
+%rushing all apart from some common starting point when they were perhaps all together. 
+%What is the pattern, or the meaning, or the *why?* It does not do harm to the mystery to know 
+%a little about it. For far more marvelous is the truth than any artists of the past imagined! 
+%Why do the poets of the present not speak of it? 
+%What men are poets who can speak of Jupiter if he were like a man, 
+%but if he is an immense spinning sphere of methane and ammonia must be silent?" \\
+%Richard P. Feynman\\
+%\vspace{1.0in}
+%``The most exciting phrase to hear in science,
+%the one that heralds the most discoveries, is not `Eureka!' (I found it!) but `That's funny...'"\\
+%Isaac Asimov
+%}
+%}%
+%}}%
+%BeginExpansion
+\frontpiece{
+{\large ```The stars are made of the same atoms as the earth.'
+I usually pick one small topic like this to give a lecture on. 
+Poets say science takes away from the beauty of the stars -- mere gobs of gas atoms. 
+Nothing is ``mere." I too can see the stars on a desert night, and feel them. 
+But do I see less or more? The vastness of the heavens stretches my imagination -- 
+stuck on this carousel my little eye can catch one-million-year-old light. 
+A vast pattern -- of which I am a part --  perhaps my stuff was belched from some forgotten star, 
+as one is belching there. Or see them with the greater eye of Palomar, 
+rushing all apart from some common starting point when they were perhaps all together. 
+What is the pattern, or the meaning, or the *why?* It does not do harm to the mystery to know 
+a little about it. For far more marvelous is the truth than any artists of the past imagined! 
+Why do the poets of the present not speak of it? 
+What men are poets who can speak of Jupiter if he were like a man, 
+but if he is an immense spinning sphere of methane and ammonia must be silent?" \\
+Richard P. Feynman\\
+\vspace{1.0in}
+``The most exciting phrase to hear in science,
+the one that heralds the most discoveries, is not `Eureka!' (I found it!) but `That's funny...'"\\
+Isaac Asimov
+}
+}%
+%
+%EndExpansion
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%Frontpage with some quote  by some (in)famous person(s)
+
+%TCIMACRO{
+%\TeXButton{dedication}{\dedication{\large To Love, Peace, and the Brotherhood of Man}%
+%}}%
+%BeginExpansion
+\dedication{\large To Love, Peace, and the Brotherhood of Man}%
+%
+%EndExpansion
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%I dedicate this thesis to ...
+
+%TCIMACRO{
+%\TeXButton{author,title}{\title{Constrained Optimization of Nonlinear Chemical Dynamical Systems}
+%\author{Sachin Kansal}%
+%}}%
+%BeginExpansion
+\title{Constrained Optimization of Nonlinear Chemical Dynamical Systems}
+\author{Sachin Kansal}%
+%
+%EndExpansion
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%author and title fields. replace with your own, or not...
+
+%TCIMACRO{
+%\TeXButton{Front Pages}{\admin  	%
+%}}%
+%BeginExpansion
+\admin  	%
+%
+%EndExpansion
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%generates all the prefatory pages
+
+%TCIMACRO{
+%\TeXButton{acknowledgements}{\begin{acknowledgements}
+%...
+%\end{acknowledgements}
+%}}%
+%BeginExpansion
+\begin{acknowledgements}
+...
+\end{acknowledgements}
+%
+%EndExpansion
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%Acknowledge everyone, whether they are even aware you exist is inconsequential.
+
+\doublespacing		%abstract has to be double-spaced
+
+%TCIMACRO{
+%\TeXButton{abstract}{\begin{abstract}
+%......
+%\end{abstract}%
+%}}%
+%BeginExpansion
+\begin{abstract}
+......
+\end{abstract}%
+%
+%EndExpansion
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%the abstract goes into the preceding field between the begin{abstract} and end{abstract}
+
+\onehalfspacing	%everything from here on will be 1.5 spaced
+
+%TCIMACRO{
+%\TeXButton{contents and lists}{\tableofcontents
+%\listoffigures
+%\listoftables
+%}}%
+%BeginExpansion
+\tableofcontents
+\listoffigures
+\listoftables
+%
+%EndExpansion
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%generates lists of tables, figures and the table of contents
+
+\bodyoftext
+
+
+\chapter{Introduction}
+
+\section{Motivation}
+
+..........
+
+\section{NonLinear Control}
+
+---
+
+\section{Real Time Optimization}
+
+---
+
+\chapter{Problem Definition}
+
+\section{Representative Process}
+
+---
+
+\section{Trajectory Generation}
+
+\subsection{Model Selection}
+
+--- choice of the model which captures the important process behavior yet is
+not overly complex and computationally expensive to implement
+
+\subsection{Process Measurements}
+
+--- choice of instrumentation which makes the real-time implementation
+possible and yet doesn't require all new instrumentation for the existing
+batch process plants
+
+\chapter{Optimization in Flat Output Space}
+
+\section{Introduction}
+
+The dynamic optimization of batch processes ......
+
+%TCIMACRO{
+%\TeXButton{B}{\begin{table}[h]  \centering%
+%}}%
+%BeginExpansion
+\begin{table}[h]  \centering%
+%
+%EndExpansion
+\caption{Model Parameters for the CSTR
+\label{cstrtable}}\bigskip 
+
+\begin{center}
+\begin{tabular}{rlll}
+\hline
+$\alpha $ & = & $30.828$ & $hr^{-1}$ \\ 
+$\beta $ & = & $86.688$ & $hr^{-1}$ \\ 
+$\delta $ & = & $3.522\times 10^{-4}$ & $m^{3}.K.KJ^{-1}$ \\ 
+$\gamma $ & = & $0.1$ & $K.KJ^{-1}$ \\ 
+$T_{in}$ & = & $104.9$ & $^{o}C$ \\ 
+$c_{in}$ & = & $5.1\times 10^{3}$ & $mol.m^{-3}$ \\ 
+$k_{10}$ & = & $1.287\times 10^{12}$ & $hr^{-1}$ \\ 
+$k_{20}$ & = & $9.043\times 10^{6}$ & $m^{3}(mol.hr)^{-1}$ \\ 
+$E_{1}$ & = & $9758.3$ &  \\ 
+$E_{2}$ & = & $8560.0$ &  \\ 
+$\Delta H_{AB}$ & = & $4.2$ & $KJ.mol^{-1}$ \\ 
+$\Delta H_{BC}$ & = & $-11.0$ & $KJ.mol^{-1}$ \\ 
+$\Delta H_{AD}$ & = & $-41.85$ & $KJ.mol^{-1}$ \\ \hline
+\end{tabular}
+\end{center}
+
+%TCIMACRO{
+%\TeXButton{E}{\end{table}%
+%}}%
+%BeginExpansion
+\end{table}%
+%
+%EndExpansion
+
+\section{Differentially Flat Systems}
+
+Differential flatness is a concept that applies to underdetermined system of
+ODEs. A general underdetermined system ...
+
+\begin{remark}
+It is clear from above, that a solution connecting any two generic points in
+the original system space can be found. Thus flat systems are controllable.
+\end{remark}
+
+\section{Overview of the Process}
+
+The nylon polymerization reaction can most clearly be described in terms of
+equivalent or functional groups [Steppan et al., 1987; 1990\nocite{steppan1} 
+\nocite{steppan2}] as follows: ...................
+
+The above model is analyzed in the exterior calculus setting of Guay et al.,
+1991 and the flat ouputs for the above model, similar to the ones calculated
+by Rothfuss et al., 1996, are found to be:
+
+\begin{eqnarray*}
+y_{1} &=&T \\
+y_{2} &=&\dfrac{c_{in}-c_{A}}{c_{B}}
+\end{eqnarray*}
+
+\chapter{Summary and Conclusions}
+
+\section{Contributions of this Thesis}
+
+\section{Recommendations for Industrial Application}
+
+\section{Directions for Future Work}
+
+\subsection{Academic Research Directions}
+
+\subsection{Industrial Research Directions}
+
+\bigskip 
+
+%TCIMACRO{
+%\TeXButton{bibliography in contents}{\clearpage\addcontentsline{toc}{chapter}{Bibliography}
+%\singlespacing
+%}}%
+%BeginExpansion
+\clearpage\addcontentsline{toc}{chapter}{Bibliography}
+\singlespacing
+%
+%EndExpansion
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%dont forget this if you want the bibliography to show up on the contents page
+
+\bibliographystyle{IFAC}
+\bibliography{sachin}
+\bigskip 
+%Generates the bibliography. You have to specify the source bib files and the biblio style 
+
+%TCIMACRO{
+%\TeXButton{Appendices}{\appendix
+%}}%
+%BeginExpansion
+\appendix
+%
+%EndExpansion
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%The chapters after this tab are all appendices
+
+\end{document}

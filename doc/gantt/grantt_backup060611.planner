@@ -1,0 +1,945 @@
+<?xml version="1.0"?>
+<project name="" company="" manager="" phase="" project-start="20110617T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Jornada laboral" description="Un d&#xED;a de trabajo predeterminado"/>
+      <day-type id="1" name="Jornada de descanso" description="Un d&#xED;a de descanso predeterminado"/>
+      <day-type id="2" name="Usar base" description="Usar d&#xED;a del calendario base"/>
+    </day-types>
+    <calendar id="1" name="Predeterminado">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="1700" end="2300"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Investigaci&#xF3;n" note="" work="172800" start="20110617T000000Z" end="20110628T230000Z" work-start="20110617T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="2" name="desarrollo internacional" note="" work="64800" start="20110617T000000Z" end="20110621T230000Z" work-start="20110617T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="3" name="perf&#xED;l de prestaciones" note="" work="43200" start="20110617T000000Z" end="20110620T230000Z" work-start="20110617T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="4" name="costo de transferencia" note="" work="21600" start="20110620T230000Z" end="20110621T230000Z" work-start="20110621T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="3" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="5" name="desarrollo nacional" note="" work="64800" start="20110621T230000Z" end="20110624T230000Z" work-start="20110622T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="6" name="perf&#xED;l de prestaciones" note="" work="43200" start="20110621T230000Z" end="20110623T230000Z" work-start="20110622T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="4" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="7" name="costo de transferencia" note="" work="21600" start="20110623T230000Z" end="20110624T230000Z" work-start="20110624T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="6" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="8" name="Recopilaci&#xF3;n de Documentaci&#xF3;n" note="" work="43200" start="20110624T230000Z" end="20110628T230000Z" work-start="20110627T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="7" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="9" name="placa FPGA" note="" work="2721600" start="20110628T230000Z" end="20111216T230000Z" work-start="20110629T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="10" name="FPGA a utilizar" note="" work="345600" start="20110628T230000Z" end="20110719T230000Z" work-start="20110629T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="11" name="fabricante" note="" work="64800" start="20110628T230000Z" end="20110701T230000Z" work-start="20110629T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="8" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="12" name="recursos" note="" work="64800" start="20110701T230000Z" end="20110706T230000Z" work-start="20110704T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="11" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="13" name="modo de programaci&#xF3;n" note="" work="86400" start="20110706T230000Z" end="20110712T230000Z" work-start="20110707T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="12" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="14" name="velocidad de prog." note="" work="21600" start="20110706T230000Z" end="20110707T230000Z" work-start="20110707T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="12" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="15" name="encapsulado" note="" work="21600" start="20110712T230000Z" end="20110713T230000Z" work-start="20110713T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="13" type="FS"/>
+            <predecessor id="1" predecessor-id="14" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="16" name="documentaci&#xF3;n" note="" work="86400" start="20110713T230000Z" end="20110719T230000Z" work-start="20110714T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="15" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="17" name="memoria de prog. para la FPGA" note="" work="648000" start="20110719T230000Z" end="20110829T230000Z" work-start="20110720T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="18" name="protocolo" note="" work="86400" start="20110719T230000Z" end="20110725T230000Z" work-start="20110720T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="19" name="disponibilidad en la FPGA" note="" work="43200" start="20110719T230000Z" end="20110721T230000Z" work-start="20110720T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="16" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="20" name="estandares de la IEEE" note="" work="43200" start="20110721T230000Z" end="20110725T230000Z" work-start="20110722T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="19" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="21" name="tama&#xF1;o Mb" note="" work="43200" start="20110725T230000Z" end="20110727T230000Z" work-start="20110726T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="20" type="FS"/>
+            <predecessor id="1" predecessor-id="16" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="22" name="fabricante" note="" work="345600" start="20110727T230000Z" end="20110818T230000Z" work-start="20110728T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="23" name="controladores para diferentes SO" note="" work="86400" start="20110727T230000Z" end="20110802T230000Z" work-start="20110728T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="21" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="24" name="Documentaci&#xF3;n disponible" note="" work="86400" start="20110802T230000Z" end="20110808T230000Z" work-start="20110803T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="23" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="25" name="elecci&#xF3;n de memoria" note="" work="64800" start="20110808T230000Z" end="20110811T230000Z" work-start="20110809T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="24" type="FS"/>
+              <predecessor id="1" predecessor-id="23" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="26" name="implementaci&#xF3;n de nota de aplicaci&#xF3;n" note="" work="108000" start="20110811T230000Z" end="20110818T230000Z" work-start="20110812T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="25" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="27" name="modo de programaci&#xF3;n" note="" work="86400" start="20110818T230000Z" end="20110824T230000Z" work-start="20110819T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="26" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="28" name="velocidad de prog." note="" work="21600" start="20110818T230000Z" end="20110819T230000Z" work-start="20110819T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="26" type="FS"/>
+            <predecessor id="1" predecessor-id="24" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="29" name="encapsulado" note="" work="43200" start="20110824T230000Z" end="20110826T230000Z" work-start="20110825T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="27" type="FS"/>
+            <predecessor id="1" predecessor-id="28" type="FS"/>
+            <predecessor id="1" predecessor-id="25" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="30" name="documentaci&#xF3;n" note="" work="21600" start="20110826T230000Z" end="20110829T230000Z" work-start="20110829T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="29" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="31" name="circuito de alimentaci&#xF3;n" note="" work="410400" start="20110829T230000Z" end="20110923T230000Z" work-start="20110830T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="32" name="potencia" note="" work="86400" start="20110829T230000Z" end="20110902T230000Z" work-start="20110830T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="16" type="FS"/>
+            <predecessor id="1" predecessor-id="30" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="33" name="tensiones reguladas" note="" work="86400" start="20110902T230000Z" end="20110908T230000Z" work-start="20110905T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="32" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="34" name="reguladores" note="" work="43200" start="20110908T230000Z" end="20110912T230000Z" work-start="20110909T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="33" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="35" name="fabricantes" note="" work="86400" start="20110912T230000Z" end="20110916T230000Z" work-start="20110913T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="34" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="36" name="circuito" note="" work="64800" start="20110916T230000Z" end="20110921T230000Z" work-start="20110919T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="35" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="37" name="documentaci&#xF3;n" note="" work="43200" start="20110921T230000Z" end="20110923T230000Z" work-start="20110922T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="36" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="38" name="pinout de la placa" note="" work="475200" start="20110923T230000Z" end="20111025T230000Z" work-start="20110926T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="39" name="cantidad de pines necesarios" note="" work="129600" start="20110923T230000Z" end="20111003T230000Z" work-start="20110926T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="12" type="FS"/>
+            <predecessor id="1" predecessor-id="37" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="40" name="caracter&#xED;sticas de velocidad" note="" work="108000" start="20111003T230000Z" end="20111010T230000Z" work-start="20111004T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="39" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="41" name="tipo de conector" note="" work="129600" start="20111010T230000Z" end="20111018T230000Z" work-start="20111011T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="40" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="42" name="fabricantes" note="" work="21600" start="20111018T230000Z" end="20111019T230000Z" work-start="20111019T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="41" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="43" name="documentaci&#xF3;n" note="" work="86400" start="20111019T230000Z" end="20111025T230000Z" work-start="20111020T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="39" type="FS"/>
+            <predecessor id="1" predecessor-id="42" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="44" name="dise&#xF1;o de placa" note="" work="518400" start="20111025T230000Z" end="20111125T230000Z" work-start="20111026T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="45" name="obtener librer&#xED;as" note="" work="43200" start="20111025T230000Z" end="20111027T230000Z" work-start="20111026T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="16" type="FS"/>
+            <predecessor id="1" predecessor-id="30" type="FS"/>
+            <predecessor id="1" predecessor-id="37" type="FS"/>
+            <predecessor id="1" predecessor-id="43" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="46" name="dise&#xF1;o de esquem&#xE1;tico" note="" work="86400" start="20111027T230000Z" end="20111102T230000Z" work-start="20111028T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="45" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="47" name="dise&#xF1;o de PCB" note="" work="280800" start="20111102T230000Z" end="20111118T230000Z" work-start="20111103T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="48" name="definir dimensiones" note="" work="21600" start="20111102T230000Z" end="20111103T230000Z" work-start="20111103T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="46" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="49" name="definir capas" note="" work="21600" start="20111102T230000Z" end="20111103T230000Z" work-start="20111103T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="46" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="50" name="distribuir componentes" note="" work="21600" start="20111103T230000Z" end="20111104T230000Z" work-start="20111104T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="48" type="FS"/>
+              <predecessor id="1" predecessor-id="49" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="51" name="routear componentes" note="" work="216000" start="20111104T230000Z" end="20111118T230000Z" work-start="20111107T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="50" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="52" name="generar gerber" note="" work="21600" start="20111118T230000Z" end="20111121T230000Z" work-start="20111121T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="51" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="53" name="chequear para su fabricaci&#xF3;n" note="" work="21600" start="20111121T230000Z" end="20111122T230000Z" work-start="20111122T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="52" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="54" name="documentaci&#xF3;n" note="" work="64800" start="20111122T230000Z" end="20111125T230000Z" work-start="20111123T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="53" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="55" name="documentar modo de prog. y grabado de memoria" note="" work="108000" start="20111125T230000Z" end="20111202T230000Z" work-start="20111128T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="16" type="FS"/>
+          <predecessor id="1" predecessor-id="30" type="FS"/>
+          <predecessor id="1" predecessor-id="43" type="FS"/>
+          <predecessor id="1" predecessor-id="54" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="56" name="documentaci&#xF3;n placa FPGA" note="" work="216000" start="20111202T230000Z" end="20111216T230000Z" work-start="20111205T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="55" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="57" name="placa BASE" note="" work="3909600" start="20111216T230000Z" end="20120814T230000Z" work-start="20111219T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="58" name="USB/JTAG" note="" work="1900800" start="20111216T230000Z" end="20120411T230000Z" work-start="20111219T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="59" name="busqueda de proyectos LGPL" note="" work="108000" start="20111216T230000Z" end="20111223T230000Z" work-start="20111219T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="56" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="60" name="Estudio del interfaz USB" note="" work="345600" start="20111223T230000Z" end="20120112T230000Z" work-start="20111226T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="61" name="especificaciones estandares" note="" work="43200" start="20111223T230000Z" end="20111227T230000Z" work-start="20111226T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="59" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="62" name="trama" note="" work="21600" start="20111223T230000Z" end="20111226T230000Z" work-start="20111226T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="59" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="63" name="velocidades" note="" work="21600" start="20111223T230000Z" end="20111226T230000Z" work-start="20111226T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="59" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="64" name="caracter&#xED;sticas el&#xE9;ctricas" note="" work="43200" start="20111227T230000Z" end="20111229T230000Z" work-start="20111228T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="63" type="FS"/>
+              <predecessor id="1" predecessor-id="62" type="FS"/>
+              <predecessor id="1" predecessor-id="61" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="65" name="precauciones" note="" work="21600" start="20111229T230000Z" end="20111230T230000Z" work-start="20111230T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="59" type="FS"/>
+              <predecessor id="1" predecessor-id="64" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="66" name="controladores dedicados" note="" work="64800" start="20111230T230000Z" end="20120104T230000Z" work-start="20120102T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="65" type="FS"/>
+              <predecessor id="1" predecessor-id="59" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="67" name="controladores programables" note="" work="43200" start="20120104T230000Z" end="20120106T230000Z" work-start="20120105T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="66" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="68" name="documentaci&#xF3;n" note="" work="86400" start="20120106T230000Z" end="20120112T230000Z" work-start="20120109T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="67" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="69" name="Estudio del interfaz JTAG" note="" work="410400" start="20120112T230000Z" end="20120206T230000Z" work-start="20120113T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="70" name="especificaciones estandares" note="" work="43200" start="20120112T230000Z" end="20120116T230000Z" work-start="20120113T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="68" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="71" name="trama" note="" work="21600" start="20120112T230000Z" end="20120113T230000Z" work-start="20120113T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="68" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="72" name="velocidades" note="" work="21600" start="20120112T230000Z" end="20120113T230000Z" work-start="20120113T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="68" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="73" name="caracter&#xED;sticas el&#xE9;ctricas" note="" work="43200" start="20120116T230000Z" end="20120118T230000Z" work-start="20120117T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="70" type="FS"/>
+              <predecessor id="1" predecessor-id="71" type="FS"/>
+              <predecessor id="1" predecessor-id="72" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="74" name="controladores" note="" work="86400" start="20120118T230000Z" end="20120124T230000Z" work-start="20120119T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="59" type="FS"/>
+              <predecessor id="1" predecessor-id="73" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="75" name="compatibilidad con FPGA" note="" work="86400" start="20120124T230000Z" end="20120130T230000Z" work-start="20120125T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="74" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="76" name="documentaci&#xF3;n" note="" work="108000" start="20120130T230000Z" end="20120206T230000Z" work-start="20120131T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="59" type="FS"/>
+              <predecessor id="1" predecessor-id="75" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="77" name="dise&#xF1;o USB a JTAG" note="" work="928800" start="20120206T230000Z" end="20120404T230000Z" work-start="20120207T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="78" name="dispositivo central integrado a utilizar" note="" work="302400" start="20120206T230000Z" end="20120224T230000Z" work-start="20120207T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="79" name="estudio de datasheet" note="" work="64800" start="20120206T230000Z" end="20120209T230000Z" work-start="20120207T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="76" type="FS"/>
+                <predecessor id="1" predecessor-id="59" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="80" name="notas de aplicaci&#xF3;n" note="" work="216000" start="20120209T230000Z" end="20120223T230000Z" work-start="20120210T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="79" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="81" name="encapsulado" note="" work="21600" start="20120223T230000Z" end="20120224T230000Z" work-start="20120224T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="80" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="82" name="busqueda de librer&#xED;as" note="" work="43200" start="20120224T230000Z" end="20120228T230000Z" work-start="20120227T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="81" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="83" name="dise&#xF1;o de esquem&#xE1;tico" note="" work="108000" start="20120228T230000Z" end="20120306T230000Z" work-start="20120229T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="82" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="84" name="dise&#xF1;o PCB" note="" work="172800" start="20120306T230000Z" end="20120315T230000Z" work-start="20120307T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="83" type="FS"/>
+            </predecessors>
+            <task id="85" name="definir dimensiones" note="" work="21600" start="20120306T230000Z" end="20120307T230000Z" work-start="20120307T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="83" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="86" name="definir capas" note="" work="21600" start="20120306T230000Z" end="20120307T230000Z" work-start="20120307T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="83" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="87" name="distribuir componentes" note="" work="21600" start="20120307T230000Z" end="20120308T230000Z" work-start="20120308T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="85" type="FS"/>
+                <predecessor id="1" predecessor-id="86" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="88" name="routear componentes" note="" work="108000" start="20120308T230000Z" end="20120315T230000Z" work-start="20120309T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="87" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="89" name="construcci&#xF3;n y testeo" note="" work="216000" start="20120315T230000Z" end="20120329T230000Z" work-start="20120316T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="88" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="90" name="documentaci&#xF3;n" note="" work="86400" start="20120329T230000Z" end="20120404T230000Z" work-start="20120330T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="89" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="91" name="Documentaci&#xF3;n" note="" work="108000" start="20120404T230000Z" end="20120411T230000Z" work-start="20120405T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="59" type="FS"/>
+            <predecessor id="1" predecessor-id="90" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="92" name="Perif&#xE9;ricos" note="" work="1036800" start="20120411T230000Z" end="20120612T230000Z" work-start="20120412T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="93" name="Designar datos I/O" note="" work="475200" start="20120411T230000Z" end="20120507T230000Z" work-start="20120412T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="94" name="Pulsadores" note="" work="21600" start="20120411T230000Z" end="20120412T230000Z" work-start="20120412T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="91" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="95" name="Llaves" note="" work="21600" start="20120411T230000Z" end="20120412T230000Z" work-start="20120412T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="91" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="96" name="LEDs" note="" work="21600" start="20120411T230000Z" end="20120412T230000Z" work-start="20120412T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="91" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="97" name="Display" note="" work="21600" start="20120411T230000Z" end="20120412T230000Z" work-start="20120412T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="91" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="98" name="Conector IDE" note="" work="21600" start="20120411T230000Z" end="20120412T230000Z" work-start="20120412T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="91" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="99" name="datos aislados galv&#xE1;nicamente" note="" work="194400" start="20120412T230000Z" end="20120425T230000Z" work-start="20120413T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="100" name="requerimientos y fabricantes posibles" note="" work="86400" start="20120412T230000Z" end="20120418T230000Z" work-start="20120413T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="94" type="FS"/>
+                <predecessor id="1" predecessor-id="95" type="FS"/>
+                <predecessor id="1" predecessor-id="96" type="FS"/>
+                <predecessor id="1" predecessor-id="97" type="FS"/>
+                <predecessor id="1" predecessor-id="98" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="101" name="esquem&#xE1;tico y asignaci&#xF3;n de pines" note="" work="43200" start="20120418T230000Z" end="20120420T230000Z" work-start="20120419T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="100" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="102" name="potencia" note="" work="43200" start="20120420T230000Z" end="20120424T230000Z" work-start="20120423T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="101" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="103" name="documentaci&#xF3;n" note="" work="21600" start="20120424T230000Z" end="20120425T230000Z" work-start="20120425T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="102" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="104" name="Esquema de conexionado y designaci&#xF3;n de pines FPGA" note="" work="43200" start="20120425T230000Z" end="20120427T230000Z" work-start="20120426T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="103" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="105" name="C&#xE1;lculo de potencia de perif&#xE9;ricos" note="" work="64800" start="20120427T230000Z" end="20120502T230000Z" work-start="20120430T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="104" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="106" name="Documentaci&#xF3;n" note="" work="64800" start="20120502T230000Z" end="20120507T230000Z" work-start="20120503T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="105" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="107" name="Conversores" note="" work="453600" start="20120507T230000Z" end="20120605T230000Z" work-start="20120508T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="108" name="Requerimientos y fabricantes posibles" note="" work="108000" start="20120507T230000Z" end="20120514T230000Z" work-start="20120508T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="106" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="109" name="ADC" note="" work="129600" start="20120514T230000Z" end="20120522T230000Z" work-start="20120515T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="110" name="resoluci&#xF3;n" note="" work="21600" start="20120514T230000Z" end="20120515T230000Z" work-start="20120515T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="108" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="111" name="comunicaci&#xF3;n serial" note="" work="21600" start="20120515T230000Z" end="20120516T230000Z" work-start="20120516T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="110" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="112" name="esquematico y asignaci&#xF3;n de pines" note="" work="43200" start="20120516T230000Z" end="20120518T230000Z" work-start="20120517T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="111" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="113" name="documentaci&#xF3;n" note="" work="43200" start="20120518T230000Z" end="20120522T230000Z" work-start="20120521T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="112" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="114" name="DAC" note="" work="129600" start="20120522T230000Z" end="20120530T230000Z" work-start="20120523T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <task id="115" name="resoluci&#xF3;n" note="" work="21600" start="20120522T230000Z" end="20120523T230000Z" work-start="20120523T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="113" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="116" name="comunicaci&#xF3;n serial" note="" work="21600" start="20120523T230000Z" end="20120524T230000Z" work-start="20120524T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="115" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="117" name="esquem&#xE1;tico y asignaci&#xF3;n de pines" note="" work="43200" start="20120524T230000Z" end="20120528T230000Z" work-start="20120525T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="116" type="FS"/>
+              </predecessors>
+            </task>
+            <task id="118" name="docuentaci&#xF3;n" note="" work="43200" start="20120528T230000Z" end="20120530T230000Z" work-start="20120529T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+              <predecessors>
+                <predecessor id="1" predecessor-id="117" type="FS"/>
+              </predecessors>
+            </task>
+          </task>
+          <task id="119" name="C&#xE1;lculo de potencia" note="" work="43200" start="20120530T230000Z" end="20120601T230000Z" work-start="20120531T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="113" type="FS"/>
+              <predecessor id="1" predecessor-id="118" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="120" name="Documentaci&#xF3;n" note="" work="43200" start="20120601T230000Z" end="20120605T230000Z" work-start="20120604T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="119" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="121" name="Puerto Serie" note="" work="86400" start="20120605T230000Z" end="20120611T230000Z" work-start="20120606T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="122" name="dise&#xF1;o de driver: DB9 y conector IDE para un 2do puerto" note="" work="21600" start="20120605T230000Z" end="20120606T230000Z" work-start="20120606T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="120" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="123" name="esquem&#xE1;tico y asignaci&#xF3;n de pines" note="" work="21600" start="20120606T230000Z" end="20120607T230000Z" work-start="20120607T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="122" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="124" name="calculo de potencia" note="" work="21600" start="20120607T230000Z" end="20120608T230000Z" work-start="20120608T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="123" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="125" name="documentaci&#xF3;n" note="" work="21600" start="20120608T230000Z" end="20120611T230000Z" work-start="20120611T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="124" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="126" name="asociar todo los perif&#xE9;ricos con conector FPGA" note="" work="21600" start="20120611T230000Z" end="20120612T230000Z" work-start="20120612T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="125" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="127" name="Fuente de Alimentacion" note="" work="518400" start="20120612T230000Z" end="20120716T230000Z" work-start="20120613T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="128" name="requerimientos de potencia" note="" work="43200" start="20120612T230000Z" end="20120614T230000Z" work-start="20120613T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="126" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="129" name="fabricantes IC de fuentes" note="" work="108000" start="20120614T230000Z" end="20120621T230000Z" work-start="20120615T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="130" name="estudio notas de aplicaci&#xF3;n" note="" work="64800" start="20120614T230000Z" end="20120619T230000Z" work-start="20120615T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="128" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="131" name="an&#xE1;lisis de costo" note="" work="21600" start="20120619T230000Z" end="20120620T230000Z" work-start="20120620T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="130" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="132" name="documentaci&#xF3;n" note="" work="21600" start="20120620T230000Z" end="20120621T230000Z" work-start="20120621T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="131" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="133" name="fabricantes de reguladores" note="" work="64800" start="20120621T230000Z" end="20120626T230000Z" work-start="20120622T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="134" name="estudio notas de aplicaci&#xF3;n" note="" work="21600" start="20120621T230000Z" end="20120622T230000Z" work-start="20120622T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="132" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="135" name="an&#xE1;lisis de costo" note="" work="21600" start="20120622T230000Z" end="20120625T230000Z" work-start="20120625T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="134" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="136" name="documentaci&#xF3;n" note="" work="21600" start="20120625T230000Z" end="20120626T230000Z" work-start="20120626T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="135" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="137" name="esquem&#xE1;tico de fuente" note="" work="86400" start="20120626T230000Z" end="20120702T230000Z" work-start="20120627T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="136" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="138" name="esquem&#xE1;tico de regulador" note="" work="43200" start="20120702T230000Z" end="20120704T230000Z" work-start="20120703T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="137" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="139" name="asignaci&#xF3;n de pines y jumper de configuraci&#xF3;n" note="" work="21600" start="20120704T230000Z" end="20120705T230000Z" work-start="20120705T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="138" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="140" name="testeo" note="" work="108000" start="20120705T230000Z" end="20120712T230000Z" work-start="20120706T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="139" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="141" name="documentaci&#xF3;n" note="" work="43200" start="20120712T230000Z" end="20120716T230000Z" work-start="20120713T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="140" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="142" name="dise&#xF1;o de placa" note="" work="388800" start="20120716T230000Z" end="20120809T230000Z" work-start="20120717T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="143" name="obtener liber&#xED;as" note="" work="21600" start="20120716T230000Z" end="20120717T230000Z" work-start="20120717T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="141" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="144" name="dise&#xF1;o de esquem&#xE1;tico" note="" work="21600" start="20120717T230000Z" end="20120718T230000Z" work-start="20120718T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="143" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="145" name="dise&#xF1;o PCB" note="" work="280800" start="20120718T230000Z" end="20120806T230000Z" work-start="20120719T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <task id="146" name="definir dimensiones" note="" work="21600" start="20120718T230000Z" end="20120719T230000Z" work-start="20120719T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="144" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="147" name="definir capas" note="" work="21600" start="20120719T230000Z" end="20120720T230000Z" work-start="20120720T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="146" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="148" name="distribuir componentes" note="" work="21600" start="20120720T230000Z" end="20120723T230000Z" work-start="20120723T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="147" type="FS"/>
+            </predecessors>
+          </task>
+          <task id="149" name="routear componentes" note="" work="216000" start="20120723T230000Z" end="20120806T230000Z" work-start="20120724T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+            <predecessors>
+              <predecessor id="1" predecessor-id="148" type="FS"/>
+            </predecessors>
+          </task>
+        </task>
+        <task id="150" name="generar gerber" note="" work="21600" start="20120806T230000Z" end="20120807T230000Z" work-start="20120807T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="149" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="151" name="chequear para su fabricaci&#xF3;n" note="" work="21600" start="20120807T230000Z" end="20120808T230000Z" work-start="20120808T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="150" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="152" name="documentaci&#xF3;n" note="" work="21600" start="20120808T230000Z" end="20120809T230000Z" work-start="20120809T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="151" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="153" name="documentaci&#xF3;n placa BASE" note="" work="64800" start="20120809T230000Z" end="20120814T230000Z" work-start="20120810T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="152" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="154" name="importaci&#xF3;n" note="" work="1987200" start="20120808T230000Z" end="20121012T230000Z" work-start="20120809T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="155" name="Importaci&#xF3;n de placas" note="" work="993600" start="20120808T230000Z" end="20121011T230000Z" work-start="20120809T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="156" name="(estimativo)presupuestar online placas" note="" work="21600" start="20120808T230000Z" end="20120809T230000Z" work-start="20120809T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="53" type="FS"/>
+            <predecessor id="1" predecessor-id="151" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="157" name="contactar fabricantes y cotizar" note="" work="64800" start="20120809T230000Z" end="20120814T230000Z" work-start="20120810T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="156" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="158" name="realizar pago" note="" work="43200" start="20120814T230000Z" end="20120816T230000Z" work-start="20120815T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="157" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="159" name="comienza proceso de fabricaci&#xF3;n" note="" work="864000" start="20120816T230000Z" end="20121011T230000Z" work-start="20120817T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="158" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="160" name="Importaci&#xF3;n de componentes" note="" work="972000" start="20120809T230000Z" end="20121011T230000Z" work-start="20120810T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="161" name="cotizar online componentes" note="" work="21600" start="20120809T230000Z" end="20120810T230000Z" work-start="20120810T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="54" type="FS"/>
+            <predecessor id="1" predecessor-id="152" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="162" name="chequear encapsulados a comprar" note="" work="21600" start="20120810T230000Z" end="20120813T230000Z" work-start="20120813T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="161" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="163" name="definir cantidad a comprar" note="" work="21600" start="20120813T230000Z" end="20120814T230000Z" work-start="20120814T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="162" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="164" name="realizar pago" note="" work="43200" start="20120814T230000Z" end="20120816T230000Z" work-start="20120815T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="163" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="165" name="comienza proceso de env&#xED;o de componentes" note="" work="864000" start="20120816T230000Z" end="20121011T230000Z" work-start="20120817T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="164" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="166" name="documentaci&#xF3;n de facturaci&#xF3;n y recepci&#xF3;n de componentes" note="" work="21600" start="20121011T230000Z" end="20121012T230000Z" work-start="20121012T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="159" type="FS"/>
+          <predecessor id="1" predecessor-id="165" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="167" name="armado placas" note="" work="324000" start="20121012T230000Z" end="20121102T230000Z" work-start="20121015T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="168" name="obtener herramientas de soldadura SMD" note="" work="64800" start="20121012T230000Z" end="20121017T230000Z" work-start="20121015T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="166" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="169" name="Construcci&#xF3;n placa FPGA" note="" work="86400" start="20121017T230000Z" end="20121023T230000Z" work-start="20121018T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="170" name="soldado de componentes principales" note="" work="43200" start="20121017T230000Z" end="20121019T230000Z" work-start="20121018T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="168" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="171" name="soldado de dem&#xE1;s componentes" note="" work="21600" start="20121019T230000Z" end="20121022T230000Z" work-start="20121022T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="170" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="172" name="testear pines de alimentaci&#xF3;n" note="" work="21600" start="20121022T230000Z" end="20121023T230000Z" work-start="20121023T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="171" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="173" name="Construcci&#xF3;n placa Base" note="" work="86400" start="20121023T230000Z" end="20121029T230000Z" work-start="20121024T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="174" name="soldado de componentes principales" note="" work="43200" start="20121023T230000Z" end="20121025T230000Z" work-start="20121024T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="172" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="175" name="soldado de dem&#xE1;s componentes" note="" work="21600" start="20121025T230000Z" end="20121026T230000Z" work-start="20121026T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="174" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="176" name="testear pines de alimentaci&#xF3;n" note="" work="21600" start="20121026T230000Z" end="20121029T230000Z" work-start="20121029T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="175" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="177" name="documentaci&#xF3;n" note="" work="86400" start="20121029T230000Z" end="20121102T230000Z" work-start="20121030T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="176" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="178" name="Testeo" note="" work="194400" start="20121102T230000Z" end="20121115T230000Z" work-start="20121105T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="179" name="revisar continuidad de alimentaci&#xF3;n" note="" work="21600" start="20121102T230000Z" end="20121105T230000Z" work-start="20121105T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="177" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="180" name="alimentar circuito con fuente reguladora de corriente" note="" work="21600" start="20121105T230000Z" end="20121106T230000Z" work-start="20121106T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="179" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="181" name="dise&#xF1;ar arquitectura en VHDL para testing" note="" work="86400" start="20121106T230000Z" end="20121112T230000Z" work-start="20121107T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="180" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="182" name="medici&#xF3;n de consumo de potencia" note="" work="21600" start="20121112T230000Z" end="20121113T230000Z" work-start="20121113T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="181" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="183" name="documentaci&#xF3;n" note="" work="43200" start="20121113T230000Z" end="20121115T230000Z" work-start="20121114T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="182" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="184" name="Documentaci&#xF3;n" note="" work="864000" start="20121115T230000Z" end="20130110T230000Z" work-start="20121116T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="185" name="placa FPGA" note="" work="64800" start="20121115T230000Z" end="20121120T230000Z" work-start="20121116T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="56" type="FS"/>
+          <predecessor id="1" predecessor-id="183" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="186" name="placa BASE" note="" work="108000" start="20121120T230000Z" end="20121127T230000Z" work-start="20121121T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="185" type="FS"/>
+          <predecessor id="1" predecessor-id="153" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="187" name="hardware" note="" work="43200" start="20121127T230000Z" end="20121129T230000Z" work-start="20121128T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="186" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="188" name="software" note="" work="21600" start="20121129T230000Z" end="20121130T230000Z" work-start="20121130T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="187" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="189" name="asignar formato a documento (LaTeX)" note="" work="21600" start="20121130T230000Z" end="20121203T230000Z" work-start="20121203T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="188" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="190" name="dise&#xF1;ar paper para publicaci&#xF3;n" note="" work="324000" start="20121203T230000Z" end="20121224T230000Z" work-start="20121204T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="191" name="publicaciones en revistas cient&#xED;ficas" note="" work="216000" start="20121203T230000Z" end="20121217T230000Z" work-start="20121204T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="189" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="192" name="participaci&#xF3;n en concursos de dise&#xF1;o HW" note="" work="108000" start="20121217T230000Z" end="20121224T230000Z" work-start="20121218T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="191" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="193" name="publicar en opencores.org" note="" work="129600" start="20121224T230000Z" end="20130101T230000Z" work-start="20121225T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="194" name="dise&#xF1;ar sitio en HTML" note="" work="108000" start="20121224T230000Z" end="20121231T230000Z" work-start="20121225T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="192" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="195" name="fotos y v&#xED;deos" note="" work="21600" start="20121231T230000Z" end="20130101T230000Z" work-start="20130101T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="194" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="196" name="presentaci&#xF3;n a docentes de c&#xE1;tedra" note="" work="151200" start="20130101T230000Z" end="20130110T230000Z" work-start="20130102T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="195" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="197" name="Transferencia" note="" work="151200" start="20130110T230000Z" end="20130121T230000Z" work-start="20130111T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="198" name="acto de entraga de tecnolog&#xED;a al LTDI" note="" work="21600" start="20130110T230000Z" end="20130111T230000Z" work-start="20130111T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="196" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="199" name="capacitaci&#xF3;n para el uso de plataforma" note="" work="108000" start="20130111T230000Z" end="20130118T230000Z" work-start="20130114T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="198" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="200" name="brind&#xED;s por fin del proyecto" note="" work="21600" start="20130118T230000Z" end="20130121T230000Z" work-start="20130121T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="199" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+  </tasks>
+  <resource-groups>
+    <group id="1" name="" admin-name="" admin-phone="" admin-email=""/>
+  </resource-groups>
+  <resources>
+    <resource id="1" name="gabriel dagostino" short-name="gabi" type="1" units="0" email="gabrieldagostino@hotmail.com" note="" std-rate="0"/>
+    <resource id="2" name="Pablo Cayuela" short-name="Pablo" type="1" units="0" email="pablo.cayuela@gmail.com" note="" std-rate="0"/>
+    <resource id="3" name="Sergio Olmedo" short-name="Sergio" type="1" units="0" email="sergio338@gmail.com" note="" std-rate="0"/>
+    <resource id="4" name="Luis A. Guanuco" short-name="Lucho" type="1" units="0" email="guanucoluis@gmail.com" note="" std-rate="250"/>
+  </resources>
+  <allocations>
+    <allocation task-id="5" resource-id="4" units="100"/>
+  </allocations>
+</project>

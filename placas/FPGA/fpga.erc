@@ -1,0 +1,12 @@
+ERC report (mar 28 feb 2012 17:42:23 ART)
+
+***** Hoja /
+ErrType(3): Pin connected to some others pins but no pin to drive it
+    @ (8,0000 ",5,7000 "): Pin 3 (power_in) of component U2 is not driven (Net 81).
+ErrType(3): Pin connected to some others pins but no pin to drive it
+    @ (2,7500 ",1,0000 "): Pin 22 (power_in) of component U1 is not driven (Net 56).
+ErrType(4): Conflict problem between pins. Severity: warning
+    @ (1,7500 ",4,1000 "): Pin 23 (BiDi) of component U1 is connected to 
+    @ (9,6500 ",4,4000 "): pin GND (power_out) of component OSC1 (net 25).
+
+ >> Errores ERC: 0

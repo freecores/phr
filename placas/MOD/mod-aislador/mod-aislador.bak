@@ -1,0 +1,328 @@
+EESchema Schematic File Version 2  date vie 11 nov 2011 16:30:49 ART
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:iso7242a
+LIBS:mod-aislador-cache
+EELAYER 24  0
+EELAYER END
+$Descr A4 11700 8267
+Sheet 1 1
+Title ""
+Date "11 nov 2011"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6700 4800 6350 4800
+Wire Wire Line
+	6350 4800 6350 4450
+Wire Wire Line
+	6350 4450 5700 4450
+Wire Wire Line
+	6650 4100 6200 4100
+Wire Wire Line
+	5700 4000 6650 4000
+Wire Wire Line
+	6000 3350 6000 3300
+Wire Wire Line
+	4250 3350 4250 3300
+Wire Wire Line
+	3900 3750 3900 3850
+Wire Wire Line
+	3900 3750 4100 3750
+Wire Wire Line
+	4100 3750 4100 3800
+Wire Wire Line
+	6650 4300 6400 4300
+Wire Wire Line
+	6400 4300 6400 4700
+Wire Wire Line
+	6400 4700 6700 4700
+Wire Wire Line
+	6650 4400 6600 4400
+Wire Wire Line
+	6600 4400 6600 4450
+Wire Wire Line
+	5700 4650 5750 4650
+Wire Wire Line
+	5750 4650 5750 4850
+Wire Wire Line
+	4450 4450 2900 4450
+Wire Wire Line
+	2900 4450 2900 3950
+Wire Wire Line
+	2900 3950 3050 3950
+Wire Wire Line
+	3850 4250 4300 4250
+Wire Wire Line
+	3850 4050 4300 4050
+Wire Wire Line
+	3000 3800 3000 3850
+Wire Wire Line
+	3000 3850 3050 3850
+Wire Wire Line
+	4400 3600 4400 3650
+Wire Wire Line
+	4400 3650 4450 3650
+Wire Wire Line
+	6650 3800 6600 3800
+Wire Wire Line
+	6600 3800 6600 3750
+Wire Wire Line
+	4450 4300 4300 4300
+Wire Wire Line
+	4300 4300 4300 4250
+Wire Wire Line
+	4450 4000 4300 4000
+Wire Wire Line
+	4300 4000 4300 4050
+Wire Wire Line
+	4250 3850 4250 3950
+Wire Wire Line
+	4250 3850 4450 3850
+Wire Wire Line
+	5750 3600 5750 3650
+Wire Wire Line
+	5750 3650 5700 3650
+Wire Wire Line
+	4450 4800 4400 4800
+Wire Wire Line
+	4250 3950 3850 3950
+Wire Wire Line
+	3850 4150 4450 4150
+Wire Wire Line
+	4400 4850 4400 4650
+Wire Wire Line
+	4400 4650 4450 4650
+Connection ~ 4400 4800
+Wire Wire Line
+	5700 4800 5750 4800
+Connection ~ 5750 4800
+Wire Wire Line
+	6500 5000 6500 5050
+Wire Wire Line
+	6500 5050 6650 5050
+Wire Wire Line
+	6650 5050 6650 4900
+Wire Wire Line
+	6650 4900 6700 4900
+Wire Wire Line
+	3900 3850 3850 3850
+Wire Wire Line
+	4250 2850 4250 2900
+Wire Wire Line
+	6000 2900 6000 2850
+Wire Wire Line
+	6650 3900 6200 3900
+Wire Wire Line
+	6200 3900 6200 3850
+Wire Wire Line
+	6200 3850 5700 3850
+Wire Wire Line
+	6200 4100 6200 4150
+Wire Wire Line
+	6200 4150 5700 4150
+Wire Wire Line
+	6650 4200 6350 4200
+Wire Wire Line
+	6350 4200 6350 4300
+Wire Wire Line
+	6350 4300 5700 4300
+$Comp
+L GNDA #PWR01
+U 1 1 4EBD6B79
+P 6000 3350
+F 0 "#PWR01" H 6000 3350 40  0001 C CNN
+F 1 "GNDA" H 6000 3280 40  0000 C CNN
+	1    6000 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VPP #PWR9
+U 1 1 4EBD6B71
+P 6000 2850
+F 0 "#PWR9" H 6000 3050 40  0001 C CNN
+F 1 "VPP" H 6000 3000 40  0000 C CNN
+	1    6000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 4EBD6B54
+P 4250 3350
+F 0 "#PWR02" H 4250 3350 30  0001 C CNN
+F 1 "GND" H 4250 3280 30  0001 C CNN
+	1    4250 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 4EBD6B49
+P 4250 2850
+F 0 "#PWR03" H 4250 2950 30  0001 C CNN
+F 1 "VCC" H 4250 2950 30  0000 C CNN
+	1    4250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 4EBD6AE3
+P 6000 3100
+F 0 "C2" H 6100 3000 50  0000 L CNN
+F 1 "0.1u" H 6050 3200 50  0000 L CNN
+	1    6000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 4EBD6AD6
+P 4250 3100
+F 0 "C1" H 4300 3200 50  0000 L CNN
+F 1 "0.1u" H 4300 3000 50  0000 L CNN
+	1    4250 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L VPP #PWR11
+U 1 1 4EBD6A66
+P 6500 5000
+F 0 "#PWR11" H 6500 5200 40  0001 C CNN
+F 1 "VPP" H 6500 5150 40  0000 C CNN
+	1    6500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K1
+U 1 1 4EBD6A13
+P 7050 4800
+F 0 "K1" V 7000 4800 50  0000 C CNN
+F 1 "jum_EN2" V 7100 4800 40  0000 C CNN
+	1    7050 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_7 P2
+U 1 1 4EBD696A
+P 7000 4100
+F 0 "P2" V 6970 4100 60  0000 C CNN
+F 1 "IO aislados" V 7070 4100 60  0000 C CNN
+	1    7000 4100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3050 4250
+NoConn ~ 3050 4150
+NoConn ~ 3050 4050
+$Comp
+L CONN_5X2 P1
+U 1 1 4EBD6248
+P 3450 4050
+F 0 "P1" H 3450 4350 60  0000 C CNN
+F 1 "FPGA" V 3450 4050 50  0000 C CNN
+	1    3450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 4EBD5F64
+P 4400 4850
+F 0 "#PWR04" H 4400 4850 30  0001 C CNN
+F 1 "GND" H 4400 4780 30  0001 C CNN
+	1    4400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 4EBD5F5F
+P 4100 3800
+F 0 "#PWR05" H 4100 3800 30  0001 C CNN
+F 1 "GND" H 4100 3730 30  0001 C CNN
+	1    4100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR06
+U 1 1 4EBD5F56
+P 4400 3600
+F 0 "#PWR06" H 4400 3700 30  0001 C CNN
+F 1 "VCC" H 4400 3700 30  0000 C CNN
+	1    4400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR07
+U 1 1 4EBD5F50
+P 3000 3800
+F 0 "#PWR07" H 3000 3900 30  0001 C CNN
+F 1 "VCC" H 3000 3900 30  0000 C CNN
+	1    3000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR08
+U 1 1 4EBD5ED6
+P 6600 4450
+F 0 "#PWR08" H 6600 4450 40  0001 C CNN
+F 1 "GNDA" H 6700 4350 40  0000 C CNN
+	1    6600 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VPP #PWR7
+U 1 1 4EBD5E3B
+P 5750 3600
+F 0 "#PWR7" H 5750 3800 40  0001 C CNN
+F 1 "VPP" H 5750 3750 40  0000 C CNN
+	1    5750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR09
+U 1 1 4EBD5E1E
+P 5750 4850
+F 0 "#PWR09" H 5750 4850 40  0001 C CNN
+F 1 "GNDA" H 5750 4780 40  0000 C CNN
+	1    5750 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L VPP #PWR12
+U 1 1 4EBD5DC0
+P 6600 3750
+F 0 "#PWR12" H 6600 3950 40  0001 C CNN
+F 1 "VPP" H 6600 3900 40  0000 C CNN
+	1    6600 3750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
