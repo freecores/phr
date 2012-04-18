@@ -1,7 +1,12 @@
-update=jue 08 mar 2012 12:36:51 ART
+update=mar 17 abr 2012 22:28:30 ART
 last_client=pcbnew
 [general]
 version=1
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [eeschema]
 version=1
 LibDir=
@@ -32,7 +37,11 @@ offY_E=0
 RptD_X=0
 RptD_Y=100
 RptLab=1
+SimCmd=
+UseNetN=0
 LabSize=60
+PrintMonochrome=1
+ShowSheetReferenceAndTitleBlock=1
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -67,17 +76,17 @@ LibName30=xilinx_virtexii-xc2v80&flashprom
 LibName31=libreria/tps75003_pm
 LibName32=libreria/pcb_hole
 LibName33=libreria/osc
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
 [pcbnew]
 version=1
 PadDrlX=320
 PadDimH=600
 PadDimV=600
 BoardThickness=630
+RouteTo=15
+RouteBo=0
+Segm45=1
+Racc45=1
+SgPcb45=1
 TxtPcbV=800
 TxtPcbH=600
 TxtModV=600
@@ -88,7 +97,7 @@ DrawLar=150
 EdgeLar=150
 TxtLar=120
 MSegLar=150
-LastNetListRead=fpga.net
+WpenSer=10
 [pcbnew/libraries]
 LibDir=
 LibName1=sockets
