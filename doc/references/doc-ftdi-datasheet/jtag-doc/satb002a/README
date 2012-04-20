@@ -1,0 +1,59 @@
+
+  Scan Educator
+  -------------
+  Release 1.0 - November 15, 1991.
+
+
+  Table Of Contents
+  -----------------
+      Installation
+      Important Information
+      Using Scan Educator
+      Using the Scan Educator Simulator
+
+
+  Installation
+  ------------
+  Place the installation diskette in a 5 1/4" high-density floppy drive.
+  Then make this drive the current drive and run INSTALL.  For example:
+
+      A:
+      INSTALL
+
+  Then follow the on-screen instructions.
+
+
+  Important Information
+  ---------------------
+  Screen graphics may become corrupted during the Demonstrations of
+  TAP Control Testing and Scan Control Testing if the mouse is moved.
+  To avoid this problem, use the Space bar to advance the presentation
+  during the Demonstration sections.
+
+  Do not execute SCANEDKA.EXE, found on the installation diskette. It
+  is a compressed archive used only by INSTALL.EXE.
+
+
+  Using Scan Educator
+  -------------------
+  To run Scan Educator, enter the following commands at the DOS prompt:
+
+     C:
+     CD \SCANED
+     SCANED
+
+  This example assumes you installed on drive C.  If you installed Scan
+  Educator on another drive, use the letter of the drive you installed on.
+
+
+  Using the Scan Educator Simulator
+  ---------------------------------
+  The Scan Educator Simulator can be used by itself to experiment with
+  boundary-scan testing.  The simulator implements the features described
+  in the TAP Control Testing and Scan Control Testing sections.  To invoke
+  the simulator, run SCANSIM from the \SCANED directory.  For example:
+
+     C:
+     CD \SCANED
+     SCANSIM
+

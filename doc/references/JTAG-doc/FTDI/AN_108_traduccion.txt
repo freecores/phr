@@ -1,0 +1,7 @@
+Los dispositivos FT2232D, FT232H, FT2232H y el FT4232H incoporan un procesador comandado llamado "Multi-Protocol Synchronous Serial Engine (MPSSE). EL propósito del procesador de comandado MPSSE es comunicarse con dispisitivos que usan protocolos sincronos (tal como JTAG oSPI) en una manera eficiente.
+La unidad MPSSE es controlada utilizando un comando SETUP. Varios comandos son utilizados para sacar y entrar datos de clock del chip, así como controlar otras lineas de I/O.
+Si está desactivado el MPSSE se lleva a cavo un reseteo y no tendrá ningún efecto en el resto de el chip. Cuando está activo, este tomará sus comandos y datos desde el dato OUT escritó hacia el conducto OUT en el chip.
+Esto se hace simplemente utilizando el comando WRITE, como si el dato estuviera escribiendose en un puerto COM.
+Cualquier lectura de se pasará de nuevo en el conducto normal IN. Esto se hace usando el comando normal READ, como si el dato estuviera leyendose desde un puerto COM.
+
+Para asegurar que el controlador del dispositivo no emitirá respuesta IN si el baffer es deshabilitado para aceptar datos, agregar una llamada a la prioridad FT_SetFlowcontrol para entrada al modo MPSSE o MCU Host Bus.

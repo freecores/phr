@@ -1,0 +1,48 @@
+- c This section guides you through the operations\necessary to load and execute an EXTEST\instruction on an SN74BCT8244A.\ \You are required to follow the test sequence\given in this assignment.  When you make a mistake,\Scan Educator will explain how to correct the error.\ \Click OK or press Space to begin the assignment.
+- c Your assignment is to:\ \ 1. Shift in an EXTEST instruction. \ 2. Shift in data to be driven      \    out by the EXTEST instruction.  \ 3. Return to Run-Test/Idle.        \ \Click OK or press Space to begin.
+- c Step 1: Shift in an EXTEST instruction.\ \To shift in an EXTEST instruction, the TAP Controller\must be moved to Shift-IR.  In this state you need to\shift in the following data: 00000000\starting with the least significant bit.
+x 0 TMS must be 0 to move to Run-Test/Idle.
+x 1 TMS must be 1 to move to Select-DR-Scan.
+x 1 TMS must be 1 to move to Select-IR-Scan.
+x 0 TMS must be 0 to move to Capture-IR.
+x 0 TMS must be 0 to move to Shift-IR.
+- z The opcode for EXTEST is 00000000.
+0 0 TMS and TDI must both be 0 to shift\in the first bit of the EXTEST opcode.
+0 0 TMS and TDI must both be 0 to shift\in the second bit of the EXTEST opcode.
+0 0 TMS and TDI must both be 0 to shift\in the third bit of the EXTEST opcode.
+0 0 TMS and TDI must both be 0 to shift\in the fourth bit of the EXTEST opcode.
+0 0 TMS and TDI must both be 0 to shift\in the fifth bit of the EXTEST opcode.
+0 0 TMS and TDI must both be 0 to shift\in the sixth bit of the EXTEST opcode.
+0 0 TMS and TDI must both be 0 to shift\in the seventh bit of the EXTEST opcode.
+0 1 TDI must be 0 for the eighth bit of the EXTEST\opcode. TMS must be 1 to move to Exit1-IR.\ \Issuing one too many TCKs\in Shift-IR is a common mistake.
+- z
+x 1 TMS must be 1 to move to Update-IR.
+- c Step 2: Execute an EXTEST instruction.\ \To execute an EXTEST instruction, the TAP\Controller must be moved to Shift-DR. In\this state you must shift in the\following data: 000000111110100101\starting with the least significant bit.
+x 1 TMS must be 1 to move to Select-DR-Scan.
+x 0 TMS must be 0 to move to Capture-DR.
+- c Note:\ \Before leaving Capture-DR, set the A‚B Data\Control switches to your choice of values\to be captured by the boundary-scan register.
+x 0 TMS must be 0 to move to Shift-DR.
+- z The data to shift in is\000000111110100101.
+1 0 TDI must be 1 and TMS must be 0\to shift in the LSB of the data.
+0 0 TDI must be 0 and TMS must be 0 to\shift in the second bit of the data.
+1 0 TDI must be 1 and TMS must be 0 to\shift in the third bit of the data.
+0 0 TDI must be 0 and TMS must be 0 to\shift in the fourth bit of the data.
+0 0 TDI must be 0 and TMS must be 0 to\shift in the fifth bit of the data.
+1 0 TDI must be 1 and TMS must be 0 to\shift in the sixth bit of the data.
+0 0 TDI must be 0 and TMS must be 0 to\shift in the seventh bit of the data.
+1 0 TDI must be 1 and TMS must be 0 to\shift in the eighth bit of the data.
+1 0 TDI must be 1 and TMS must be 0 to\shift in the ninth bit of the data.
+1 0 TDI must be 1 and TMS must be 0 to\shift in the tenth bit of the data.
+1 0 TDI must be 1 and TMS must be 0 to\shift in the eleventh bit of the data.
+1 0 TDI must be 1 and TMS must be 0 to\shift in the twelfth bit of the data.
+0 0 TDI must be 0 and TMS must be 0 to\shift in the thirteenth bit of the data.
+0 0 TDI must be 0 and TMS must be 0 to\shift in the fourteenth bit of the data.
+0 0 TDI must be 0 and TMS must be 0 to\shift in the fifteenth bit of the data.
+0 0 TDI must be 0 and TMS must be 0 to\shift in the sixteenth bit of the data.
+0 0 TDI must be 0 and TMS must be 0 to\shift in the seventeenth bit of the data.
+0 1 TDI must be 0 and TMS must be 1 to shift in the\eighteenth bit of the data and to move to Exit1-DR.\ \Issuing one too many TCKs\in Shift-DR is a common mistake.
+- z
+x 1 TMS must be 1 to move to Update-DR.
+- c Step 3: Return to Run-Test/Idle.\ \To conclude the Guided Practice session,\move the TAP Controller to Run-Test/Idle.\In this stable state the device retains\its current state.
+x 0 TMS must be 0 to move to Run-Test/Idle.
+- c This concludes the Guided Practice.  You may\now exit the program and return to the menu\(press Alt+M), or continue to experiment.
