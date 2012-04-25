@@ -1,12 +1,7 @@
-update=mar 17 abr 2012 22:28:30 ART
-last_client=pcbnew
+update=mar 24 abr 2012 21:15:34 ART
+last_client=cvpcb
 [general]
 version=1
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
 [eeschema]
 version=1
 LibDir=
@@ -99,7 +94,6 @@ TxtLar=120
 MSegLar=150
 WpenSer=10
 [pcbnew/libraries]
-LibDir=
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -116,3 +110,9 @@ LibName13=libreria/DIP4-8_OSC
 LibName14=libreria/HOLE
 LibName15=libreria/pin_array_x1
 LibName16=libreria/TPS75003_PM_INV
+LibDir=
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms

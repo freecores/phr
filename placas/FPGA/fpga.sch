@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date mar 20 mar 2012 21:35:54 ART
+EESchema Schematic File Version 2  date mar 24 abr 2012 21:18:48 ART
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -33,13 +33,12 @@ LIBS:tps75003_pm
 LIBS:pcb_hole
 LIBS:osc
 LIBS:fpga-cache
-EELAYER 25  0
+EELAYER 24  0
 EELAYER END
 $Descr A4 11700 8267
-encoding utf-8
 Sheet 1 1
 Title "Adaptador FPGA"
-Date "20 mar 2012"
+Date "25 apr 2012"
 Rev "0.1"
 Comp "Proyecto: Plataforma de Hardware Reconfigurable"
 Comment1 "Autor: Luis Alberto Guanuco"
@@ -47,6 +46,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Label 2450 950  0    60   ~ 0
+VCCAUX
 $Comp
 L CAPAPOL Ca6
 U 1 1 4F69144A
@@ -1312,6 +1313,4 @@ F 1 "MODE_PROG" V 8900 2750 40  0000 C CNN
 $EndComp
 Text Label 3900 950  0    60   ~ 0
 VCCINT_1V2
-Text Label 2400 950  0    60   ~ 0
-VCCAUX
 $EndSCHEMATC
