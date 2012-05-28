@@ -1,23 +1,17 @@
 *herramientas
-	vym
-	TeXMaker
-	libreoffice
 	opejproj(openproj.org)
 	inkscape
 		fuentes: Gaposis outlineBRK, brazeBRK, macropsiaBRK, pseudp BRK, Xtrusion BRK, zoiadl BRK, Zurklez sodial BRK
 	diagrama de GRANTT
-		grantt project (java)
 		planner (ref: http://paraisolinux.com/herramientas-para-diagramas-de-gantt/)
-	DFM Design For Manufacturing 
-		https://www.protoexpress.com/betterdfm/index.jsp?XXREFPATH=TOPMENU-PRODSVCS
-		http://www.4pcb.com/
+
 	iMPACT helper: transferir binario sin instalar iMPACT (http://fpgalibre.sourceforge.net/hard.html#tp10)
 	Grabación de FPGAs y memorias, JTAG, etc.: (http://openwince.sourceforge.net/jtag/)
 	INTI: Contactar con los changos para que nos pasen el script que usan para sintetizar y programar a traves del impact por linux
 
 =================0
 idea presentada hace poco 21 oct 2011
-Mirando las características expuestas por la placa Digilent C-Mod, se presenta la idea de hacer una placa de modo DIP con un CPLD. Según las prestaciones con las que cuenta la placa, es siemplemente un CPLD con lo necesario en alimentación además de Clk..
+OTCPLD - Agregar al diseño de la placa CPLD, un generador de clock.
 =================0
 
 *referencias (http)
@@ -55,13 +49,9 @@ Mirando las características expuestas por la placa Digilent C-Mod, se presenta 
 		Proyecto LGPL ========> http://en.qi-hardware.com/wiki/JTAG_Serial_Cable_run_1_for_Milkymist_One
 			Para bajar proyecto=======> git clone git://github.com/milkymist/extras-m1.git
 
-*transportistas internacionales
-	EMS http://www.ems.com.cn/english-main.jsp
-
 *protocolos estandares
 	IEEE 1149.1/1532 JTAG programming/debug port (spartan)
 	IEEE1149.1 JTAG Boundary Scan Test (coolrunner)
-
 
 *memorias SPI
 	ST (512 Kbit to 32 Mbit, Low Voltage, Serial Flash Memory With 40 MHz or 50 MHz SPI Bus Interface)
@@ -88,9 +78,6 @@ Mirando las características expuestas por la placa Digilent C-Mod, se presenta 
 *fabricantes de PCB
 	http://www.pcbwing.com/
 
-*herramientas
-	Soldadura BGA http://gsmserver.com/shop/equipment/soldering_sssembly/infrared/jovy_systems_re_7500_rework_system.php?lang=sp  U$S1790 (más gastos de envío)
-
 * componentes
 
 digikey	-	memoria XCF01SVOG20C( corresponde a XC3S50A-4VQG100C)	U$S 3,15	comprar
@@ -108,53 +95,13 @@ digikey -	FPGA memoria no volatil XC3S50AN-4TQG144C		U$S 9,91	ver 		codigo digik
 		LTC1844
 
 *miscelanius
-	nombre de la placa
-		X		placa de desarrollo en hardware recofigurable PDHR v0.1
-				development platform reconfigurable hardware DPRH v
-
-		X		plataforma de desarrollo orientado al HDL PDHDL v0.1
-
-				DPHDL
-
-		X		plataforma de desarrollo basado en hardware reconfigurable PDbHR
-				developments platform based on hardware reconfigurable (inglés)
-
-		*?		plataforma de hardware reconfigurable	
-				open reconfigurable hardware plataform (inglés) openRHP
-
-
-		*?		plataforma abierta de sistemas reconfigurable		
-				open platform for reconfigurable hardware
-
-		******		Plataforma de Hardware Reconfigurable	PHR
-
+	Plataforma de Hardware Reconfigurable	PHR
 
 	componentes
 		Para el diseño de los conectores que permitiran conectar la placa base con la placa FPGA deberíamos usar los conectores SMD con separación mínima que son los 1.27mm o (0.050)pulgadas. Para más detalles ver en ref/conectores SMD - torson.pdf
 		Se pretende utilizar un conector de 1mm de paso, debe revisarse la disponibilidad en córdoba.
-	CUENTAS
-		Realizando una análisis a priorí se observa que comprando los componentes más caros(con mayores prestaciones) se llega a un costo estimado por plataforma de unos U$S86 = $ 345
-		Mientras que si reducimos los costos y apostamos a ofrecer las prestaciones necesasarias tenemos un costo de U$S53 = $ 210. Son datos a priori pero no dejan de reflejar el análisis hecho hace tiempo ya. Si se quiere cubrir con las necesidades de todos los desarrolladores tendremos que aumentar el costo. Mientras que si diseñamos una plataforma para cubrir las necesidades principales de cualquier desarrollo se tendrá una plataforma baja en costo.
 
-
-
-
-*Financiamiento
-	CUDAR
-
-	ADEC
-		presentación vence el 30 de mayo (visitar antes para consultar).
-
-*Concursos
-	CAI
-		presentación vence el 17 junio (tiene que estar allá, mandar con tiempo).
-	SASE
-		ver para el 2012
-	INNOVAR
-		2012	http://www.innovar.gob.ar/
-
-
-*transferencia de tecnología
+*"Posibles" transferencia de tecnología
 	UTNs
 		San francisco
 			http://www.frsfco.utn.edu.ar/secyt/grupoI+D_Electronica_Medicina.asp
@@ -181,17 +128,5 @@ digikey -	FPGA memoria no volatil XC3S50AN-4TQG144C		U$S 9,91	ver 		codigo digik
 			ISO7242A (1Mbps)
 		_ 1 conector externo IDE
 
-
-* Fundamento del proyecto
-	+ Lo que se puede apreciar, de los diferentes proyectos que se asemejan al nuestro, el costo máximo no tiene que superar lo que nos cuesta comprar una placa afuera. Hasta el momento (17/05/2011) el diseño base es la BASYS2, cuesta en la página de digilent U$S 50 (académico) U$S 80(burros). No se si debe ser cuantitativa la comparación pero si nos sirve para tener una referencia, ya que ésta placa se asemeja a lo que se quiere lograr
-
 =================================================================================================================================================
-
-18/11/11
-Se ha logrado regularizar la tesis con la presentación de un 49% de la tesis. A la fecha no se ha retirado la primera entrega del financiamiento ADEC pero en una semana, luego de rendir se hará efectivo el retiro.
-
-Se hablo con Yoaquino, ex estudiante de la facultad regional de "San Francisco" para que nos contacte con docentes/investigadores de dicha regional que estén interesados en recibir las placas a diseñar. Desde luego que dichas placas se construiran pero con recursos que se puedan conseguir en el futuro ya que se debe poner toda la atensión en las placas que se fabricarán para nuestra regional
-
-Las primeras placas enviadas a china hace una semana (más o menos) ya se encuentran en camino hacia argentina. El envío fue realizado por la empresa FedEx que presentana una leve diferencia con las demás firmas de transporte. El envío cuenta con las placas OOCDLinks, CPLD2DIP y S3proto Power. La última placa es para el proyecto de tesis de facundo por lo que pagará 1/3 del costo que suma un monto total de U$S55. 
-
 
