@@ -1,4 +1,4 @@
-update=05/07/2012 21:01:22
+update=07/07/2012 14:33:29
 last_client=eeschema
 [eeschema]
 version=1
@@ -65,3 +65,5 @@ LibName30=valves
 LibName31=iso7242a
 LibName32=LP2951
 LibName33=MAX681
+LibName34=ADCS7476
+LibName35=DAC121S101
