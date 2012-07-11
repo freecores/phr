@@ -40,8 +40,8 @@ Date "11 nov 2011"
 Rev "$Rev: 32 $"
 Comp "$Id: mod-aislador.sch 33 2012-07-11 13:59:49Z guanucoluis $"
 Comment1 "$URL$"
-Comment2 ""
-Comment3 ""
+Comment2 "$Date$"
+Comment3 "$Author$"
 Comment4 ""
 $EndDescr
 $Comp
