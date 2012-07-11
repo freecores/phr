@@ -37,9 +37,9 @@ $Descr A4 11700 8267
 Sheet 1 1
 Title ""
 Date "11 nov 2011"
-Rev "$Rev$"
+Rev "$Rev: 32 $"
 Comp "$Id$"
-Comment1 ""
+Comment1 "$Author$"
 Comment2 ""
 Comment3 ""
 Comment4 ""
