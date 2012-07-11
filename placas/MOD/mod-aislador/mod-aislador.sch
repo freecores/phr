@@ -40,7 +40,7 @@ Date "11 nov 2011"
 Rev "$Rev: 32 $"
 Comp "$Id: mod-aislador.sch 33 2012-07-11 13:59:49Z guanucoluis $"
 Comment1 "$URL: http://opencores.org/ocsvn/phr/phr/trunk/placas/MOD/mod-aislador/mod-aislador.sch $"
-Comment2 "$Date$"
+Comment2 "$Date: 2012-07-11 11:05:29 -0300 (mié 11 de jul de 2012) $"
 Comment3 "$Author$"
 Comment4 ""
 $EndDescr
