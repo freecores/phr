@@ -38,7 +38,7 @@ Sheet 1 1
 Title ""
 Date "11 nov 2011"
 Rev "$Rev: 32 $"
-Comp "$Id$"
+Comp "$Id: mod-aislador.sch 33 2012-07-11 13:59:49Z guanucoluis $"
 Comment1 "$Author$"
 Comment2 ""
 Comment3 ""
