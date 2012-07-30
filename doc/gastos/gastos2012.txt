@@ -1,0 +1,5 @@
+placa-FPGA v0.1
+
+componente		cantidad	forma de pago		fecha		gestionado_por		forma de pago
+----------------------------------------------------------------------------------------------------------------------
+placas			4		paypal			jul 30		sergio olmedo		$230
