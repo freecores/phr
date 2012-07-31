@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.8.4)  11 APR 2012 22:45
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.26)  30 JUL 2012 21:02
 entering extended mode
  %&-line parsing enabled.
 **PHR_Rev01.tex
@@ -190,7 +190,7 @@ File: g3018.png Graphic file (type png)
 (./PHR_Rev01.aux) ) 
 Here is how much of TeX's memory you used:
  2574 strings out of 495061
- 31492 string characters out of 1182622
+ 31492 string characters out of 1182621
  85003 words of memory out of 3000000
  5741 multiletter control sequences out of 15000+50000
  9189 words of font info for 35 fonts, out of 3000000 for 9000
@@ -200,7 +200,7 @@ Here is how much of TeX's memory you used:
 x12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
 r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texm
 f-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on PHR_Rev01.pdf (2 pages, 226863 bytes).
+Output written on PHR_Rev01.pdf (2 pages, 227292 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

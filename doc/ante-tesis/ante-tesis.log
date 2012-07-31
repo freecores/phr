@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  14 JUN 2011 00:07
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.26)  30 JUL 2012 20:59
 entering extended mode
  %&-line parsing enabled.
 **ante-tesis.tex
 (./ante-tesis.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, spanish, galician, catalan, loaded.
+yphenation, loaded.
 (/usr/share/texmf-texlive/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/size10.clo
@@ -421,21 +421,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1 <./logo-utn.png> <./logo-dpto.png>] (./ante-tesis.aux) ) 
 Here is how much of TeX's memory you used:
- 2149 strings out of 494999
- 24686 string characters out of 1180817
- 78913 words of memory out of 3000000
- 5321 multiletter control sequences out of 15000+50000
- 9189 words of font info for 35 fonts, out of 3000000 for 9000
- 54 hyphenation exceptions out of 8191
- 28i,14n,45p,646b,311s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 2151 strings out of 495061
+ 24707 string characters out of 1182621
+ 78893 words of memory out of 3000000
+ 5314 multiletter control sequences out of 15000+50000
+ 9497 words of font info for 36 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 28i,14n,45p,646b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
-m/cmr17.pfb>
-Output written on ante-tesis.pdf (2 pages, 229593 bytes).
+xlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb
+>
+Output written on ante-tesis.pdf (2 pages, 243050 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
+ 34 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
