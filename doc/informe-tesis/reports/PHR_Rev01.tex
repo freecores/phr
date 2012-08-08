@@ -1,21 +1,16 @@
 \documentclass[a4paper]{article}
 \usepackage[spanish]{babel}
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{acronym}
 \usepackage{graphicx}
-\author{
-  Luis A. Guanuco\thanks{Universidad Tecnológica Nacional -- Facultad Regional Córdoba} \& 
-  Damian Morero\thanks{Clariphy Argentina S.A. -- Responsable Área de código}}
-\title{Implementación en harware \\ 
-  Mapper \& Demapper \\ 
-  \emph{\small{Prácticas Profesionales Supervisadas}}}
-\date{Julio 2012}
+\author{Luis A. Guanuco\thanks{Universidad Tecnológica Nacional -- Facultad Regional Córdoba}}
+\title{Plataforma de Hardware Reconfigurable}
+\date{2012}
 \begin{document}
 \maketitle
-
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.4\textwidth]{images/logo_casa}
+  \includegraphics[width=0.4\textwidth]{images/logov2_ES}
 \end{figure}
 
 \begin{abstract}
@@ -84,7 +79,7 @@ Se presentará a continuación, en forma resumida, algunos conceptos básicos pa
 La Figura \ref{fig:com_sys} es el diagrama en bloque de un sistema de comunicación digital típico. El mensaje a ser enviado puede ser de una fuente analógica o digital. El conversor analógico-digital (A/D) muestrea y cuantifíca la señal analógica, luego presenta las muestras en forma digital ( bits '0' o '1'). El codificador acepta la señal digital y la codifica a una señal digital mas corta. Ésto se llama \textsl{source encoding}, con lo cual se reduce la redundancia como también la velocidad de transmisión. Ésto a su vez reduce el ancho de banda requerido por el sistema. El decodificador del canal acepta la señal digital de salidas del codificador fuente y lo codifica en una señal digital mayor. Se agrega redundancia en el codificado de la señal digital por lo que algo del error causado por el ruido o interferencias durante la transimisión a trevés del canal puede ser corregido en el receptor. 
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\textwidth]{images/com_sys}
+  \includegraphics[width=0.8\textwidth]{images/logov2_ES}
   \caption{Diagrama en bloque de un sistema de comunicación digital típico.}
   \label{fig:com_sys}
 \end{figure}
