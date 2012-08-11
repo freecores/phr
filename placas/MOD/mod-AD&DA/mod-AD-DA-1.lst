@@ -1,0 +1,97 @@
+eeschema (2012-01-19 BZR 3256)-stable  >> Creation date: 11/08/2012 13:21:56
+
+#Componentes ( orden = Referencia )
+| BOR1       AN_IN       
+| BOR4       AN_OUT      
+| C1         0.1u        
+| C2         0.33uF      
+| C3         0.33uF      
+| C4         0.33uF      
+| C5         10pF        
+| C6         0.33uF      
+| C7         10pF        
+| C8         10pF        
+| C14        10pF        
+| C1reg1     0.33uF      
+| C1reg2     0.33uF      
+| C2reg1     3.3 uF      
+| C2reg2     3.3 uF      
+| Cbypass1   50nF        
+| Cpot1      10uF        
+| Cpot2      0.1uF       
+| Cpot3      0.1uF       
+| Cpot4      1uF         
+| Cpot5      0.1uF       
+| Cpot6      0.1uF       
+| Cpot7      1uF         
+| Cpot8      1uF         
+| P1         FPGA        
+| R1         1k          
+| R2         4k7         
+| R3         1k          
+| R4         100k        
+| R5         1k          
+| R6         1k          
+| R7         1k          
+| R8         1k          
+| R9         1k          
+| R10        1k          
+| R1A1       5k6         
+| U1         LP2951      
+| U2         NJU7201     
+| U3         MAX871      
+| U4         LP2950      
+| U5         AD5160      
+| U6         ADC124S101  
+| U7         DAC124S085  
+| U8         TS924       
+#Fin Componentes
+
+#Componentes ( orden = Valor )
+| 0.1u         C1        
+| 0.1uF        Cpot2     
+| 0.1uF        Cpot3     
+| 0.1uF        Cpot5     
+| 0.1uF        Cpot6     
+| 0.33uF       C2        
+| 0.33uF       C3        
+| 0.33uF       C4        
+| 0.33uF       C6        
+| 0.33uF       C1reg1    
+| 0.33uF       C1reg2    
+| 100k         R4        
+| 10pF         C5        
+| 10pF         C7        
+| 10pF         C8        
+| 10pF         C14       
+| 10uF         Cpot1     
+| 1k           R1        
+| 1k           R3        
+| 1k           R5        
+| 1k           R6        
+| 1k           R7        
+| 1k           R8        
+| 1k           R9        
+| 1k           R10       
+| 1uF          Cpot4     
+| 1uF          Cpot7     
+| 1uF          Cpot8     
+| 3.3 uF       C2reg1    
+| 3.3 uF       C2reg2    
+| 4k7          R2        
+| 50nF         Cbypass1  
+| 5k6          R1A1      
+| AD5160       U5        
+| ADC124S101   U6        
+| AN_IN        BOR1      
+| AN_OUT       BOR4      
+| DAC124S085   U7        
+| FPGA         P1        
+| LP2950       U4        
+| LP2951       U1        
+| MAX871       U3        
+| NJU7201      U2        
+| TS924        U8        
+#Fin Componentes
+
+#Fin de Lista
