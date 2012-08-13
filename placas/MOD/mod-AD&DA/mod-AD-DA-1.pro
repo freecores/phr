@@ -1,5 +1,5 @@
-update=11/08/2012 11:11:58
-last_client=eeschema
+update=13/08/2012 12:28:57
+last_client=pcbnew
 [eeschema]
 version=1
 LibDir=librerias
@@ -67,3 +67,39 @@ LibName32=texas-reguladores
 LibName33=ADC
 LibName34=POT DIGITAL
 LibName35=TS924
+LibName36=FOOTPRINTS
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
+[pcbnew]
+version=1
+PadDrlX=320
+PadDimH=600
+PadDimV=600
+BoardThickness=630
+TxtPcbV=800
+TxtPcbH=600
+TxtModV=600
+TxtModH=600
+TxtModW=120
+VEgarde=100
+DrawLar=150
+EdgeLar=150
+TxtLar=120
+MSegLar=150
+LastNetListRead=AD-DA-1.net
+[pcbnew/libraries]
+LibDir=
+LibName1=sockets
+LibName2=connect
+LibName3=discret
+LibName4=pin_array
+LibName5=divers
+LibName6=libcms
+LibName7=display
+LibName8=valves
+LibName9=led
+LibName10=dip_sockets
+LibName11=librerias/FOOTPRINTS
