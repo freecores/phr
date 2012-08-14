@@ -1,0 +1,423 @@
+# EESchema Netlist Version 1.1 created  13/08/2012 12:27:10
+(
+ ( /4FF87B5E bornier5 BOR1 AN_IN
+  ( 1 GND )
+  ( 2 N-000025 )
+  ( 3 N-000013 )
+  ( 4 N-000026 )
+  ( 5 N-000027 )
+ )
+ ( /4FF87F1B bornier5 BOR4 AN_OUT
+  ( 1 N-000035 )
+  ( 2 N-000040 )
+  ( 3 N-000039 )
+  ( 4 N-000038 )
+  ( 5 GND )
+ )
+ ( /4EBD6AD6 C1 C1 0.1u
+  ( 1 GND )
+  ( 2 +5VA )
+ )
+ ( /502677B2 C1 C1reg1 0.33uF
+  ( 1 VAA )
+  ( 2 GND )
+ )
+ ( /50267AE7 C1 C1reg2 0.33uF
+  ( 1 +5VA )
+  ( 2 GND )
+ )
+ ( /50230FFC SM0603_Capa C2 0.33uF
+  ( 1 GND )
+  ( 2 -5VA )
+ )
+ ( /4FF624AF SM0603_Capa C2reg1 3.3_uF
+  ( 1 VAA )
+  ( 2 GND )
+ )
+ ( /50267AE8 SM0603_Capa C2reg2 3.3_uF
+  ( 1 +5VA )
+  ( 2 GND )
+ )
+ ( /50267DFF SM0603_Capa C3 0.33uF
+  ( 1 GND )
+  ( 2 +5VA )
+ )
+ ( /50266375 SM0603_Capa C4 0.33uF
+  ( 1 GND )
+  ( 2 +5VA )
+ )
+ ( /5026625E SM0603_Capa C5 10pF
+  ( 1 N-000010 )
+  ( 2 N-000040 )
+ )
+ ( /4FF62C30 SM0603_Capa C6 0.33uF
+  ( 1 N-000015 )
+  ( 2 N-000037 )
+ )
+ ( /50266271 SM0603_Capa C7 10pF
+  ( 1 N-000004 )
+  ( 2 N-000039 )
+ )
+ ( /5026627E SM0603_Capa C8 10pF
+  ( 1 N-000003 )
+  ( 2 N-000038 )
+ )
+ ( /4FF87989 SM0603_Capa C14 10pF
+  ( 1 N-000014 )
+  ( 2 N-000035 )
+ )
+ ( /50254BFA SM0603_Capa Cbypass1 50nF
+  ( 1 VAA )
+  ( 2 N-000029 )
+ )
+ ( /5026713E C1 Cpot1 10uF
+  ( 1 +5V )
+  ( 2 GND )
+ )
+ ( /5026716B SM0603_Capa Cpot2 0.1uF
+  ( 1 +5V )
+  ( 2 GND )
+ )
+ ( /50267C5E SM0603_Capa Cpot3 0.1uF
+  ( 1 VCC )
+  ( 2 GND )
+ )
+ ( /50267C5A C1 Cpot4 1uF
+  ( 1 VCC )
+  ( 2 GND )
+ )
+ ( /50267411 SM0603_Capa Cpot5 0.1uF
+  ( 1 VCC )
+  ( 2 GND )
+ )
+ ( /5026740C SM0603_Capa Cpot6 0.1uF
+  ( 1 +5V )
+  ( 2 GND )
+ )
+ ( /50267C00 C1 Cpot7 1uF
+  ( 1 VCC )
+  ( 2 GND )
+ )
+ ( /50267C04 C1 Cpot8 1uF
+  ( 1 +5V )
+  ( 2 GND )
+ )
+ ( /4EBD6248 PIN_ARRAY_5x2 P1 FPGA
+  ( 1 ? )
+  ( 2 /CS_ADC )
+  ( 3 ? )
+  ( 4 /CS_REF_ADC )
+  ( 5 GND )
+  ( 6 /CS_DAC )
+  ( 7 VCC )
+  ( 8 /DATAIN )
+  ( 9 /SCLK )
+  ( 10 /DATAOUT )
+ )
+ ( /50266260 SM0603 R1 1k
+  ( 1 +5VA )
+  ( 2 N-000010 )
+ )
+ ( /4FF62452 SM0603 R1A1 5k6
+  ( 1 N-000022 )
+  ( 2 N-000029 )
+ )
+ ( /4FF62352 SM0603 R2 4k7
+  ( 1 N-000029 )
+  ( 2 GND )
+ )
+ ( /5026626F SM0603 R3 1k
+  ( 1 +5VA )
+  ( 2 N-000004 )
+ )
+ ( /4FF62574 SM0603 R4 100k
+  ( 1 VAA )
+  ( 2 N-000024 )
+ )
+ ( /50266280 SM0603 R5 1k
+  ( 1 +5VA )
+  ( 2 N-000003 )
+ )
+ ( /5026625F SM0603 R6 1k
+  ( 1 N-000010 )
+  ( 2 N-000040 )
+ )
+ ( /50266270 SM0603 R7 1k
+  ( 1 N-000004 )
+  ( 2 N-000039 )
+ )
+ ( /5026627F SM0603 R8 1k
+  ( 1 N-000003 )
+  ( 2 N-000038 )
+ )
+ ( /4FF878F4 SM0603 R9 1k
+  ( 1 +5VA )
+  ( 2 N-000014 )
+ )
+ ( /4FF8791E SM0603 R10 1k
+  ( 1 N-000014 )
+  ( 2 N-000035 )
+ )
+ ( /4FF622C2 SO8E U1 LP2951
+  ( 1 VAA )
+  ( 2 ? )
+  ( 3 ? )
+  ( 4 GND )
+  ( 5 N-000024 )
+  ( 6 ? )
+  ( 7 N-000029 )
+  ( 8 +5V )
+ )
+ ( /50266F11 TO92 U2 NJU7201
+  ( 1 GND )
+  ( 2 VCC )
+  ( 3 +5V )
+ )
+ ( /50230DC5 SOT23-5 U3 MAX871
+  ( 1 -5VA )
+  ( 2 +5VA )
+  ( 3 N-000037 )
+  ( 4 GND )
+  ( 5 N-000015 )
+ )
+ ( /50230FCC TO92 U4 LP2950
+  ( 1 +5VA )
+  ( 2 GND )
+  ( 3 VCC )
+ )
+ ( /502539CF SOT23_8 U5 AD5160
+  ( 1 VAA )
+  ( 2 +5V )
+  ( 3 GND )
+  ( 4 /SCLK )
+  ( 5 /DATAIN )
+  ( 6 /CS_REF_ADC )
+  ( 7 N-000022 )
+  ( 8 ? )
+ )
+ ( /50254DBF MSOP10-0.5 U6 ADC124S101
+  ( 1 /CS_ADC )
+  ( 2 VAA )
+  ( 3 GND )
+  ( 4 N-000025 )
+  ( 5 N-000013 )
+  ( 6 N-000026 )
+  ( 7 N-000027 )
+  ( 8 /DATAIN )
+  ( 9 /DATAOUT )
+  ( 10 /SCLK )
+ )
+ ( /502552D7 MSOP10-0.5 U7 DAC124S085
+  ( 1 +5VA )
+  ( 2 N-000006 )
+  ( 3 N-000007 )
+  ( 4 N-000008 )
+  ( 5 N-000009 )
+  ( 6 GND )
+  ( 7 +5VA )
+  ( 8 /DATAIN )
+  ( 9 /CS_DAC )
+  ( 10 /SCLK )
+ )
+ ( /5026627D TSSOP14 U8 TS924
+  ( 1 N-000035 )
+  ( 2 N-000014 )
+  ( 3 N-000006 )
+  ( 4 +5VA )
+  ( 5 N-000007 )
+  ( 6 N-000010 )
+  ( 7 N-000040 )
+  ( 8 N-000039 )
+  ( 9 N-000004 )
+  ( 10 N-000008 )
+  ( 11 -5VA )
+  ( 12 N-000009 )
+  ( 13 N-000003 )
+  ( 14 N-000038 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C1reg1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C1reg2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ CP*
+ SM*
+$endlist
+$component C2reg1
+ CP*
+ SM*
+$endlist
+$component C2reg2
+ CP*
+ SM*
+$endlist
+$component C3
+ CP*
+ SM*
+$endlist
+$component C4
+ CP*
+ SM*
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ CP*
+ SM*
+$endlist
+$component C7
+ SM*
+ C?
+ C1-1
+$endlist
+$component C8
+ SM*
+ C?
+ C1-1
+$endlist
+$component C14
+ SM*
+ C?
+ C1-1
+$endlist
+$component Cbypass1
+ SM*
+ C?
+ C1-1
+$endlist
+$component Cpot1
+ SM*
+ C?
+ C1-1
+$endlist
+$component Cpot2
+ SM*
+ C?
+ C1-1
+$endlist
+$component Cpot3
+ SM*
+ C?
+ C1-1
+$endlist
+$component Cpot4
+ SM*
+ C?
+ C1-1
+$endlist
+$component Cpot5
+ SM*
+ C?
+ C1-1
+$endlist
+$component Cpot6
+ SM*
+ C?
+ C1-1
+$endlist
+$component Cpot7
+ SM*
+ C?
+ C1-1
+$endlist
+$component Cpot8
+ SM*
+ C?
+ C1-1
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R1A1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R9
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R10
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
