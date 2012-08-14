@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  14/08/2012 11:48:36
+PCBNEW-LibModule-V1  13/08/2012 12:25:11
 # encoding utf-8
 $INDEX
 SOT23_8
