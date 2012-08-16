@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.26)  15 AUG 2012 21:48
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.4.26)  15 AUG 2012 21:56
 entering extended mode
  %&-line parsing enabled.
 **PHR_Rev01.tex
@@ -383,41 +383,34 @@ LaTeX Font Info:    ... okay on input line 10.
 \MPnumerator=\count107
 \everyMPtoPDFconversion=\toks25
 )
-
-pdfTeX warning: pdflatex (file ./images/logov2_ES.pdf): PDF inclusion: found PD
-F version <1.5>, but at most version <1.4> allowed
-<images/logov2_ES.pdf, id=1, 110.011pt x 34.529pt>
-File: images/logov2_ES.pdf Graphic file (type pdf)
- <use images/logov2_ES.pdf>
 Package acronym Info: Label `acro:PHR' newly defined as it shall be overridden
-although it is yet undefined on input line 18.
+although it is yet undefined on input line 17.
+ [1
 
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/logov2_ES.pdf>] [
-2] (./PHR_Rev01.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./PHR_Rev01.aux) ) 
 Here is how much of TeX's memory you used:
- 2508 strings out of 495061
- 29531 string characters out of 1182621
+ 2501 strings out of 495061
+ 29408 string characters out of 1182621
  94253 words of memory out of 3000000
- 5676 multiletter control sequences out of 15000+50000
+ 5672 multiletter control sequences out of 15000+50000
  10014 words of font info for 36 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  27i,11n,27p,813b,250s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type
-1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
-fonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8
-.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sh
-are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/font
-s/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on PHR_Rev01.pdf (2 pages, 148719 bytes).
+</u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr1
+7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public
+/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmti9.pfb>
+Output written on PHR_Rev01.pdf (2 pages, 146692 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
