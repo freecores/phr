@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{acronym}
 \usepackage{graphicx}
+\usepackage{amsmath}
 \author{Luis A. Guanuco\thanks{Universidad Tecnológica Nacional -- Facultad Regional Córdoba}}
 \title{Plataforma de Hardware Reconfigurable}
 \date{2012}
@@ -13,150 +14,34 @@
   \includegraphics[width=0.4\textwidth]{images/logov2_ES}
 \end{figure}
 
-\begin{abstract}
-  
-
-  El presente documento contiene en detalle las actividades que se llevó a cabo en \ac{CASA} con la finalidad de cumplir las \emph{Prácticas Profesionales Supervisadas}. El trabajo se baso en realizar la implementación en hardware de los módulos \emph{Mapper} y \emph{Demmaper}. Éstos módulos realizan la codificación y decodificación de los datos a ser transmitidos por el dispositivo que se encuentra desarrollando actualmente \ac{CASA}.
+\begin{abstract} 
+  La ciencia de la \emph{Ingeniería} guía al estudiante por el camino de las \emph{ciencias duras}, lo que permite la manipulación de sistemas reales mediante el modelado del mismo. La resolución de los problemas en ingeniería tienen un gran contenido teórico, aunque, en su gran mayoría, tanto el planteamiento como la implementación se llevan acabo en entorno real o medio físico. La presente documentación hará enfoque de la importancia que presenta para los ingenierieros el conocimiento y manejo del \emph{Laboratorio}. También se expone, como un ejemplo de lo redactado, la inserción de la \emph{\ac{PHR}} en ingeniería electrónica, del cuál se podrá obtener conclusiones que sirvan al lector presentandose inquietudez y certezas en el tema.
 \end{abstract}
 
 %*****************************************
 \section{Introducción}
 \label{sec:intro}
-
-\subsection{Empresa}
-\label{sec:empresa}
-\ac{CASA} es una empresa de tecnología avanzada, fundada en el año 2006, por iniciativa del Dr. Ing. Oscar Agazzi y con el apoyo de un importante grupo de profesionales de brillante desempeño.
-
-Se encuentra radicada en Córdoba debido a la importante interacción que posee con las Universidades de esta ciudad y a la calidad de sus egresados, así como también por la estrecha relación existente con el Laboratorio de Comunicaciones Digitales de la Facultad de Ingeniería de la Universidad Nacional de Córdoba en particular, de donde provienen sus principales técnicos.
-
-Uno de sus accionistas y principal cliente es ClariPhy Communications, Inc. una empresa fundada en el año 2002 en la ciudad de Irvine, California, Estados Unidos, que se ocupa del desarrollo de circuitos integrados para comunicaciones por fibras ópticas en redes de área local, utilizando una técnica revolucionaria conocida como "Compensación Electrónica de Dispersión" para aumentar la velocidad y la confiabilidad de las comunicaciones.
-
-\ac{CASA} se encuadra en el modelo de ``empresa micro multinacional'', por el cual la subsidiaria local realiza un trabajo tan relevante y central desde el punto de vista tecnológico como el que se hace en la casa matriz en Estados Unidos. Por tal motivo, desde el punto de vista del Desarrollo Tecnológico Argentino, el modelo de micro multinacional es un concepto mucho más atractivo que el de outsourcing.
-
-En este momento el equipo de trabajo de \ac{CASA} está formado por más de veinte personas en el área de ingeniería, todos ellos profesionales altamente capacitados y especializados en distintos temas de Comunicaciones Digitales, Comunicaciones Opticas, Microelectrónica, etc. Este grupo de profesionales ha hecho contribuciones centrales al desarrollo de los productos de su cliente, que por el nivel técnico, el grado de innovación y creatividad están totalmente a la par de las contribuciones realizadas por los ingenieros de la casa matriz.
-
-\subsubsection{Tecnología}
-\ac{CASA} está desarrollando una familia de Circuitos Integrados para Comunicaciones que permite aumentar considerablemente la velocidad, el desempeño ( la performance ), y el alcance de las redes existentes dentro de las estructuras de las empresas y en entornos data center.
-
-Además de permitir multiplicar hasta 10 veces el ancho de banda sobre la infraestructura de red preexistente, con la tecnología de \ac{CASA} los departamentos de IT alcanzarán mayor densidad de puertos y menores costos por puerto. Los circuitos integrados avanzados de \ac{CASA} permiten a los proveedores de switchs, servidores, y almacenamiento/storage la posibilidad de ofrecer una nueva generación de productos a sus clientes.
-
-Algunos de los logros obtenidos por \ac{CASA} en la tecnología de Circuitos Integrados para Comunicaciones incluyen:
+El termino \emph{laboratorio} se encuentra presente en varias diciplinas. En ingeniería, se podría clasificar tres grupos fundamentales para los cuales la ídea del Laboratorio toma mayor énfasis, éstos son:
 \begin{itemize}
-\item La primera solución industrial en Compensación Electrónica de Dispersión (EDC) que resuelve y supera los rigurosos requerimientos de costos, energía, alcance y los requerimientos en cuanto a la latencia de las redes de la empresa.
-\item Un avance fundamental en diseño analógico, permitiendo el procesamiento de la señal de 10 Gbit/s de manera digital mientras se alcanzan los bajos requerimientos de potencia disipada.
-\item Un procesador digital de alto desempeño, bajo consumo, que contiene un ecualizador feed forward (FFE) y un detector de secuencia de máxima verosimilitud (MLSD)
-\item Implementación en la tecnología estándar de proceso CMOS, cuyas ventajas son:
-  \begin{itemize}
-  \item Economías de escala
-  \item Integración y densidad
-  \item Reducción de la energía y los costos según la ley de Moore
-  \end{itemize}
+\item[$\cdot$] Desarrollo
+\item[$\cdot$] Investigación
+\item[$\cdot$] Académico
 \end{itemize}
 
-\subsubsection{Mercado}
-\begin{itemize}
-\item El Mercado de Ethernet a 10Gb/s
-  \begin{itemize}
-  \item Ethernet es la norma de comunicaciones en redes más exitosa de la historia, con más de 3.000 millones de puertos vendidos hasta el momento
-  \item Los comités de normas ya están trabajando en Ethernet a 100Gb/s
-  \end{itemize}
-\item La Propuesta de \ac{CASA}
-  \begin{itemize}
-  \item Proveer la tecnología de más bajo costo y menor consumo de energía para comunicaciones en redes a 10Gb/s.
-  \item Aprovechar las fibras ópticas ya instaladas en redes empresariales.
-  \item Usar Procesamiento Digital de Señales para reducir dramáticamente el costo de los componentes ópticos
-  \end{itemize}
-\item Estándares
-  \begin{itemize}
-  \item 10GBASE-LRM, ratificada en Octubre de 2006
-  \item 10GBASE-T ratificada en Junio de 2006
-  \item SFP+, norma para módulos ópticos
-  \end{itemize}
-\end{itemize}
-
-\subsection{Concepto	fundamentales}
-\label{sec:concept}
-Se presentará a continuación, en forma resumida, algunos conceptos básicos para que la lectura del las siguientes secciones logren una mayor comprensión. Éstos conceptos se pueden amplear en cualquier bibligrafía relacionadas.
-\subsubsection{Sistemas de comunicación digital}
-La Figura \ref{fig:com_sys} es el diagrama en bloque de un sistema de comunicación digital típico. El mensaje a ser enviado puede ser de una fuente analógica o digital. El conversor analógico-digital (A/D) muestrea y cuantifíca la señal analógica, luego presenta las muestras en forma digital ( bits '0' o '1'). El codificador acepta la señal digital y la codifica a una señal digital mas corta. Ésto se llama \textsl{source encoding}, con lo cual se reduce la redundancia como también la velocidad de transmisión. Ésto a su vez reduce el ancho de banda requerido por el sistema. El decodificador del canal acepta la señal digital de salidas del codificador fuente y lo codifica en una señal digital mayor. Se agrega redundancia en el codificado de la señal digital por lo que algo del error causado por el ruido o interferencias durante la transimisión a trevés del canal puede ser corregido en el receptor. 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.8\textwidth]{images/logov2_ES}
-  \caption{Diagrama en bloque de un sistema de comunicación digital típico.}
-  \label{fig:com_sys}
-\end{figure}
-\subsubsection{Sistemas de comunicación digital}
-
-\subsubsection{Lenguajes de descripción de hardware}
-
+En el \textbf{desarrollo} de un producto, en determinados esenarios, es necesario tomar muestras/datos que sirven al diseño del sistema a implementar. Extendiendose éstos concepto en caso de que se encuentren problemas para la evolución del diseño, donde el laboratorio proporciona valiosa información. El modelado físico resulta beneficioso ya que sobre el mismo se pueden resolver sin los inconvenientes que podría resultar hacerlo sobre el mismo medio, ya sea por la complejidad que sería recrear el ambiente o por simples limitaciones físicas. En la mayoría de las situaciones es necesario la comprobación en el laboratorio como también conciderar sus técnicas fundamentales para la elaboración de un proyecto.
+En la \textbf{Invesitagación}, el laboratoría forma parte fundamental en la caracterización de cualquire fenómeno, incluso de aquellos que aún no se tenga información alguna. Como también permite proporcionar información adicional para su posterior documentación.
+Ya en el ámbito \textbf{académico}, un estudiante de grado sin los conocimientos de la prácticas o por lo menos una guía difícilmente pueda experimentar satisfactoriamente su actividad de en laboratorio. Aún con los conocimientos de la teoría. El conocimiento de las técnicas a implementar en el laboratorio le permitirán tener un mayor rendimiento como también eliminar errores sistemáticos en la implementación.
+Quizá aquí se presentan conceptos muy subjetivos pero son claros ejemplos que sirven de base a fines de obtener concluciones sobre el correcto manejo de una herramienta valiosa como es el \emph{Laboratorio}.
 %*****************************************
-\section{Planteo Teórico}
-\label{sec:teo}
-
-
-\subsection{Especificaciones}
-
-
-\subsection{Sistema}
-
-
-\subsection{Resolución}
-
-%*****************************************
-\section{Simulación}
-\label{sec:sim}
-\subsection{Estructura del simulador}
-
-
-\subsection{Resolución del sistema}
-
-
-\subsection{Especificaciones finales}
-
-%*****************************************
-\section{Implementación}
-\label{sec:imp}
-
-\subsection{Especificaciones}
-
-\subsection{Arquitectura}
-
-\subsection{Verificación}
-
-\subsection{Recursos de hardware}
-
-\subsection{Observaciones de implementación}
-
-
-%*****************************************
-
 \section{Observaciones finales}
 
-\subsection{Acrónimos}
+\appendix{}
+\section{Acrónimos}
 \begin{acronym}
-  \acro{CASA}[ClariPhy]{Clariphy Argentina S.A.}
+  \acro{PHR}[PHR]{Plataforma de Hardware Reconfigurable}
   \acro{UTN-FRC}{Universidad Tecnológica Nacional -- Facultad Regional C\'ordoba}
 \end{acronym}
 
 
-\appendix{}
 
-\section{Práctica Profesional Supervisada}
-asdf
-ahoalsf asf saf sadfsf sdfsd sdfsdafsdf
-sdfasdfa
-as
-f
-sfsdfsdfdsafdsaf f saf s
-
-\section{Córdoba}
-
-asfasf
-f
-asf
-s
-f
-sdf
-
-asffsdff fasd fasffsdff fasd fasffsdff fasd fasffsdff fasd fasffsdff fasd fasffsdff fasd fasffsdff fasd fasffsdff fasd fasffsdff fasd fasffsdff fasd fasffsdff fasd fasffsdff fasd fasffsdff fasd fasffsdff fasd fasffsdff fasd fasffsdff fasd f
 \end{document}
